@@ -1,22 +1,41 @@
-name, symbole, unité, valeur
-Vitesse relativiste, c, m s, 299792428
-Constante de Planck, h, J s, 6.62607015e-34
-Constante de Dirac, ħ, , J s, 1.05457181e-34
-Newton Gravitational Constant, G, 6.67430e 10
-Constante de Newton optimisée, G_s, kg m s, 6.67545375e10
-Constante de Boltzman , k_B, J. K -1, 1.380649e−23
-Constante de déplacement de Wien, b, ω b m. K, 2.897771995e10
-Longueur d'onde réduite de l'Electron ħ/m e c, ,ƛ_e, mètre, 3.861592675e10
-rayon de Hubble-Lemaître : c/H_0, H_0, R Mètre Gal, 1.306713895e10
-Masse de l'Univers Rc 2 /2G = m P4 /m e m p m H M, M_U, kg, 8.796524777e52
-Mu, u, U J. m, 8.459065716e-10
-Rayon de Nambu (hologramme du Grandcosmos) Ra 3 /pH R N, R_N, mètre, 1.712894163e26
-Rayon du Grandcosmos R N2 /2l P R GC , R_GC, mètre, 9.075773376e86
-Rayon monoélectronique ƛ e exp((π 2 /6-1)a(1+1/p)) + 1 - γ ) R 1, R_Mono, mètre, 1.492365473e26
-Température de fond T CMB K, T_CMB, 2.7255
-Température de neutrino T neut = T CMB (4/11), T_Neutrino, K,  1.9454
-Densité énergétique du CNB : (3 × (7/8) ×(4/11) 4/3 u CMB u CNB, u_CNB, J. m -3 2.8457e-14
-Période non-Doppler de Kotov : ≈ ƛ e √(a G a w )/c t K, t_K, sec, 9600.60(1)
-Longueur de Planck l_P √(ħG/c 3 ) quantum d'espace officiel, l_P,  m, 1.6e-34
-Topon : π(R/l P ) = 2πR/d : (Relation. Holograph. Cent.) d 2l /R quantum d'espace, Topon , m, 4.0e-96
+symbol, value
+c,constants.c
+h,constants.h
+hbar,constants.hbar
+a,137.0359990836958
+d_e,1.00115965218128
+xi3,1.202056903159594
+xi2,np.pi**2/6
+e=np.e
+gamma,np.euler_gamma
+Gamma,(constants.fine_structure**-1*gamma)/np.pi
+F,(2*137*Gamma)**1.5
+lambdabare,constants.hbar/(constants.m_e*constants.c)
+lambdabar_F,lambdabare/F
+lambdabar_p,(constants.hbar/(constants.m_p*constants.c))
+H,1837.152646
+p,1836.15267343 
+n,1838.68366173 
+m_e=constants.m_e
+m_p=constants.m_p
+m_n=constants.m_n
+beta,(H-p)**(-1)
+print(beta)
+j,(8*np.pi**2)/np.log(2)
+print(j)
+k_B,constants.Boltzmann
+T_cmb,2.72582
+l_P,((constants.hbar*G_s)/constants.c**3)**0.5
+ƛ_w,(constants.hbar/(constants.m_e*constants.c))/F**2
+b,2.897771955*10**(-3)
+𝜔=,(h*c)/(k_B*b)
+l_ph,(lambdabare*(np.pi*(a**2))**2)
+r_H,(lambdabare*aprime)
+r_H,(lambdabare*aprime)
+G_s,6.67545372*10**-11
+Lucas,(2**127)-1
+OM,2**46 * 3**20 * 5**9 * 7**6 * 11**2 * 13**3 * 17 * 19 * 23 * 29 * 31 * 41 * 47 * 59 * 71 # 808017424794512875886459904961710757005754368000000000
+OB,2**41 * 3**13 * 5**6 * 7**2 * 11 * 13 * 17 * 19 * 23 * 31 * 47 # 4154781481226426191177580544000000
+OP,2**8 * 3**7 * 5**6 * 7 * 11 * 31 * 37 * 67 * 2**9 * 3**4 * 5 * 7**3 * 11 * 19 * 31 * 2**14 * 3**3 * 5**3 * 7 * 13 * 29 * 2**21 * 3**3 * 5 * 7 * 11**3 * 23 * 29 * 31 * 37 * 43 * 2**7 * 3**5 * 5 * 17 * 19 * 2**3 * 3 * 5 * 7 * 11 * 19
+
 
