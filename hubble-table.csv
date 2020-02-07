@@ -1,4 +1,4 @@
-LaTeX Formula, Plain Formula, gly_value, meter_value
+LaTeXFormula, PlainFormula, gly, m
 $$2\hbar^2/(G.m_e.m_p.m_n)$$, 2*hbar**2/(G_s*m_e*m_p*m_n), 13.80047597102314, 1.3056258355517771e+26
 $$ƛ_e.exp((e^{4e-1/a}-ln2(P^4/a^3 ))/2)^{1/2}$$, np.exp(np.sqrt((e**(4*e-1/a)-np.log(P**4/a**3)**2)/2))*lambdabare, 13.81e9,  	1.306718550184196e+26 	
 $$ƛ_e^2/l_P(j/16)^{16}(e^e)^2d_e\sqrt(2)$$, 	(lambdabare**2/l_P)*((j/16)**16)*( e**e )**2*d_e*np.sqrt(2), 13.81e9,  	1.306718550184196e+26 	
