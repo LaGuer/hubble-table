@@ -28,7 +28,7 @@ l_P,((constants.hbar*G_s)/constants.c**3)**0.5
 b,2.897771955*10**(-3)
 𝜔,(h*c)/(k_B*b)
 l_ph,(lambdabare*(np.pi*(a**2))**2)
-r_H,(lambdabare*aprime)
+aprime, 137.1106292
 r_H,(lambdabare*aprime)
 G_s,6.67545372e-11
 Lucas,170141183460469231731687303715884105727
