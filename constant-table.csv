@@ -6,7 +6,7 @@ a,137.0359990836958
 d_e,1.00115965218128
 zeta3,1.202056903159594
 zeta2,np.pi**2/6
-e=np.e
+e,np.e
 gamma,np.euler_gamma
 Gamma,(constants.fine_structure**-1*gamma)/np.pi
 F,(2*137*Gamma)**1.5
