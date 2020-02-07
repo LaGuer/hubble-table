@@ -16,13 +16,11 @@ lambdabar_p,(constants.hbar/(constants.m_p*constants.c))
 H,1837.152646
 p,1836.15267343 
 n,1838.68366173 
-m_e=constants.m_e
-m_p=constants.m_p
-m_n=constants.m_n
+m_e, constants.m_e
+m_p, constants.m_p
+m_n, constants.m_n
 beta,(H-p)**(-1)
-print(beta)
 j,(8*np.pi**2)/np.log(2)
-print(j)
 k_B,constants.Boltzmann
 T_cmb,2.7255
 l_P,((constants.hbar*G_s)/constants.c**3)**0.5
