@@ -1,61 +1,22 @@
-symbole, unité, valeur
-Vitesse relativiste, c m s, 299792428
-Constante de Planck, h J s, 6.62607015e-34
-Constante de Dirac, ħ = h/2π J s, 1.05457181e-34
-G, 6.67430e 10
-Constante de Newton optimisée, G kg m s, 6.67545375e10
-PConstante de Boltzman k B, J. K -1, 1.380649e−23
-Constante de déplacement de Wien : b = λ Wien T = hc/k B, ω b m. K, 2.897771995e10
-Longueur d'onde réduite de l'Electron ħ/m e c,  ƛ e mètre, 3.861592675e10
-rayon de Hubble-Lemaître : c/H 0, R Mètre Gal, 1.306713895e10
-Masse de l'Univers Rc 2 /2G = m P4 /m e m p m H M, kg, 8.796524777e52
-u, U J. m, 8.459065716e-10
-Rayon de Nambu (hologramme du Grandcosmos) Ra 3 /pH R N, mètre, 1.712894163e26
-Rayon du Grandcosmos R N2 /2l P R GC , mètre, 9.075773376e86
-Rayon monoélectronique ƛ e exp((π 2 /6-1)a(1+1/p)) + 1 - γ ) R 1, mètre, 1.492365473e26
-Température de fond T CMB K, 2.7255
-Température de neutrino T neut = T CMB (4/11), K,  1.9454
-Densité énergétique du CNB : (3 × (7/8) ×(4/11) 4/3 u CMB u CNB J. m -3 2.8457× 10 -14
-Période non-Doppler de Kotov : ≈ ƛ e √(a G a w )/c t K, sec, 9600.60(1)
+name, symbole, unité, valeur
+Vitesse relativiste, c, m s, 299792428
+Constante de Planck, h, J s, 6.62607015e-34
+Constante de Dirac, ħ, , J s, 1.05457181e-34
+Newton Gravitational Constant, G, 6.67430e 10
+Constante de Newton optimisée, G_s, kg m s, 6.67545375e10
+Constante de Boltzman , k_B, J. K -1, 1.380649e−23
+Constante de déplacement de Wien, b, ω b m. K, 2.897771995e10
+Longueur d'onde réduite de l'Electron ħ/m e c, ,ƛ_e, mètre, 3.861592675e10
+rayon de Hubble-Lemaître : c/H_0, H_0, R Mètre Gal, 1.306713895e10
+Masse de l'Univers Rc 2 /2G = m P4 /m e m p m H M, M_U, kg, 8.796524777e52
+Mu, u, U J. m, 8.459065716e-10
+Rayon de Nambu (hologramme du Grandcosmos) Ra 3 /pH R N, R_N, mètre, 1.712894163e26
+Rayon du Grandcosmos R N2 /2l P R GC , R_GC, mètre, 9.075773376e86
+Rayon monoélectronique ƛ e exp((π 2 /6-1)a(1+1/p)) + 1 - γ ) R 1, R_Mono, mètre, 1.492365473e26
+Température de fond T CMB K, T_CMB, 2.7255
+Température de neutrino T neut = T CMB (4/11), T_Neutrino, K,  1.9454
+Densité énergétique du CNB : (3 × (7/8) ×(4/11) 4/3 u CMB u CNB, u_CNB, J. m -3 2.8457e-14
+Période non-Doppler de Kotov : ≈ ƛ e √(a G a w )/c t K, t_K, sec, 9600.60(1)
+Longueur de Planck l_P √(ħG/c 3 ) quantum d'espace officiel, l_P,  m, 1.6e-34
+Topon : π(R/l P ) = 2πR/d : (Relation. Holograph. Cent.) d 2l /R quantum d'espace, Topon , m, 4.0e-96
 
-
-Tableau 6. Constantes secondaires dimensionnées Symb Formule Remarques
-Longueur de Planck l P √(ħG/c 3 ) quantum d'espace officiel ≈ 1.6 × 10 -34 m
-Topon : π(R/l P ) = 2πR/d : (Relation. Holograph. Cent.) d 2l /R quantum d'espace ≈ 4.0 × 10 -96 m
-Masse de Planck m P √(ħc/G) voisine de la masse de l'ovocyte humain
-Température des mammifères T mam T CMB /j Relation centrale dans l'Axe.Topologique.
-Longueur d'onde des mammifères λ mam hc/k B T mam
-2
-Densité de photons du CMB :
--3
-ph
-l
-2
-P
-16π(3)/ λ
-Voisin de √(Rl P ) ≈ rayon de l'ovocyte
-3
-CMB
-410.87 × 10 6 m -3 ≈ (ƛ e (πa 2 ) 2 ) -3
-
-
-
-
-Tableau 8 : Constantes secondaires non-dimensionnées Symbole Formule Constante de correction Rydbergh β (H-p) Rapport de Planck P m P /m e P 3+7 ≈ a w 7 √a 7+127 => P/a w √a ≈ (√a 127 /P 3 ) 1/7 ≈ n 3
-Couplage gravitationnel a G = R/2ƛ e a G P 2 /pH a G = R/2ƛ e : analogue gravitationnel de a(1+1/p) = r H /ƛ e
-Couplage faible a w F 2 a w = (2×137 Γ) 3
-Couplage fort α soff ≈ 0.1179(10) a s a w /2π(pH) 3/2 8.43450292 Valeur optimisée (Bizouard)
-Aire numérique de la 4D-sphère de rayon a s 4 2π a Racine 5 ième de R/ƛ e
-Nb. équivalent de neutrons dans l'Univers :5.251884 × 10 79 n n
-87
-Remarques
--1
-2 3
-M/m n
-≈ (3N edd /10)(H/p)
-n ph2 ≈ expexp6 ≈ exp(π 4 + π 5 )
-Nb. de photons dans l'Univers : 3.838 ×10 n ph (4π/3)(R/l ph )
-Nb. de photons dans le Grandcosms : exp(621.9499) N ph (4π/3)(R GC /l ph ) 3 ≈ (R 1 /ƛ e ) 7 ≈ exp(621.9507)
-Nb. éq. d'atomes H dans le Grandcosmos :exp(603.8427) N H M/m n
-3
-≈ (π/3)(R/ƛ e √a) 7
