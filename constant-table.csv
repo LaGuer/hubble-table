@@ -26,7 +26,7 @@ T_cmb,2.7255
 l_P,((constants.hbar*G_s)/constants.c**3)**0.5
 ƛ_w,(constants.hbar/(constants.m_e*constants.c))/F**2
 b,2.897771955*10**(-3)
-𝜔=,(h*c)/(k_B*b)
+𝜔,(h*c)/(k_B*b)
 l_ph,(lambdabare*(np.pi*(a**2))**2)
 r_H,(lambdabare*aprime)
 r_H,(lambdabare*aprime)
