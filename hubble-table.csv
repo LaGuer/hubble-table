@@ -2,9 +2,9 @@ Formula in Latex, Formula in plain, gly_value, m_value
 $$2hbar^2/(G.m_e.m_p.m_n)$$, 2*hbar**2/(G_s*m_e*m_p*m_n), 13.80047597102314, 1.3056258355517771e+26
 $$ƛ_e.exp((e{^4e-1/a}-ln2(P^4/a^3 ))/2)^{1/2}$$, 	(lambdabare**2/l_P)*((j/16)**16)*( e**e )**2*d_e*np.sqrt(2), 13.81e9,  	1.306718550184196e+26 	
 $$((a/\sqrt(137)(4\pi.F)^2)ƛ_e^4l{ph}^3(ƛ_{CMB}/l_P)^8)^{1/7}$$, ((a/(np.sqrt(137)*(4*np.pi*F)**2))*(lambdabare**4)*(l_ph**3)*(lambdabar_cmb/l_P)**8)**(1/7), 13.8117e9, 1.3062424977649562e+26
-$$ƛ_eF_e(Pe^e)^2/√(pn)$$, lambdabare*F_e*(P*e**e)**2/np.sqrt(pn), 13.8126e9, 1.3067153891523966e+26
+$$ƛ_Fe(Pe^e)^2/√(pn)$$, lambdabar_F*e*(P*e**e)**2/np.sqrt(p*n), 13.8126e9, 1.306774097292284e+26
 $$(ƛ_e^2/l_P)(j/16)^16( e^e )^2.d_e√2$$, (lambdabare**2/l_P)(j/16)**16( e**e )**2*d_e*np.srt(2), 13.8120e9, 1.3067153891523966e+26
 $$((a/\sqrt(137)(4πF)^2)ƛe4 l_ph^3(\lambda_CMB/l_P)^8 )^(1/7)$$, ((a/np.sqrt(137)*(4np.pi*F)**2)*lambdabar**4*l_ph**3*(lambdabar_CMB/l_P)**8 )**(1/7), 13.81189e9, 1.3067153891523966e+26
-$$2\betaƛ_ej**{17}(4π)^2√137$$, 2*beta*lambdabare*(j**17)*(4*np.pi)**2*np.sqrt(137),  13.81198e9, 1.3067153577444422e+26
+$$2\beta ƛ_ej**{17}(4π)^2√137$$, 2*beta*lambdabare*(j**17)*(4*np.pi)**2*np.sqrt(137),  13.81198e9, 1.3067153577444422e+26
 $$ƛ_e(3j^j /2H)^{1/6}$$, lambdabare*(3*j**j /(2*H))**(1/6), 13.81199e9, 1.3067153891523966e+26
 $$(βFP^{3/2}(n/p)^{7/2}/2\pi).ƛ_e$$, beta*F*P**(3/2)*(n/p)**(7/2)/(2*np.pi)*lambdabare, 13.81198e9, 1.3067155838671086e+26
