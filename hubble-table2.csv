@@ -3,4 +3,4 @@ $$R_N=\frac{2.\hbar^2}{G.(m_N)^3}$$, R_N=2*constants.hbar**2/(G_s*((a)*constants
 $$ƛe.exp((\pi^2/6-1).(aH/p) + 1 - \gamma )$$, (np.exp(((a*((1+1/p))*(((np.pi**2)/6)-1))+1)-gamma))*lambdabare, 15.774315383368366e+9, 1.4923654623153317e+26,
 $$ƛ_e 2^{128} (1 - (137^2 + \pi^2 + e^2 )/pH)$$, lambdabare*2**128*(1 - (137**2 + np.pi**2 + e**2 )/p*H), , ,
 $$R_{GC}=R_N^2/(2l_P)$$, R_N**2/(2*l_P),9.59310005329329e+61 , 9.075773400070832e+86,
-$$\frac{m_P^4}{m_e\cdot m_p\cdot\ m_n} = M_U$$M_U=(m_P**4)/(constants.m_e*constants.m_p*constants.m_n), n/a, n/a, 8.792233511611562e+52 
+$$\frac{m_P^4}{m_e\cdot m_p\cdot\ m_n} = M_U$$, M_U=(m_P**4)/(constants.m_e*constants.m_p*constants.m_n), n/a, n/a, 8.792233511611562e+52 
