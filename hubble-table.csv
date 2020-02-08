@@ -14,7 +14,7 @@ $$((11/4)^{3/610}.R1^2)/R_N$$, ((1/np.log(2))**2.5)*R1**2)/R_N, 13.8119588717053
 $$R_{a}=ƛ_e.(2.\pi^2.a^3)^5$$, ((constants.pi**2*(2*(1/constants.fine_structure)**3))**5)*(constants.hbar/(constants.m_e*constants.c)), 13.80417811516134e+9, 1.3059760854303987e+26
 $$ƛ_FP^2e/8$$, lambdabar_F*P**2*e/8, 13.814149979454358e+9, 1.3069194966342527e+26
 $$ƛ_FP^3/p^7$$, lambdabar_F*P**3/p**7, 13.803117607419157e+9, 1.30587575365127e+26
-$$\frac{2.\hbar^2}{G.m_e.m_p^2}$$, 2*constants.hbar**2/(G_s*constants.m_e*constants.m_p**2), 13.819498813523245e+9, 1.3049688972818604e+26
+
 $$R_{Rydberg}=\frac{(ƛ_{Ryd}.n^4)^2}{ƛ_p}$$, ((lambdabarRyd*n**4)**2)/lambdabar_p, 13.810372445537942e+9, 1.3065621143319103e+26
 $$R_{ƛ_w}=ƛ_w.(\frac{2^{70}.\gamma.n^3}{\Gamma^4})^2$$, (((2**70*np.euler_gamma*n**3)/Gamma**4)**2)*ƛ_w, 13.811976947856119e+9, 1.3067139119716592e+26
 $$ƛ_e g(6)/ (1 + \sqrt(137 +\sqrt(136))/jn)$$, ((constants.hbar/(constants.m_e*constants.c))*np.exp(2**(6+(1/2)))/6)/(1+np.sqrt(137**2+np.sqrt(136))/(j*n)), 13.811976768530968e+9, 1.3067138950061902e+26
