@@ -5,3 +5,4 @@ $$exp(2^{6+1/2})/6$$, (constants.hbar/(constants.m_e*constants.c))*np.exp(2**(6+
 $$R_N=\frac{2.\hbar^2}{G.(m_N)^3}$$, R_N=2*constants.hbar**2/(G_s*((a)*constants.m_e)**3), 18.10530562420883e+9, 1.7128941663434102e+26
 $$ƛe.exp((\pi^2/6-1).(aH/p) + 1 - \gamma )$$, (np.exp(((a*((1+1/p))*(((np.pi**2)/6)-1))+1)-gamma))*lambdabare, 15.774315383368366e+9, 1.4923654623153317e+26
 $$ƛ_e2^{128}((137^2 + \pi^2 + e^2 )/pH)$$, lambdabare*2**128/(1+(137**2 + np.pi**2 + e**2)/(H*p) ), 13.81240522506028e+9, 1.3067544301236205e+26 
+$$\frac{2.\hbar^2}{G.m_e.m_p^2}$$, 2*constants.hbar**2/(G_s*constants.m_e*constants.m_p**2), 13.819498813523245e+9, 1.3049688972818604e+26
