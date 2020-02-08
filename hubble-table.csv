@@ -20,4 +20,4 @@ $$\frac{2.\hbar^2}{G.m_e.m_p^2}$$, 2*constants.hbar**2/(G_s*constants.m_e*consta
 $$R_{Rydberg}=\frac{(ƛ_{Ryd}.n^4)^2}{ƛ_p}$$, ((lambdabarRyd*n**4)**2)/lambdabar_p, 13.810372445537942e+9, 1.3065621143319103e+26
 $$ƛ_e 2^{128} (1 - (137^2 + \pi^2 + e^2 )/pH)$$, lambdabare*2**128*(1 - (137**2 + np.pi**2 + e**2 )/p*H), , 
 $$R_{ƛ_w}=ƛ_w.(\frac{2^{70}.\gamma.n^3}{\Gamma^4})^2$$, (((2**70*np.euler_gamma*n**3)/Gamma**4)**2)*ƛ_w, 13.811976947856119e+9, 1.3067139119716592e+26
-
+$$ƛ_e 2^128 / d_e^2 (m_H /m_p )^6$$, lambdabare*2**128 / d_e**2 * (m_H /m_p )**6, , 
