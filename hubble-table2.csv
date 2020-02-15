@@ -26,3 +26,4 @@ $$(\hbar/(m_e.c))*(2.R/R_N)^{210}$$, (constants.hbar/(constants.m_e*constants.c)
 $$ƛ_e(\tau/p)^{140}/2$$, lambdabare*(τ/p)**140/2, 13.770870240475283e+9, 1.3028249171802058e+26
 $$R_N (OM.OB/n_{ph})^2$$, R_N*(OM*OB/n_ph)**2, 13.766765674643457e+9, 1.3024365952697872e+26
 $$R_N (\pi.OM.OB/3)^2 /exp(e^6)$$, R_N*(np.pi*OM*OB /3)**2/(np.exp(e**6)), 13.896392386837583e+9, 1.3147002291309415e+26
+$$\sqrt(3)/2.ƛ_e.g_3^{8.a_s}$$, Decimal(np.sqrt(3)/2)*Decimal(lambdabare)*Decimal(g_3)**(Decimal(8)*Decimal(a_s)), 13.839436281488e+9, 1.309311765516e+26
