@@ -68,7 +68,37 @@
 \begin{document}
 
 \begin{frontmatter}
-\end{frontmatter}
+
+\title{Elsevier \LaTeX\ template\tnoteref{mytitlenote}}
+\tnotetext[mytitlenote]{Fully documented templates are available in the elsarticle package on \href{http://www.ctan.org/tex-archive/macros/latex/contrib/elsarticle}{CTAN}.}
+
+%% Group authors per affiliation:
+%\author{Elsevier\fnref{myfootnote}}
+%\address{Radarweg 29, Amsterdam}
+\fntext[myfootnote]{Since 1880.}
+
+%% or include affiliations in footnotes:
+%\author[mymainaddress,mysecondaryaddress]{Elsevier Inc}
+\ead[url]{www.elsevier.com}
+
+\author[mysecondaryaddress]{Global Customer Service\corref{mycorrespondingauthor}}
+\cortext[mycorrespondingauthor]{Corresponding author}
+\ead{support@elsevier.com}
+
+\address[mymainaddress]{1600 John F Kennedy Boulevard, Philadelphia}
+\address[mysecondaryaddress]{360 Park Avenue South, New York}
+
+\begin{abstract}
+%% Text of abstract
+The Permanent Oscillatory Cosmology is confirmed by 71 formula giving the Hubble radius, with 7 correlating to $10^{-9}$. The computer shows that the best formula are obtained using the Atiyah constant and the number 137, the Eddington's integer part of the electric constant. This is conforms with Atiyah's testimony about the Physics-Mathematics unification and the central role of arithmetics in the unification process of both mathematics and physics. The identification with the Eddington statistical formula gives $G$, compatible with the $10^{-5}$ precise BIPM measurement and the $10^{-6}$ precise quasar non-Doppler Kotov period. The hypothesis of a computing Cosmos implies a $\pi$ rationalization process which validates the Wyler's theory and the Fermion Koide formula in the $10^{-9}$ domain. 
+\end{abstract}
+
+\begin{keyword}
+\texttt{elsarticle.cls}\sep \LaTeX\sep Elsevier \sep template
+\MSC[2010] 00-01\sep  99-00
+\end{keyword}
+
+
 %% Title, authors and addresses
 
 %% use the tnoteref command within \title for footnotes;
@@ -90,7 +120,7 @@
 %% \fntext[label3]{}
 
 %\title{}
-\title{Atiyah's Physics-Mathematics Unification confirms Permanent Oscillatory Cosmology}
+%\title{Atiyah's Physics-Mathematics Unification confirms Permanent Oscillatory Cosmology}
 
 %% use optional labels to link authors explicitly to addresses:
 %% \author[label1,label2]{}
@@ -130,12 +160,11 @@
 }
 \address{}
 
-\begin{abstract}
-%% Text of abstract
-The Permanent Oscillatory Cosmology is confirmed by 71 formula giving the Hubble radius, with 7 correlating to $10^{-9}$. The computer shows that the best formula are obtained using the Atiyah constant and the number 137, the Eddington's integer part of the electric constant. This is conforms with Atiyah's testimony about the Physics-Mathematics unification and the central role of arithmetics in the unification process of both mathematics and physics. The identification with the Eddington statistical formula gives $G$, compatible with the $10^{-5}$ precise BIPM measurement and the $10^{-6}$ precise quasar non-Doppler Kotov period. The hypothesis of a computing Cosmos implies a $\pi$ rationalization process which validates the Wyler's theory and the Fermion Koide formula in the $10^{-9}$ domain. 
-\end{abstract}
+\end{frontmatter}
 
-\begin{keyword}
+
+
+%\begin{keyword}
 %% keywords here, in the form: keyword \sep keyword
 
 %% PACS codes here, in the form: \PACS code \sep code
@@ -143,7 +172,7 @@ The Permanent Oscillatory Cosmology is confirmed by 71 formula giving the Hubble
 %% MSC codes here, in the form: \MSC code \sep code
 %% or \MSC[2008] code \sep code (2000 is the default)
 %\keywords{Quantum Physics \and Number theory \and Cosmology \and Holography \and Crystallography}
-\end{keyword}
+%\end{keyword}
 
 
 
