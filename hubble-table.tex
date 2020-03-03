@@ -15,6 +15,12 @@
 \usepackage{tikz}
 \usepackage[active,tightpage]{preview}
 \usetikzlibrary{shapes,calc}
+\ifpdf
+  %
+\else
+  % Implement Outline text using pstricks if regular LaTeX->dvi->ps->pdf route
+  \usepackage{pst-all}
+\fi
 
 
 \usepackage{booktabs}       % professional-quality tables
@@ -67,12 +73,6 @@
   %% \texttt{email} \\
 }
 
-\ifpdf
-  %
-\else
-  % Implement Outline text using pstricks if regular LaTeX->dvi->ps->pdf route
-  \usepackage{pst-all}
-\fi
 
 
 \begin{document}
