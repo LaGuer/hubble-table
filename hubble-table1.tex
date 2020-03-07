@@ -35,14 +35,7 @@
 
 \hypersetup{breaklinks=true}
 
-\newcounter{rowcntr}[table]
-\renewcommand{\therowcntr}{\thetable.\arabic{rowcntr}}
 
-% A new columntype to apply automatic stepping
-\newcolumntype{N}{>{\refstepcounter{rowcntr}\therowcntr}c}
-
-% Reset the rowcntr counter at each new tabular
-\AtBeginEnvironment{tabular}{\setcounter{rowcntr}{0}}
 
 \pagenumbering{gobble}
 \title{Hubble Table}
@@ -937,6 +930,17 @@ The authors thanks Anatole Khelif for many discussions, including with Atiyah, a
   \end{tabular}
   % \label{tab5:table5}
 \end{table}
+
+
+\newcounter{rowcntr}[table]
+\renewcommand{\therowcntr}{\thetable.\arabic{rowcntr}}
+
+% A new columntype to apply automatic stepping
+\newcolumntype{N}{>{\refstepcounter{rowcntr}\therowcntr}c}
+
+% Reset the rowcntr counter at each new tabular
+\AtBeginEnvironment{tabular}{\setcounter{rowcntr}{0}}
+
 
 \begin{table}
 \caption{Table 6}
