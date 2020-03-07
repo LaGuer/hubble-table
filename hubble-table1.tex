@@ -26,6 +26,24 @@
 %\usepackage[nohead,margin=0mm]{geometry}  % Page & margins
 \usepackage{pstricks,pst-node}            % Pstricks
 
+
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+
+\hypersetup{breaklinks=true}
+
+\newcounter{rowcntr}[table]
+\renewcommand{\therowcntr}{\thetable.\arabic{rowcntr}}
+
+% A new columntype to apply automatic stepping
+\newcolumntype{N}{>{\refstepcounter{rowcntr}\therowcntr}c}
+
+% Reset the rowcntr counter at each new tabular
+\AtBeginEnvironment{tabular}{\setcounter{rowcntr}{0}}
+
 \pagenumbering{gobble}
 \title{Hubble Table}
 %\author{author}
