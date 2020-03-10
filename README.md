@@ -10,7 +10,7 @@ A latex doc formatted according to the scientific publication requirements.
 
 | Latex Doc Type                |      "*.sty"                 |        "*.tex"              |      Compile in PDF                                                                                                                                    |
 | ----------------------------- |:----------------------------:|:---------------------------:|-------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|hubble-table publication Test  |[conference.sty](conference.sty)| [hubble-table](hubble-table.tex )       |[latexonline.cc hubble-table.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fhubble-table&target=hubble-table2.tex&command=pdflatex)      |
+|hubble-table publication Test  |[conference.sty](conference.sty)| [hubble-table](hubble-table.tex )       |[latexonline.cc hubble-table.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fhubble-table&target=hubble-table.tex&command=pdflatex)      |
 
 
 
@@ -21,7 +21,7 @@ A latex doc formatted according to the scientific publication requirements.
 
 | Latex Doc Type                |      "*.sty"                 |        "*.tex"              |      Compile in PDF                                                                                                                                    |
 | ----------------------------- |:----------------------------:|:---------------------------:|-------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|hubble-table publication Test  |[conference.sty](conference.sty)| [hubble-table](hubble-table1.tex )       |[latexonline.cc hubble-table1.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fhubble-table2&target=hubble-table1.tex&command=pdflatex)      |
+|hubble-table publication Test  |[conference.sty](conference.sty)| [hubble-table](hubble-table1.tex )       |[latexonline.cc hubble-table1.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fhubble-table1&target=hubble-table1.tex&command=pdflatex)      |
 |hubble-table publication Test  |[elsarticle.cls](elsarticle.cls)| [elsarticle-template](elsarticle-template.tex )       |[elsarticle-template.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fhubble-table&target=elsarticle-template.tex&command=pdflatex)      |
 |hubble-table publication Test  |[elsarticle.cls](elsarticle.sty)| [elsdoc](elsedoc.tex )       |[elsdoc.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fhubble-table&target=elsdoc.tex&command=pdflatex)      |
 |hubble-table publication Test  |[elsarticle.cls](elsarticle.sty)| [elsarticle-template-num](elsarticle-template-num.tex )       |[elsarticle-template-num.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fhubble-table&target=elsarticle-template-num.tex&command=pdflatex)      |
