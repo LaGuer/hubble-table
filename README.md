@@ -4,7 +4,7 @@ A latex doc formatted according to the scientific publication requirements.
 
 ### Paper:
 
-1. [![rXiv](https://img.shields.io/badge/rXiv-2002.0190-orange.svg?style=flat)](https://vixra.org/pdf/2002.0190v6.pdf)
+1. [![rXiv](https://img.shields.io/badge/rXiv-2002.0190-orange.svg?style=flat)](https://vixra.org/pdf/2002.0190v8.pdf)
 
 2. A link to an online automatic latex build system: [latexonline.cc](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fhubble-table&target=main.tex&command=pdflatex), [latexbase.com](https://latexbase.com) or try [OverLeaf](https://www.overleaf.com/)
 
