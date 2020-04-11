@@ -851,7 +851,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \bibitem{Friedman} Friedman W. et al, The Carnegie-Chicago Hubble Program. VIII. An Independent Determination of the Hubble Constant Based on the Tip of the Red Giant Branch, arxiv : 1907.05922.\\ 
 \bibitem{Durham} Durham I.T. 2006, Sir Arthur Eddington and the Foundations of Modern Physics arXiv:quant-ph/0603146v1  p.117.
 \bibitem{Sanchez2} Sanchez F.M., Kotov V. and Bizouard C., 'Towards a synthesis of two cosmologies: the steady- state flickering Universe'. Journal of Cosmology, vol 17. (2011).\\
-\bibitem{Quinn} Quinn T, Speake C, Parks H, Davis R. 2014 The BIPM measurements of the Newtonian constant of gravitation, G. Phil.Trans. R. Soc. A372: 20140032. http://dx.doi.org/10.1098/rsta.2014.0032. \\
+\bibitem{Quinn} Quinn T, Speake C, Parks H, Davis R. 2014 The BIPM measurements of the Newtonian constant of gravitation, G. Phil.Trans. R. Soc. A372: 20140032. https://royalsocietypublishing.org/doi/10.1098/rsta.2014.0032 \\
 \bibitem{Sternheimer} Sternheimer J., Musique des particules elementaires, CRAS, 297, II, 829--834 (1983).\\
 \bibitem{Weigel} Veysseyre R., Veysseyre H., and Weigel D. Counting, and Symbols of Cristallographic Point Symmetry Operations of Space En. AAECC 5, 53--70 (1994).\\
 \bibitem{Carr} Carr B.J. and Rees M. J. , “The anthropic principle and the structure of the physical world”, Nature 278, 605-612 (1979).\\
@@ -1645,6 +1645,25 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 
 	%\addplot {4*cos(deg(x))};
 	%\label{pgfplots:label3}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}[baseline]
+\label{tab:10:table10}
+\centering
+%% \includegraphics[width=\textwidth,height=14cm]{./figure/figure}
+%%\caption[Newtonian gravitational constant]{gravitational constant G measurements -Theoritical measurements vs Experimental measurement -}
+\begin{axis}
+	\addplot+[only marks,
+			samples=15,
+			error bars/y dir=both,
+			error bars/y fixed=2.5]
+		{3*x+2.5*rand};
+	\label{pgfplots:label1}
+
+	\addplot+[mark=none] {3*x};
+	\label{pgfplots:label2}
+
 \end{axis}
 \end{tikzpicture}
 
