@@ -1356,27 +1356,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \end{figure}
 
 
-\begin{tikzpicture}[baseline]
-\label{tab:9:table9}
-\centering
-%% \includegraphics[width=\textwidth,height=14cm]{./figure/figure}
-%%\caption[The Hubble Radius]{Table of Hubble Radius values.}
-\begin{axis}
-	\addplot+[only marks,
-			samples=15,
-			error bars/y dir=both,
-			error bars/y fixed=2.5]
-		{3*x+2.5*rand};
-	\label{pgfplots:label1}
-
-	\addplot+[mark=none] {3*x};
-	\label{pgfplots:label2}
-
-	%\addplot {4*cos(deg(x))};
-	%\label{pgfplots:label3}
-\end{axis}
-\end{tikzpicture}
-
+\begin{figure}
 \begin{tikzpicture}[baseline]
 \label{tab:10:table10}
 \centering
@@ -1395,7 +1375,9 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 
 \end{axis}
 \end{tikzpicture}
+\end{figure}
 
+\begin{figure}
 \begin{tikzpicture}
 \label{tab:10:table10}
 \centering
@@ -1445,6 +1427,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
      };
      \end{axis}
 \end{tikzpicture}
+\end{figure}
 
 \end{appendix}
 \end{document}
