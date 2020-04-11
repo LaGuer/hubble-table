@@ -1648,56 +1648,56 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \end{axis}
 \end{tikzpicture}
 
-\begin{tikzpicture}
-\label{tab:10:table10}
-\centering
-     \pgfplotsset{width=11cm,
-         compat=1.3,
-         legend style={font=\footnotesize}}
-     \begin{axis}[
-     title={$R_1$:Experimental Plot I vs. V},
-     xlabel={Gly},
-     ylabel={I}},
-     legend cell align=left,
-     legend pos=north west]
+%\begin{tikzpicture}
+%\label{tab:10:table10}
+%\centering
+%     \pgfplotsset{width=11cm,
+%         compat=1.3,
+%         legend style={font=\footnotesize}}
+%     \begin{axis}[
+%     title={$R_1$:Experimental Plot I vs. V},
+%     xlabel={Gly},
+%     ylabel={I}},
+%     legend cell align=left,
+%     legend pos=north west]
 
-     \addplot+[blue][mark size=1.5pt] table[row sep=\\,
-     y={create col/linear regression={y=Y}}] % compute a linear regression from the
+%     \addplot+[blue][mark size=1.5pt] table[row sep=\\,
+%     y={create col/linear regression={y=Y}}] % compute a linear regression from the
      %input table 
-     {
-           X Y\\
-           0.44 0.001   \\ 
-           -0.44    -0.001  \\ 
-           4.24 0.008   \\ 
-           -4.40    -0.008  \\ 
-           13.75 0.018   \\ 
-           -13.75    -0.018  \\ 
-           13.79    0.029   \\ 
-           -13.79   -0.029  \\ 
-           13.80    0.035   \\ 
-           -13.80   -0.035  \\
-     };
-     \addlegendentry{%
-         $\pgfmathprintnumber{\pgfplotstableregressiona} \cdot a
-         \pgfmathprintnumber[print sign]{\pgfplotstableregressionb}$ lin. Regression} %
+%     {
+%           X Y\\
+%           0.44 0.001   \\ 
+%           -0.44    -0.001  \\ 
+%           4.24 0.008   \\ 
+%           -4.40    -0.008  \\ 
+%           13.75 0.018   \\ 
+%           -13.75    -0.018  \\ 
+%           13.79    0.029   \\ 
+%           -13.79   -0.029  \\ 
+%           13.80    0.035   \\ 
+%           -13.80   -0.035  \\
+%     };
+%     \addlegendentry{%
+%         $\pgfmathprintnumber{\pgfplotstableregressiona} \cdot a
+%         \pgfmathprintnumber[print sign]{\pgfplotstableregressionb}$ lin. Regression} %
 
-              \addplot+[blue,only marks,mark=*,mark size=1pt][error bars/.cd,y dir=both,y explicit,
-        x dir=both,x explicit] 
-      coordinates {
+%              \addplot+[blue,only marks,mark=*,mark size=1pt][error bars/.cd,y dir=both,y explicit,
+%        x dir=both,x explicit] 
+%      coordinates {
 
-        (   0.44    ,   0.001   ) +- (  0.01    ,   0.00025 )
-        (   -0.44   ,   -0.001  ) +- (  0.01    ,   -0.00025    )
-        (4.24,0.008) +- (0.01,0.002)
-        (-4.40,-0.008) +- (0.01,-0.002)
-        (13.75,0.018) +- (0.01,0.0045)
-        (-13.75,-0.018) +- (0.01,-0.0045)
-        (13.79,0.029) +- (0.01,0.00725)
-        (-13.79,-0.029) +- (0.01,-0.00725)
-        (13.80,0.035) +- (0.01,0.00875)
-        (-13.80,-0.035) +- (0.01,-0.00875)
-      };
-\end{axis}
-\end{tikzpicture}
+%        (   0.44    ,   0.001   ) +- (  0.01    ,   0.00025 )
+%        (   -0.44   ,   -0.001  ) +- (  0.01    ,   -0.00025    )
+%        (4.24,0.008) +- (0.01,0.002)
+%        (-4.40,-0.008) +- (0.01,-0.002)
+%        (13.75,0.018) +- (0.01,0.0045)
+%        (-13.75,-0.018) +- (0.01,-0.0045)
+%        (13.79,0.029) +- (0.01,0.00725)
+%        (-13.79,-0.029) +- (0.01,-0.00725)
+%        (13.80,0.035) +- (0.01,0.00875)
+%        (-13.80,-0.035) +- (0.01,-0.00875)
+%      };
+%\end{axis}
+%\end{tikzpicture}
 
 \end{appendix}
 \end{document}
