@@ -1309,7 +1309,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 
 
 \begin{table}
-\caption{14 ppb precise formula for $R \approx 13.8119768$ Glyr}
+\caption{14 ppb precise formula for $R \approx 13.8119768$ Gly}
 \label{tab:6:table6}
   \hskip-2.0cm\begin{tabular}{llll}
     \toprule
@@ -1404,7 +1404,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
          compat=1.3,
          legend style={font=\footnotesize}}
      \begin{axis}[
-     title={Plot of the Hubble Radius: $R$ Measured vs. Theoritical};
+     title={Hubble Radius plot: $R$ Measured vs. Theoritical};
      xlabel={Gly};
      ylabel={10^{26}m};
      legend cell align=left;
@@ -1417,14 +1417,17 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
            X Y\\
            0.44 0.001   \\ 
            -0.44    -0.001  \\ 
-           4.24 0.008   \\ 
-           -4.40    -0.008  \\ 
-           13.75 0.018   \\ 
-           -13.75    -0.018  \\ 
-           13.79    0.029   \\ 
-           -13.79   -0.029  \\ 
-           13.80    0.035   \\ 
-           -13.80   -0.035  \\
+           13.80857    0.008   \\ 
+           13.81157    -0.008  \\ 
+           13.81168    0.00018   \\ 
+           13.81177    -0.00018  \\ 
+           13.81190    0.0001   \\ 
+           13.81193    0.00001  \\ 
+           13.81197    0.00001   \\ 
+           13.8119768  0.0000001  \\
+	   13.81198    0.00001   \\ 
+	   13.81200    0.001   \\ 
+	   13.81230    0.001   \\ 
      };
      %\addlegendentry{%
      %    $\pgfmathprintnumber{\pgfplotstableregressiona} \cdot a
@@ -1435,15 +1438,17 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
      coordinates {
 
        (   0.44    ,   0.001   ) +- (  0.01    ,   0.00025 )
-       (   -0.44   ,   -0.001  ) +- (  0.01    ,   -0.00025    )
-       (4.24,0.008) +- (0.01,0.002)
-       (-4.40,-0.008) +- (0.01,-0.002)
-       (13.75,0.018) +- (0.01,0.0045)
-       (-13.75,-0.018) +- (0.01,-0.0045)
-       (13.79,0.029) +- (0.01,0.00725)
-       (-13.79,-0.029) +- (0.01,-0.00725)
-       (13.80,0.035) +- (0.01,0.00875)
-       (-13.80,-0.035) +- (0.01,-0.00875)
+       (13.80857   ,   -0.001  ) +- (  0.01    ,   -0.00025    )
+       (13.81157,0.008) +- (0.0001,0.002)
+       (13.81168,-0.008) +- (0.0001,-0.002)
+       (13.81177,0.018) +- (0.0001,0.0045)
+       (13.81190,-0.018) +- (0.0001,-0.0045)
+       (13.81193,0.029) +- (0.0001,0.00725)
+       (13.81197,0.00001) +- (0.00001,-0.00725)
+       (13.8119768,0.0000001) +- (0.0000001,0.00875)
+       (13.81198,0.00001) +- (0.00001,-0.00875)
+       (13.81200,0.00001) +- (0.001,-0.00875)
+       (13.81230,0.001) +- (0.001,-0.00875)
      };
      \end{axis}
 \end{tikzpicture}
