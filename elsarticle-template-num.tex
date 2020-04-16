@@ -868,6 +868,81 @@ This suggests a liaison with the Eddigton's matrix $16 \times 16$ \cite{Eddingto
 \end{table}
 \end{appendix}
 
+\begin{figure}
+\label{tab:10:table10}
+\caption[Newtonian gravitational constant]{gravitational constant G measurements -Theoritical measurements vs Experimental measurement -}
+\begin{tikzpicture}[baseline]
+\centering
+%% \includegraphics[width=\textwidth,height=14cm]{./figure/figure}
+%%\caption[Newtonian gravitational constant]{gravitational constant G measurements -Theoritical measurements vs Experimental measurement -}
+\begin{axis}
+	\addplot+[only marks,
+			samples=15,
+			error bars/y dir=both,
+			error bars/y fixed=2.5]
+		{3*x*rand};
+	\label{pgfplots:label1}
+
+	\addplot+[mark=none] {3*x};
+	\label{pgfplots:label2}
+
+\end{axis}
+\end{tikzpicture}
+\end{figure}
+
+\begin{figure}
+\caption[Hubble Radius plot]{Hubble Radius plot}
+\label{tab:11:table11}
+\begin{tikzpicture}
+%% \label{tab:10:table10}
+\centering
+     \pgfplotsset{width=11cm,
+         compat=1.3,
+         legend style={font=\footnotesize}}
+     \begin{axis}[
+     title={Hubble Radius plot: $R$ Measured vs. Theoritical};
+     xlabel={Gly};
+     ylabel={10^{26}m};
+     legend cell align=left;
+     legend pos=north west]
+
+     \addplot+[blue][mark size=1.5pt] table[row sep=\\,
+     y={create col/linear regression={y=Y}}] % compute a linear regression from the
+     %input table 
+     {
+           X Y\\
+           13.81157    -0.008  \\ 
+           13.81168    0.00018   \\ 
+           13.81177    -0.00018  \\ 
+           13.81190    0.0001   \\ 
+           13.81193    0.00001  \\ 
+           13.81197    0.00001   \\ 
+           13.8119768  0.0000001  \\
+	   13.81198    0.00001   \\ 
+	   13.81200    0.001   \\ 
+     };
+     %\addlegendentry{%
+     %    $\pgfmathprintnumber{\pgfplotstableregressiona} \cdot a
+     %    \pgfmathprintnumber[print sign]{\pgfplotstableregressionb}$ lin. Regression} %
+
+              \addplot+[blue,only marks,mark=*,mark size=1pt][error bars/.cd,y dir=both,y explicit,
+        x dir=both,x explicit] 
+     coordinates {
+
+       (13.81157,0.008) +- (0.0001,0.002)
+       (13.81168,-0.008) +- (0.0001,-0.002)
+       (13.81177,0.0018) +- (0.0001,0.0045)
+       (13.81190,-0.00018) +- (0.0001,-0.0045)
+       (13.81193,0.029) +- (0.0001,0.00725)
+       (13.81197,0.00001) +- (0.00001,-0.00725)
+       (13.8119768,0.0000001) +- (0.0000001,0.00875)
+       (13.81198,0.00001) +- (0.00001,-0.00875)
+       (13.81200,0.00001) +- (0.001,-0.00875)
+     };
+     \end{axis}
+\end{tikzpicture}
+\end{figure}
+
 \end{document}
 \endinput
 %%
