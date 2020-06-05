@@ -68,30 +68,6 @@ mydot/.style={
   }
 }
 
-\usepackage{pst-eucl}
-
-\def\Atom#1{%
-\begin{pspicture}[CodeFigColor=.,shortput=nab,saveNodeCoors,NodeCoorPrefix=N](8,6)
-    %
-    % drawing the triangle
-    \pstTriangle(8,0){B}(3,0){C}(6;#1){A}
-    %
-    % projecting the point A onto BC (extension)
-    \psline[linestyle=dashed](A|0,0)(C)
-    \pstProjection[CodeFig]{B}{C}{A}[P]
-    %
-    % labeling and marking angles
-    \psset{MarkAngleRadius=.5,LabelSep=1,MarkAngle=90}
-    \pstMarkAngle[Mark=MarkHash]{C}{A}{B}{$\alpha$}
-    \pstMarkAngle[Mark=MarkHashh]{A}{B}{C}{$\beta$}
-    \pstMarkAngle[Mark=MarkHashhh]{B}{C}{A}{$\gamma$}
-    %
-    % labeling sides
-    \psset{linestyle=none}
-    \pcline(A)(B)^{$c$}
-    \pcline(A)(C)_{$b$}
-    \pcline(C)(B)_{$a$}
-\end{pspicture}}
 %%%%%%%
 %%%%%%%
 %%%%%%%
@@ -2189,8 +2165,6 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \end{tikzpicture}
 
 
-
-\multido{\i=30+5}{13}{\Atom{\i}}
 
 \end{appendix}
 
