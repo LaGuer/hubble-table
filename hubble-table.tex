@@ -2143,7 +2143,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \label{tab:12:table12}
 \tkzDefPoint(0:0){C}
 \tkzDefPoint(0:3){B}
-\tkzDefPoint(64:3){A}
+\tkzDefPoint(3:3){A}
 
 \tkzLabelPoint[above](A){$A$}
 \tkzLabelPoint[right](B){$B$}
@@ -2157,10 +2157,10 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \tkzGetPoint{P}                                  %% get the point P
 \tkzLabelPoint[below](P){$\sqrt{a}$}             %% label the point P
 %\tkzDrawSegment[dashed,color=magenta](C,P)      %% draw CP
-\tkzMarkRightAngle(C,A,B)
+\tkzMarkRightAngle(C,B,A)
 
 \tkzLabelSegment[auto,swap](B,A){$\sqrt{a'}$}
-\tkzLabelSegment[auto](B,C){$w$}
+\tkzLabelSegment[auto](B,C){$ $}
 \tkzLabelSegment[auto](C,A){$\sqrt{a''}$}
 
 %% here use the correct order. For example, BCA is inner angle and ACB is outer angle
@@ -2178,21 +2178,21 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \label{tab:13:table13}
 \tkzDefPoint(0:0){C}
 \tkzDefPoint(0:3){B}
-\tkzDefPoint(64:3){A}
+\tkzDefPoint(3:3){A}
 
 \tkzLabelPoint[above](A){$A$}
 \tkzLabelPoint[right](B){$B$}
 \tkzLabelPoint[left](C){$C$}
 
-\tkzDrawSegment[green!60!black](A,C)
-\tkzDrawSegment[green!60!black](C,B)
-\tkzDrawSegment[green!60!black](A,B)
+\tkzDrawSegment[red!60!black](A,C)
+\tkzDrawSegment[red!60!black](C,B)
+\tkzDrawSegment[red!60!black](A,B)
 
 \tkzDrawAltitude[dashed,color=magenta](C,B)(A)   %% draw the perpendicular
 \tkzGetPoint{P}                                  %% get the point P
 \tkzLabelPoint[below](P){$\phi^{4}$}             %% label the point P
 %\tkzDrawSegment[dashed,color=magenta](C,P)      %% draw CP
-\tkzMarkRightAngle(C,A,B)
+\tkzMarkRightAngle(C,B,A)
 
 \tkzLabelSegment[auto,swap](B,A){$q''$}
 \tkzLabelSegment[auto](B,C){$w$}
