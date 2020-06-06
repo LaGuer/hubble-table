@@ -2335,6 +2335,20 @@ draw[color=black] (0.,0.) -- (0.,3.);
 \draw[color=gray] (0.34,0.33);
 \end{tikzpicture}
 
+\begin{tikzpicture}[x=3cm,y=3cm]
+\draw[-,thick] (0,0) -- (2,0) -- (0,1.5);
+\node [anchor = east] at (0,0) {O};
+\node [anchor = east] at (1,1.5) {L};
+\node [anchor = west] at (2,0) {T};
+\node [anchor = east] at (0,0.75) {H};
+\node [anchor = east] at (1,0.375) {h};
+\node [anchor = south] at (0.5,0) {\textit{vt}};
+\draw[-,very thick] (0,0) -- (0,1.5);
+\draw[-,very thick] (1,0) -- (1,0.75);
+\draw[{Bar[width=7mm][sep]Triangle[angle=20:10pt]}-{Triangle[angle=20:10pt][sep]Bar[width=7mm]},thick] (0,-0.25) -- node [anchor=north]{z} (1,-0.25);
+\draw[{Bar[width=7mm][sep]Triangle[angle=20:10pt]}-{Triangle[angle=20:10pt][sep]Bar[width=7mm]},thick] (1,-0.25) -- node [anchor=north]{w} (2,-0.25);
+\end{tikzpicture}
+
 \end{appendix}
 
 \end{document}
