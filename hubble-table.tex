@@ -2128,17 +2128,48 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \caption{The Weinberg Triangle properties.}
 \end{figure}
 
+%\begin{figure}
+%\centering
+%\begin{tikzpicture}
+%\RectTri[black]{(0,0)}{(4,2)}{4cm}
+%\end{scope}
+%\end{tikzpicture}
+%\caption{The Sanchez Triangle properties.}
+%\end{figure}
+
 \begin{figure}
 \centering
 \begin{tikzpicture}
 \label{tab:12:table12}
-%\caption[The Sanchez Triangle]{The Sanchez Triangle properties.}
-%\RectTri{(0,3)}{(1,0)}{6cm}
-%\begin{scope}[xshift=8.5cm]
-\RectTri[black]{(0,0)}{(4,2)}{4cm}
-%\end{scope}
+\tkzDefPoint(0:0){C}
+\tkzDefPoint(0:3){B}
+\tkzDefPoint(64:3){A}
+
+\tkzLabelPoint[above](A){$A$}
+\tkzLabelPoint[right](B){$B$}
+\tkzLabelPoint[left](C){$C$}
+
+\tkzDrawSegment[blue!60!black](A,C)
+\tkzDrawSegment[blue!60!black](C,B)
+\tkzDrawSegment[blue!60!black](A,B)
+
+\tkzDrawAltitude[dashed,color=magenta](C,B)(A)   %% draw the perpendicular
+\tkzGetPoint{P}                                  %% get the point P
+\tkzLabelPoint[below](P){$\sqrt{a}$}             %% label the point P
+%\tkzDrawSegment[dashed,color=magenta](C,P)      %% draw CP
+\tkzMarkRightAngle(C,A,B)
+
+\tkzLabelSegment[auto,swap](B,A){$\sqrt{a'}$}
+\tkzLabelSegment[auto](B,C){$w$}
+\tkzLabelSegment[auto](C,A){$\sqrt{a''}$}
+
+%% here use the correct order. For example, BCA is inner angle and ACB is outer angle
+%\tkzMarkAngle[size=0.5cm,color=cyan,mark=|](B,C,A)
+%\tkzMarkAngle[size=1cm,color=cyan,mark=||](C,A,B)
+%\tkzMarkAngle[size=1cm,color=cyan,mark=|||](A,B,C)
+
 \end{tikzpicture}
-\caption{The Sanchez Triangle properties.}
+\caption{Electric Triangle properties.}
 \end{figure}
 
 \begin{figure}
@@ -2159,13 +2190,13 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 
 \tkzDrawAltitude[dashed,color=magenta](C,B)(A)   %% draw the perpendicular
 \tkzGetPoint{P}                                  %% get the point P
-\tkzLabelPoint[below](P){$\phi^{4}$}                    %% label the point P
-%\tkzDrawSegment[dashed,color=magenta](C,P)       %% draw CP
+\tkzLabelPoint[below](P){$\phi^{4}$}             %% label the point P
+%\tkzDrawSegment[dashed,color=magenta](C,P)      %% draw CP
 \tkzMarkRightAngle(C,A,B)
 
-\tkzLabelSegment[auto,swap](B,A){$q'$}
+\tkzLabelSegment[auto,swap](B,A){$q''$}
 \tkzLabelSegment[auto](B,C){$w$}
-\tkzLabelSegment[auto](C,A){$q''$}
+\tkzLabelSegment[auto](C,A){$q'$}
 
 
 %% here use the correct order. For example, BCA is inner angle and ACB is outer angle
