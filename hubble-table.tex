@@ -2244,6 +2244,20 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \caption{Sanchez Triangle properties.}
 \end{figure}
 
+\begin{figure}
+\centering
+\begin{tikzpicture}
+\label{tab:15:table15}
+\coordinate (A) at (0,0);
+\coordinate (B) at (3.2,0);
+\pgfmathparse{sqrt((5.5)^2-(3.2)^2)}
+\coordinate (C) at (0,\pgfmathresult);
+\draw (A)--(B)--(C)--cycle;
+\tkzMarkRightAngle(C,A,B)
+\end{tikzpicture}
+\caption{$\sqrt((5.5)^2-(3.2)^2$ Triangle properties.}
+\end{figure}
+
 \begin{tikzpicture}[>=latex]
 % the coordinates of the vertices
 \coordinate (O) at (0,0);
