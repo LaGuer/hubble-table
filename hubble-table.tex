@@ -37,7 +37,11 @@
 
 %%%%%%
 %%%%%%
-\usetikzlibrary{calc,angles,quotes,decorations.markings}
+
+\usetikzlibrary{calc,angles,positioning,intersections,quotes,decorations.markings}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+%\usetikzlibrary{calc,angles,quotes,decorations.markings}
 
 \newcommand\RectTri[4][thick,green!50!black,text=black]{%
 \coordinate [label=left:$C$] (C) at #2;
