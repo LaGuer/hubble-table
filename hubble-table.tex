@@ -2255,7 +2255,30 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \draw (A)--(B)--(C)--cycle;
 \tkzMarkRightAngle(C,A,B)
 \end{tikzpicture}
-\caption{$\sqrt((5.5)^2-(3.2)^2$ Triangle properties.}
+\caption{$\sqrt{(5.5)^2-(3.2)^2}$ Triangle properties.}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[x = 1 mm, y = 1 mm, scale = 2]
+\label{tab:16:table16}
+    \clip (-3,-3) rectangle (20,20);
+    % the axes
+    \draw (0, -20) -- (0, 20);
+    \draw (-20, 0) -- (30, 0);
+    % the beam
+    \draw (0,0) circle [radius=18mm];
+    % from texnique
+    % Hypotenuse = radius = 18
+    % Opposite = half plate = 11
+    \coordinate (A) at (0,0);
+    \pgfmathparse{asin(11/18)}
+    \coordinate (B) at (\pgfmathresult:18 |- 0,0);
+    \coordinate (C) at (\pgfmathresult:18);
+    \coordinate (D) at (\pgfmathresult:0 |- 18,0);
+    \draw[red] (A) node[anchor=north east] {A}-- (B) node[anchor=north] {B} -- (C) node[anchor=south] {C} -- (D) node[anchor=south east] {D}--cycle;
+\end{tikzpicture}
+\caption{$asin(11/18)$ Triangle properties.}
 \end{figure}
 
 \begin{tikzpicture}[>=latex]
