@@ -2284,8 +2284,10 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \begin{tikzpicture}[>=latex]
 % the coordinates of the vertices
 \coordinate (O) at (0,0);
-\coordinate (A) at (2,1);
-\coordinate (B) at (-3,5);
+%\coordinate (A) at (2,1);
+%\coordinate (B) at (-3,5);
+\coordinate (A) at ($(O)!10.32cm!(B)$);
+\coordinate (B) at ($(O)!5.52cm!(A)$);
 
 % the axis
 \draw[help lines,->] (-3.5,0) -- (2.5,0);
@@ -2355,6 +2357,41 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \end{tikzpicture}
 \caption{MLT Triangle properties.}
 \end{figure}
+
+    \begin{tikzpicture}[
+my angle/.style = {draw,very thin, Straight Barb-Straight Barb,
+                   angle radius=5mm,
+                   angle eccentricity=0.75,
+                   font=\footnotesize
+                   } % angle label position!
+                        ]
+\coordinate[label= left:A] (A);
+\coordinate[label=right:B] (B) at ( 7.5:8);
+\coordinate[label=right:C] (C) at (-7.5:8);
+%
+\draw[gray] (10:8) arc (10:-10:8);
+%
+\draw[name path=b1, line width=1pt] (A) -- (B) -- (C) -- cycle;
+\pic [my angle, "$\gamma$"]   {angle = A--B--C};
+%
+\path[name path=a1] (C) -- + (37.5+90:2.5);
+\draw[name intersections={of=a1 and b1, by={B'}}]
+            (C) -- (B') node[above] {B'};
+\pic [my angle, "$\alpha$"]   {angle = C--B'--B};
+%
+\path[name path=a2] (B') -- + (7.5+240:2);
+\draw[name intersections={of=a2 and b1, by={notused,C'}}]
+            (B') -- (C') node[below] {C'};;
+\pic [my angle, "$\alpha$"] {angle = C'--B'--C};
+%
+\path[name path=a3] (C') -- + (7.5+90:2);
+\draw[name intersections={of=a3 and b1, by={B''}}]
+            (C') -- (B'') node[above] {B''};
+\pic [my angle, "$\alpha$"] {angle = B''--B'--C'};
+\pic [my angle, "$\cdot$"]  {angle = A--B''--C'};
+\pic [my angle, "$\beta$"]  {angle = C--C'--B'};
+\pic [my angle, "$\beta$"]  {angle = B''--C'--A};
+    \end{tikzpicture}
 
 \end{appendix}
 
