@@ -2174,157 +2174,15 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \begin{figure}
 \centering
 \begin{tikzpicture}
-\label{tab:13:table13}
-\tkzDefPoint(0:0){C}
-\tkzDefPoint(0:4.5){B}
-\tkzDefPoint(15:4.5){A}
-
-\tkzLabelPoint[above](A){$A$}
-\tkzLabelPoint[right](B){$B$}
-\tkzLabelPoint[left](C){$C$}
-
-\tkzDrawSegment[red!60!black](A,C)
-\tkzDrawSegment[red!60!black](C,B)
-\tkzDrawSegment[red!60!black](A,B)
-
-\tkzDrawAltitude[dashed,color=magenta](C,A)(B)   %% draw the perpendicular
-\tkzGetPoint{P}                                  %% get the point P
-\tkzLabelPoint[below](P){$\textit{q}$}             %% label the point P
-%\tkzDrawSegment[dashed,color=magenta](C,P)      %% draw CP
-\tkzMarkRightAngle(C,B,A)
-
-\tkzLabelSegment[auto,swap](B,A){$q''$}
-\tkzLabelSegment[auto](B,C){$q' $}
-\tkzLabelSegment[auto](C,A){$ $}
 
 
-%% here use the correct order. For example, BCA is inner angle and ACB is outer angle
-%\tkzMarkAngle[size=0.5cm,color=cyan,mark=|](B,C,A)
-%\tkzMarkAngle[size=1cm,color=cyan,mark=||](C,A,B)
-%\tkzMarkAngle[size=1cm,color=cyan,mark=|||](A,B,C)
 
-\end{tikzpicture}
-\caption{Weinberg Triangle properties.}
-\end{figure}
-
-\begin{figure}
-\centering
-\begin{tikzpicture}
-\label{tab:14:table14}
-\tkzDefPoint(0:0){C}
-\tkzDefPoint(0:3){B}
-\tkzDefPoint(64:1.5){A}
-
-\tkzLabelPoint[above](A){$A$}
-\tkzLabelPoint[right](B){$B$}
-\tkzLabelPoint[left](C){$C$}
-
-\tkzDrawSegment[green!60!black](A,C)
-\tkzDrawSegment[green!60!black](C,B)
-\tkzDrawSegment[green!60!black](A,B)
-
-\tkzDrawAltitude[dashed,color=magenta](C,B)(A)   %% draw the perpendicular
-\tkzGetPoint{P}                                  %% get the point P
-\tkzLabelPoint[below](P){$\phi^{4}$}                    %% label the point P
-%\tkzDrawSegment[dashed,color=magenta](C,P)       %% draw CP
-\tkzMarkRightAngle(C,A,B)
-
-\tkzLabelSegment[auto,swap](B,A){$5$}
-\tkzLabelSegment[auto](B,C){$w$}
-\tkzLabelSegment[auto](C,A){$\sqrt{22}$}
-
-
-%% here use the correct order. For example, BCA is inner angle and ACB is outer angle
-%\tkzMarkAngle[size=0.5cm,color=cyan,mark=|](B,C,A)
-%\tkzMarkAngle[size=1cm,color=cyan,mark=||](C,A,B)
-%\tkzMarkAngle[size=1cm,color=cyan,mark=|||](A,B,C)
-
-\end{tikzpicture}
-\caption{Sanchez Triangle properties.}
-\end{figure}
-
-\begin{figure}
-\centering
-\begin{tikzpicture}
-\label{tab:15:table15}
-\coordinate (A) at (0,0);
-\coordinate (B) at (3.2,0);
-\pgfmathparse{sqrt((5.5)^2-(3.2)^2)}
-\coordinate (C) at (0,\pgfmathresult);
-\draw (A)--(B)--(C)--cycle;
-\tkzMarkRightAngle(C,A,B)
-\end{tikzpicture}
-\caption{$\sqrt{(5.5)^2-(3.2)^2}$ Triangle properties.}
-\end{figure}
-
-\begin{figure}
-\centering
-\begin{tikzpicture}[x = 1 mm, y = 1 mm, scale = 2]
-\label{tab:16:table16}
-    \clip (-3,-3) rectangle (20,20);
-    % the axes
-    \draw (0, -20) -- (0, 20);
-    \draw (-20, 0) -- (30, 0);
-    % the beam
-    \draw (0,0) circle [radius=18mm];
-    % from texnique
-    % Hypotenuse = radius = 18
-    % Opposite = half plate = 11
-    \coordinate (A) at (0,0);
-    \pgfmathparse{asin(11/18)}
-    \coordinate (B) at (\pgfmathresult:18 |- 0,0);
-    \coordinate (C) at (\pgfmathresult:18);
-    \coordinate (D) at (\pgfmathresult:0 |- 18,0);
-    \draw[red] (A) node[anchor=north east] {A}-- (B) node[anchor=north] {B} -- (C) node[anchor=south] {C} -- (D) node[anchor=south west] {D}--cycle;
-\end{tikzpicture}
-\caption{$asin(11/18)$ Triangle properties.}
-\end{figure}
-
-\begin{tikzpicture}[>=latex]
-% the coordinates of the vertices
-\coordinate (O) at (0,0);
-%\coordinate (A) at (2,1);
-%\coordinate (B) at (-3,5);
-\coordinate (A) at ($(O)!10.32cm!(B)$);
-\coordinate (B) at ($(O)!5.52cm!(A)$);
-
-% the axis
-\draw[help lines,->] (-3.5,0) -- (2.5,0);
-\draw[help lines,->] (0,-0.5) -- (0,5.5);
-
-% the edges of the triangle    
-\draw (O) -- (A) -- (B) -- cycle;
-
-% labelling the vertices
-\node[mydot,label={right:$A$}] at (A) {};
-\node[mydot,label={left:$B$}] at (B) {};
-\node[mydot,label={below:$O$}] at (O) {};
-
-% the arcs for the angles    
-\begin{scope}[gray]
-\draw[->] 
-  (1,0) +(0:0.5cm) arc [radius=1cm,start angle=0,end angle=41] node[midway,right] {$\alpha$};
-\draw[->] 
-  (0.5,0) +(0:0.25cm) arc [radius=0.75cm,start angle=0,end angle=122] node[midway,above] {$\beta$};
-\end{scope}
-\end{tikzpicture}
-
-
-\begin{tikzpicture}
-\path (120:3) coordinate (A) (0:3) coordinate (B) (0:0) coordinate (C);
-\draw (A) 
-  -- (B) node [at start, above left] {$A$} node [midway, above] {$c$}
-  -- (C) node [at start, right]      {$B$} node [midway, below] {$a$}
-  -- (A) node [at start, below]      {$C$} node [midway, below] {$b$}
-  -- cycle;
-\draw [dashed] (A) |- (C) node [midway, below left] {$P$};
-\draw (0:.5) arc (0:120:.5) (60:.4) -- (60:.6);
-\end{tikzpicture}
 
 \begin{figure}
 \centering
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 
 45,x=1.0cm,y=1.0cm]
+\label{tab:13:table13}
 \draw[step=1cm,gray,very thin] (-6,-6) grid (6,6);
 \draw[color=red] (-4.32,0.) -- (6.,0.);
 \draw[color=red] (6.,0.) -- (6.,5.52);
@@ -2349,6 +2207,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \centering
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 
 45,x=1.0cm,y=1.0cm]
+\label{tab:14:table14}
 \draw[step=1cm,gray,very thin] (-6,-6) grid (6,6);
 \draw[color=red] (-4.32,0.) -- (6.,0.);
 \draw[color=red] (6.,0.) -- (6.,5.52);
@@ -2374,6 +2233,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \centering
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 
 45,x=1.0cm,y=1.0cm]
+\label{tab:15:table15}
 \draw[step=1cm,gray,very thin] (-6,-6) grid (6,6);
 \draw[color=red] (-3.21,0.) -- (0.,0.);
 \draw[color=red] (3.64,0.) -- (0.,0.0);
@@ -2399,60 +2259,6 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \caption{Golden Sanchez Triangle properties.}
 \end{figure}
 
-\begin{figure}
-\centering
-\begin{tikzpicture}[x=3cm,y=3cm]
-\draw[-,thick] (0,0) -- (1,1.5) -- (3,0);
-\node [anchor = east] at (0,0) {M};
-\node [anchor = east] at (1,1.5) {L};
-\node [anchor = west] at (3,0) {T};
-\node [anchor = east] at (1,0.) {$\phi^{4}$};
-\node [anchor = east] at (1,0.375) {h};
-\node [anchor = south] at (0.5,0) {\textit{z}};
-\node [anchor = south] at (2.,0) {\textit{w}};
-\draw[-,very thick] (0,0) -- (3,0);
-\draw[-,very thick] (1,0) -- (1,1.5);
-%\draw[{Bar[width=7mm][sep]Triangle[angle=20:10pt]}-{Triangle[angle=20:10pt][sep]Bar[width=7mm]},thick] (0,-0.25) -- node [anchor=north]{z} (2,-0.25);
-%\draw[{Bar[width=7mm][sep]Triangle[angle=20:10pt]}-{Triangle[angle=20:10pt][sep]Bar[width=7mm]},thick] (1,-0.25) -- node [anchor=north]{w} (2,-0.25);
-%\tkzMarkRightAngle[fill=blue!20](M,L,T)
-\end{tikzpicture}
-\caption{MLT Triangle properties.}
-\end{figure}
-
-    \begin{tikzpicture}[
-my angle/.style = {draw,very thin,
-                   angle radius=5mm,
-                   angle eccentricity=0.75,
-                   font=\footnotesize
-                   } % angle label position!
-                        ]
-\coordinate[label= left:A] (A);
-\coordinate[label=right:B] (B) at ( 7.5:8);
-\coordinate[label=right:C] (C) at (-7.5:8);
-%
-\draw[gray] (10:8) arc (10:-10:8);
-%
-\draw[name path=b1, line width=1pt] (A) -- (B) -- (C) -- cycle;
-\pic [my angle, "$\gamma$"]   {angle = A--B--C};
-%
-\path[name path=a1] (C) -- + (37.5+90:2.5);
-\draw[name intersections={of=a1 and b1, by={B'}}]
-            (C) -- (B') node[above] {B'};
-\pic [my angle, "$\alpha$"]   {angle = C--B'--B};
-%
-\path[name path=a2] (B') -- + (7.5+240:2);
-\draw[name intersections={of=a2 and b1, by={notused,C'}}]
-            (B') -- (C') node[below] {C'};;
-\pic [my angle, "$\alpha$"] {angle = C'--B'--C};
-%
-\path[name path=a3] (C') -- + (7.5+90:2);
-\draw[name intersections={of=a3 and b1, by={B''}}]
-            (C') -- (B'') node[above] {B''};
-\pic [my angle, "$\alpha$"] {angle = B''--B'--C'};
-\pic [my angle, "$\cdot$"]  {angle = A--B''--C'};
-\pic [my angle, "$\beta$"]  {angle = C--C'--B'};
-\pic [my angle, "$\beta$"]  {angle = B''--C'--A};
-    \end{tikzpicture}
 
 \end{appendix}
 
