@@ -2191,12 +2191,12 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \begin{figure}
 \centering
 \begin{tikzpicture}
-  \draw (5,0,0) coordinate (x) |- (0,5,0) coordinate [midway] (h) coordinate (y) -- (0,5,5) coordinate (a) -- (0,0,5) coordinate (z) -- (5,0,5) edge (x) -- (5,5,5) coordinate (v) edge (h)
+  \draw (6.4,0,0) coordinate (x) |- (0,5,0) coordinate [midway] (h) coordinate (y) -- (0,5,5) coordinate (a) -- (0,0,5) coordinate (z) -- (5,0,5) edge (x) -- (5,5,5) coordinate (v) edge (h)
   -- (a)  ;
   \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (y) -- (z);
   \node [circle, minimum size=5pt, inner sep=0pt, fill, label=135:V] at (v) {};
-  \draw [->] (x) -- +(3pt,0,0) node [midway,above] {$1$};
-  \draw [->] (y) -- +(0,3pt,0) node [midway,right] {$q'$};
+  \draw [->] (x) -- +(3pt,0,0) node [midway,above] {$q'$};
+  \draw [->] (y) -- +(0,3pt,0) node [midway,right] {$1$};
   \draw [->] (z) -- +(0,0,3pt) node [midway,above] {$q''$};
   \draw (v) -- ++(0,0,-2) coordinate (d) -- ++(-2,0,0) coordinate (e) -- ++(0,0,2) |- ++(2,-2,0) coordinate [midway] (f) -- ++(0,0,-2) coordinate (g) -- (d);
   \draw [dashed] (e) -- ++(0,-2,0) coordinate (c) edge (f) -- (g);
