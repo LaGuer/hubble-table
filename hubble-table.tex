@@ -2187,6 +2187,8 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \tkzMarkRightAngle(A,B,C)
 \tkzMarkRightAngle(B,D,C)
 \tkzLabelPoints[below](A,B)
+\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
+\tkzLabelAngle[pos=0.8](C,A,B){$\theta$}
   \draw (6.4,0,0) coordinate (x) |- (0,10,0) coordinate [midway] (h) coordinate (y) -- (0,10,3.4) coordinate (a) -- (0,0,3.4) coordinate (z) -- (6.4,0,3.4) edge (x) -- (6.4,10,3.4) coordinate (v) edge (h)
   -- (a)  ;
   \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (y) -- (z);
@@ -2206,7 +2208,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
   %\draw[red]   (0,0,0) -- (.95,0,0)    node[red,left=6pt]    {$x$};
   %\arrowthreeD{red}{(\axexthreed)}{\anglerot} 
 \end{tikzpicture}
-\caption[The Weinberg-Sanchez cuboid]{Weinberg Sanchez cuboid properties: Electro-weak / gravitation connection}
+\caption[The Weinberg-Sanchez cuboid properties]{Weinberg Sanchez cuboid: Electro-weak / gravitation connection}
 \end{figure}
 
 \end{appendix}
