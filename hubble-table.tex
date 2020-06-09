@@ -2191,7 +2191,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \begin{figure}
 \centering
 \begin{tikzpicture}
-  \draw (6.4,0,0) coordinate (x) |- (0,1,0) coordinate [midway] (h) coordinate (y) -- (0,1,3.4) coordinate (a) -- (0,1,0) coordinate (z) -- (6.4,1,0) edge (x) -- (6.4,1,3.4) coordinate (v) edge (h)
+  \draw (6.4,0,0) coordinate (x) |- (0,1,0) coordinate [midway] (h) coordinate (y) -- (0,1,3.4) coordinate (a) -- (0,1,0) coordinate (z) -- (6.4,-1,0) edge (x) -- (6.4,-1,3.4) coordinate (v) edge (h)
   -- (a)  ;
   \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (y) -- (z);
   \node [circle, minimum size=5pt, inner sep=0pt, fill, label=135:V] at (v) {};
@@ -2201,7 +2201,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
   %\draw (v) -- ++(0,0,-2) coordinate (d) -- ++(-2,0,0) coordinate (e) -- ++(0,0,2) |- ++(2,-2,0) coordinate [midway] (f) -- ++(0,0,-2) coordinate (g) -- (d);
   %\draw [dashed] (e) -- ++(0,-2,0) coordinate (c) edge (f) -- (g);
   %\node [label=45:C] at (c) {};
-  \draw[red]   (0,0,0) -- (.95,0,0)    node[red,left=6pt]    {$x$};
+  %\draw[red]   (0,0,0) -- (.95,0,0)    node[red,left=6pt]    {$x$};
   %\arrowthreeD{red}{(\axexthreed)}{\anglerot} 
 \end{tikzpicture}
 \caption{Weinberg cuboid properties.}
