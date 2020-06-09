@@ -38,7 +38,7 @@
 %%%%%%
 %%%%%%
 
-\usetikzlibrary{calc,angles,positioning,intersections,through,quotes,decorations.markings}
+\usetikzlibrary{patterns,arrows,calc,angles,positioning,intersections,through,quotes,decorations.markings}
 \usepackage{tkz-euclide}
 \usetkzobj{all}
 
@@ -2194,7 +2194,10 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
   \draw (6.4,0,0) coordinate (x) |- (0,1,0) coordinate [midway] (h) coordinate (y) -- (0,1,3.4) coordinate (a) -- (0,0,3.4) coordinate (z) -- (6.4,0,3.4) edge (x) -- (6.4,1,3.4) coordinate (v) edge (h)
   -- (a)  ;
   \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (y) -- (z);
-  \node [circle, minimum size=5pt, inner sep=0pt, fill, label=135:V] at (v) {};
+  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (v) -- (v);
+  \node [circle, minimum size=2pt, inner sep=0pt, fill, label=135:$\sqrt{2a^3/pp_G}$] at (v) {};
+  \node [circle, minimum size=4pt, inner sep=0pt, fill, label=135:o] at (o) {};
+  \draw [dashed] (0,0) -- (6.4,1,3.4)
   \draw [->] (x) -- +(3pt,0,0) node [midway,above] {$q'$};
   \draw [->] (y) -- +(0,3pt,0) node [midway,right] {$1$};
   \draw [->] (z) -- +(0,0,3pt) node [midway,above] {$q''$};
