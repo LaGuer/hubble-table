@@ -2193,7 +2193,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
 \tkzLabelAngle[pos=0.8](C,A,B){$\theta$}
   %\draw [important line] (0.0,0.) coordinate (A) -- (5.1,-1.3) coordinate (C) node[below, text width=5em] {}
-  %\draw [important line] (6.4,0.) coordinate (B) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$q$}
+  \draw [red] (6.4,0.) coordinate (B) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$q$}
   \draw (6.4,0,0) coordinate (x) |- (0,10,0) coordinate [midway] (h) coordinate (y) -- (0,10,3.4) coordinate (a) -- (0,0,3.4) coordinate (z) -- (6.4,0,3.4) edge (x) -- (6.4,10,3.4) coordinate (v) edge (h)
   -- (a)  ;
   \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (y) -- (z);
@@ -2202,8 +2202,8 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
   \node [circle, minimum size=4pt, inner sep=0pt, fill, label=135:o] at (o) {};
   \draw [decoration={markings,mark=at position 1 with
     {\arrow[scale=3,>=stealth]{>}}},postaction={decorate}] (0,0,0) -- (6.4,10,3.4);
-  \draw [decoration={markings,mark=at position 1 with
-    {\arrow[scale=2,>=stealth]{>}}},postaction={decorate}] (0,0,0) -- (6.4,0,3.4);
+  %\draw [decoration={markings,mark=at position 1 with
+  %  {\arrow[scale=2,>=stealth]{>}}},postaction={decorate}] (0,0,0) -- (6.4,0,3.4);
   \draw [->] (x) -- +(3pt,0,0) node [midway,above] {$q'$};
   \draw [->] (y) -- +(0,3pt,0) node [midway,right] {$1$};
   \draw [->] (z) -- +(0,0,3pt) node [midway,above] {$q''$};
