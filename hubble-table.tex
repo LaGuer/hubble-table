@@ -2133,14 +2133,15 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \tkzDefPoint(-1.42,0.0){A} \tkzDefPoint(5.,3.43){B} \tkzDefPoint(5.,0.){C} \tkzDefPoint(3.3,2.5){D}
 \tkzDrawPoints(A,B,C,D)
 \tkzMarkRightAngle(A,D,C)
-\tkzLabelPoints[below](A,B,C)
+\tkzLabelPoints[below](A,C)
+\tkzLabelPoints[above](B,D)
 \tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
 \tkzLabelAngle[pos=1.6](C,A,B){$\theta$}
 \draw[color=red] (-1.42,0.) -- (5.,0.);
 \draw[color=red] (5.,0.) -- (5.,3.43);
 \draw[color=red] (-1.42,0.) -- (5.,3.43);
 \draw[color=blue] (5.,0.) -- (3.3,2.5);
-\node [anchor = east] at (3.9,1.5) {$q$};
+\node [anchor = east] at (3.9,1.0) {$q$};
 \node [anchor = east] at (6.,1.5) {$q''$};
 \node [anchor = east] at (2.5,-0.5) {$q'$};
 \clip(-6.,-0.4) rectangle (0.4,3.4);
@@ -2172,7 +2173,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \node [anchor = east] at (-1.,2.5) {$\sqrt{22}$};
 \node [anchor = east] at (0.,-0.5) {$\phi^{4}$};
   \draw [decoration={markings,mark=at position 1 with
-    {\arrow[scale=3,>=stealth]{>}}},postaction={decorate}] (-3.2,-0.3) -- (3.42,-0.3);
+    {\arrow[scale=3,>=stealth]{<>}}},postaction={decorate}] (-3.2,-0.3) -- (3.42,-0.3);
 \node [anchor = east] at (2.,-0.25) {$\omega$};
 \node [anchor = east] at (-1.,-0.25) {$z$};
 \clip(-6.,-0.4) rectangle (0.4,3.4);
