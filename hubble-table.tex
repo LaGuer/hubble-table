@@ -2188,7 +2188,8 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \tkzDefPoint(0.0,0.0){A} \tkzDefPoint(6.4,0.0){B} \tkzDefPoint(5.1,-1.3){C} \tkzDefPoint(4.0,-1.0){q}
 \tkzDrawPoints(A,B,C,q)
 \tkzDefMidPoint(B,q) \tkzGetPoint{D}
-\tkzDefPoint[label={[align=left]right:$q$},xshift=00mm](4.5,-0.5){D}
+%\tkzDefPoint[label={[align=left]right:$q$},xshift=00mm](4.5,-0.5){D}
+\tkzLabelSegment[sloped,text=red](q,B){$q$}
 \tkzMarkRightAngle(A,B,C)
 \tkzMarkRightAngle(B,q,C)
 \tkzLabelPoints[below](A,B,C)
@@ -2227,10 +2228,11 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \tkzDefPoint(0.0,0.0){A} \tkzDefPoint(4.9,0.0){B} \tkzDefPoint(3.12,-1.74){C} \tkzDefPoint(1.8,-1.0){q}
 \tkzDrawPoints(A,B,C,q)
 \tkzDefMidPoint(B,q) \tkzGetPoint{D}
-\tkzDefPoint[label={[text=blue,align=left]right:$z$},xshift=-01mm](2.35,-1.60){F}
+\tkzDefPoint[label={[text=blue,align=left]right:$z$},xshift=-01mm](2.25,-1.50){F}
 \tkzDefPoint[label={[text=blue,align=left]right:$\omega$},xshift=-01mm](0.75,-0.70){E}
-\tkzDefPoint[label={[text=red,align=left]right:$\sqrt{\omega z}$},xshift=-02mm](3.0,-0.29){D}
+%\tkzDefPoint[label={[text=red,align=left]right:$\sqrt{\omega z}$},xshift=-01mm](2.8,-0.29){D}
 \tkzDefPoint[label={[align=right]right:$4 \cdot \sqrt{(3H\beta/n)}$},xshift=00mm](3.0,-0.79){D}
+\tkzLabelSegment[sloped,text=red](q,B){$\sqrt{\omega z}$}
 \tkzMarkRightAngle(A,B,C)
 \tkzMarkRightAngle(B,q,C)
 \tkzLabelPoints[below](A,B,C)
