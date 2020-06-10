@@ -2162,6 +2162,14 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 
 45,x=1.0cm,y=1.0cm]
 %\label{tab:15:table15}
+\tkzDefPoint(-3.21,0.0){A} \tkzDefPoint(0.0,3.42){B} \tkzDefPoint(3.64,0.){C} \tkzDefPoint(0.0,0.0){D}
+\tkzDrawPoints(A,B,C,D)
+\tkzMarkRightAngle(A,B,C)
+\tkzMarkRightAngle(B,D,C)
+\tkzLabelPoints[below](A,C)
+\tkzLabelPoints[above](B,D)
+\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
+\tkzLabelAngle[pos=1.6](C,A,B){$\theta$}
 \draw[step=1cm,gray,very thin] (-6,-6) grid (6,6);
 \draw[color=red] (-3.21,0.) -- (0.,0.);
 \draw[color=red] (3.64,0.) -- (0.,0.0);
@@ -2172,6 +2180,8 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \node [anchor = east] at (2.,2.5) {$5$};
 \node [anchor = east] at (-1.,2.5) {$\sqrt{22}$};
 \node [anchor = east] at (0.,-0.6) {$\phi^{4}$};
+\draw [<->] (-3.2,-0.15) node[left]{} -- (0,-0.15) node[right]{};
+\draw [<->] (0.,-0.15) node[left]{} -- (3.42,-0.15) node[right]{};
 \draw [<->] (-3.2,-0.35) node[left]{} -- (3.42,-0.35) node[right]{};
   %\draw [decoration={markings,mark=at position 1 with
    % {\arrow[scale=3,>=stealth reversed]{<}}},postaction={decorate}] (-3.2,-0.3) -- (3.42,-0.3);
@@ -2243,7 +2253,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \tkzDefPoint[label={[text=blue,align=left]right:$\omega$},xshift=-01mm](0.75,-0.70){E}
 %\tkzDefPoint[label={[text=red,align=left]right:$\sqrt{\omega z}$},xshift=-01mm](2.8,-0.29){D}
 %\tkzDefPoint[label={[align=right]right:$4 \cdot \sqrt{(3H\beta/n)}$},xshift=00mm](3.0,-0.79){D}
-\tkzLabelSegment[sloped,text=red](q,B){$\sqrt{\omega z}$}
+\tkzLabelSegment[sloped,below,text=red](q,B){$\sqrt{\omega z}$}
 \tkzMarkRightAngle(A,B,C)
 \tkzMarkRightAngle(B,q,C)
 \tkzLabelPoints[below](A,B,C)
