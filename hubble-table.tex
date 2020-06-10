@@ -2130,9 +2130,10 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 45,x=1.0cm,y=1.0cm]
 %\label{tab:14:table14}
 \draw[step=1cm,gray,very thin] (-6,-6) grid (6,6);
-\tkzDefPoint(-1.42,0.0){A} \tkzDefPoint(5.,3.43){B} \tkzDefPoint(5.,0.){C} \tkzDefPoint(3.3,2.5){q}
+\tkzDefPoint(-1.42,0.0){A} \tkzDefPoint(5.,3.43){B} \tkzDefPoint(5.,0.){C} \tkzDefPoint(3.3,2.5){D}
 \tkzDrawPoints(A,B,C,D)
 \tkzMarkRightAngle(A,D,C)
+\tkzLabelPoints[below](A,B,C)
 \tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
 \tkzLabelAngle[pos=1.6](C,A,B){$\theta$}
 \draw[color=red] (-1.42,0.) -- (5.,0.);
