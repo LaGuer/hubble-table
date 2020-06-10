@@ -2166,8 +2166,8 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \tkzDrawPoints(A,B,C,D)
 \tkzMarkRightAngle(A,B,C)
 \tkzMarkRightAngle(B,D,C)
-\tkzLabelPoints[below](A,C)
-\tkzLabelPoints[above](B,D)
+\tkzLabelPoints[below](A,C,D)
+\tkzLabelPoints[above](B)
 \tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
 \tkzLabelAngle[pos=1.6](C,A,B){$\theta$}
 \draw[step=1cm,gray,very thin] (-6,-6) grid (6,6);
@@ -2177,16 +2177,16 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \draw[color=red] (0.,3.42) -- (3.64,0.);
 \draw[color=blue] (0.,0.) -- (0.,3.42);
 \node [anchor = east] at (0.,1.5) {$h$};
-\node [anchor = east] at (2.,2.5) {$5$};
-\node [anchor = east] at (-1.,2.5) {$\sqrt{22}$};
-\node [anchor = north] at (0.,-1.0) {$\phi^{4}$};
-\draw [<->] (-3.2,-0.15) node[left]{} -- (0,-0.15) node[right]{};
-\draw [<->] (0.,-0.15) node[left]{} -- (3.42,-0.15) node[right]{};
-\draw [<->] (-3.2,-0.5) node[left]{} -- (3.42,-0.5) node[right]{};
+\node [anchor = east] at (2.,2.5) {$\approx 5$};
+\node [anchor = east] at (-1.,2.5) {$\approx \sqrt{22}$};
+\node [anchor = north] at (0.,-1.0) {$\approx \phi^{4}$};
+\draw [<->] (-3.2,-0.1) node[left]{} -- (0,-0.1) node[right]{};
+\draw [<->] (0.,-0.1) node[left]{} -- (3.42,-0.1) node[right]{};
+\draw [<->] (-3.2,-0.6) node[left]{} -- (3.42,-0.6) node[right]{};
   %\draw [decoration={markings,mark=at position 1 with
    % {\arrow[scale=3,>=stealth reversed]{<}}},postaction={decorate}] (-3.2,-0.3) -- (3.42,-0.3);
-\node [anchor = east] at (2.,-0.25) {$\omega$};
-\node [anchor = east] at (-1.,-0.25) {$z$};
+\node [anchor = east] at (2.,-0.35) {$\omega$};
+\node [anchor = east] at (-1.,-0.35) {$z$};
 \clip(-6.,-0.4) rectangle (0.4,3.4);
 %\draw [shift={(-3.2,0.)},color=gray,fill=darkgray,fill opacity=0.1] (0,0) -- (0.:0.6) arc (0.:43.9:0.6) -- cycle;
 %\draw[color=gray,fill=darkgray,fill opacity=0.1] (0.,0.42) -- (-0.42,0.42) -- (-0.42,0.) -- (0.,0.) -- cycle; 
