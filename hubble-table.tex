@@ -2180,9 +2180,9 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \node [anchor = east] at (2.,2.5) {$\approx 5$};
 \node [anchor = east] at (-1.,2.5) {$\approx \sqrt{22}$};
 \node [anchor = north] at (0.,-0.8) {$\approx \phi^{4}$};
-\draw [<->] (-3.2,-0.1) node[left]{} -- (0,-0.1) node[right]{};
-\draw [<->] (0.,-0.1) node[left]{} -- (3.42,-0.1) node[right]{};
-\draw [<->] (-3.2,-0.6) node[left]{} -- (3.42,-0.6) node[right]{};
+\draw [<->] (-3.1,-0.1) node[left]{} -- (0.2,-0.1) node[right]{};
+\draw [<->] (0.4,-0.1) node[left]{} -- (3.42,-0.1) node[right]{};
+\draw [<->] (-3.1,-0.6) node[left]{} -- (3.42,-0.6) node[right]{};
   %\draw [decoration={markings,mark=at position 1 with
    % {\arrow[scale=3,>=stealth reversed]{<}}},postaction={decorate}] (-3.2,-0.3) -- (3.42,-0.3);
 \node [anchor = east] at (2.,-0.35) {$\omega$};
@@ -2246,7 +2246,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \centering
 \begin{tikzpicture}
 %\tkzInit[xmax=6.4, zmax=3.4]
-\tkzDefPoint(0.0,0.0){A} \tkzDefPoint(4.9,0.0){B} \tkzDefPoint(3.12,-1.74){C} \tkzDefPoint(1.8,-1.0){q}
+\tkzDefPoint(0.0,0.0){C} \tkzDefPoint(4.9,0.0){B} \tkzDefPoint(3.12,-1.74){A} \tkzDefPoint(1.8,-1.0){q}
 \tkzDrawPoints(A,B,C,q)
 \tkzDefMidPoint(B,q) \tkzGetPoint{D}
 \tkzDefPoint[label={[text=blue,align=left]right:$z$},xshift=-01mm](2.25,-1.50){F}
@@ -2254,6 +2254,8 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 %\tkzDefPoint[label={[text=red,align=left]right:$\sqrt{\omega z}$},xshift=-01mm](2.8,-0.29){D}
 %\tkzDefPoint[label={[align=right]right:$4 \cdot \sqrt{(3H\beta/n)}$},xshift=00mm](3.0,-0.79){D}
 \tkzLabelSegment[sloped,below,text=red](q,B){$\sqrt{\omega z}$}
+\tkzLabelSegment[sloped,below,text=blue](A,q){$z}$}
+\tkzLabelSegment[sloped,below,text=blue](C,q){$\omega}$}
 \tkzMarkRightAngle(A,B,C)
 \tkzMarkRightAngle(B,q,C)
 \tkzLabelPoints[below](A,B,C)
@@ -2274,7 +2276,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
   \node [circle, minimum size=4pt, inner sep=0pt, fill, label=135:o] at (o) {};
   \draw [decoration={markings,mark=at position 1 with
     {\arrow[scale=3,>=stealth]{>}}},postaction={decorate}] (0,0,0) -- (4.9,1,4.6);
-  \draw [<->] (0.5,-0.5) node[left]{} -- (3.,-1.5) node[below]{$\phi^4$};
+  \draw [<->] (0.2,-0.25) node[left]{} -- (2.75.,-2.) node[below]{};
   \draw [->] (x) -- +(3pt,0,0) node [midway,above] {$\sqrt{\omega \cdot (\omega+z)}$};
   \draw [->] (y) -- +(0,3pt,0) node [midway,right] {$1$};
   \draw [->] (z) -- +(0,0,3pt) node [midway,above] {$\sqrt{z \cdot (\omega+z)}$};
