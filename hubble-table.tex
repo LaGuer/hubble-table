@@ -2219,6 +2219,12 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \draw[color=red] (-0.236,0.) -- (3.764,0.);
 \draw[color=red] (0.,0.944) -- (3.764,0.);
 \draw[color=blue] (0.,0.) -- (0.,0.944);
+\draw[blue, dotted]
+      let \p1 =  ($(D)-(center)$),
+          \n0 = {veclen(\x1,\y1)}
+      in (center) circle(\n0);
+
+
 %\node [anchor = east] at (0.,1.5) {$h$};
 %\node [anchor = east] at (2.,2.0) {$\approx 5$};
 %\node [anchor = east] at (-1.,2.0) {$\approx \sqrt{22}$};
