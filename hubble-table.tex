@@ -2205,10 +2205,12 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \begin{tikzpicture}[scale=1.75, line cap=round,line join=round,>=triangle 
 45,x=1.0cm,y=1.0cm]
 %\label{tab:15:table15}
-\tkzDefPoint(-0.236,0.0){A} \tkzDefPoint(0.0,0.944){B} \tkzDefPoint(3.764,0.){C} \tkzDefPoint(0.0,0.0){D}
-\tkzDrawPoints(A,B,C,D)
+\tkzDefPoint(-0.236,0.0){A} \tkzDefPoint(0.0,0.944){B} \tkzDefPoint(3.764,0.){C} \tkzDefPoint(0.0,0.0){D} \tkzDefPoint(0.882,0.0){D'} \tkzDefPoint(0.882,-1.764){E}
+\tkzDrawPoints(A,B,C,D,D',E)
 \tkzMarkRightAngle(A,B,C)
 \tkzMarkRightAngle(B,D,C)
+\tkzMarkRightAngle(E,D',C)
+\tkzMarkRightAngle(A,E,C)
 \tkzLabelPoints[below](A,C,D)
 \tkzLabelPoints[above](B)
 \tkzDefMidPoint(A,C) \tkzGetPoint{O}
