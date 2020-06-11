@@ -2205,6 +2205,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 
 45,x=1.0cm,y=1.0cm]
 %\label{tab:15:table15}
+\coordinate (center) at (0.,0.);
 \tkzDefPoint(-0.236,0.0){A} \tkzDefPoint(0.0,0.944){B} \tkzDefPoint(3.764,0.){C} \tkzDefPoint(0.0,0.0){D}
 \tkzDrawPoints(A,B,C,D)
 \tkzMarkRightAngle(A,B,C)
@@ -2220,7 +2221,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \draw[color=red] (0.,0.944) -- (3.764,0.);
 \draw[color=blue] (0.,0.) -- (0.,0.944);
 \draw[blue, dotted]
-      let \p1 =  ($(D)-(center)$),
+      let \p1 =  ($(1.0,0)-(center)$),
           \n0 = {veclen(\x1,\y1)}
       in (center) circle(\n0);
 
