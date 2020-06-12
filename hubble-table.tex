@@ -2198,8 +2198,8 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \tkzMarkRightAngle(B,D,C)
 \tkzLabelPoints[below](A,C,D)
 \tkzLabelPoints[above](B)
-\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
-\tkzLabelAngle[pos=1.6](C,A,B){$\theta$}
+%\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
+%\tkzLabelAngle[pos=1.6](C,A,B){$\theta$}
 \tkzDefMidPoint(A,C) \tkzGetPoint{O}
 \coordinate (center) at (O);
 \tkzLabelPoints[above](O)
@@ -2220,14 +2220,14 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \node [anchor = east] at (0.,1.5) {$h$};
 %\node [anchor = east] at (2.,2.0) {$\approx 5$};
 %\node [anchor = east] at (-1.,2.0) {$\approx \sqrt{22}$};
-\node [anchor = north,text=red] at (0.,-0.6) {$\approx \phi^{4}$};
+\node [anchor = north,text=blue] at (0.,-0.6) {$\approx \phi^{4}$};
 \draw [<->] (-3.1,-0.1) node[left]{} -- (-0.2,-0.1) node[right]{};
 \draw [<->] (0.2,-0.1) node[left]{} -- (3.42,-0.1) node[right]{};
 \draw [<->] (-3.1,-0.6) node[left]{} -- (3.42,-0.6) node[right]{};
   %\draw [decoration={markings,mark=at position 1 with
    % {\arrow[scale=3,>=stealth reversed]{<}}},postaction={decorate}] (-3.2,-0.3) -- (3.42,-0.3);
-\node [anchor = east] at (2.,-0.35) {$\omega$};
-\node [anchor = east] at (-1.,-0.35) {$z$};
+\node [anchor = east,text=blue] at (2.,-0.35) {$\omega$};
+\node [anchor = east,text=blue] at (-1.,-0.35) {$z$};
 \clip(-6.,-0.4) rectangle (0.4,3.4);
 %\draw [shift={(-3.2,0.)},color=gray,fill=darkgray,fill opacity=0.1] (0,0) -- (0.:0.6) arc (0.:43.9:0.6) -- cycle;
 %\draw[color=gray,fill=darkgray,fill opacity=0.1] (0.,0.42) -- (-0.42,0.42) -- (-0.42,0.) -- (0.,0.) -- cycle; 
@@ -2235,7 +2235,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 %\draw (6.,5.52)-- (-4.32,0.);
 %\draw (6.,0.)-- (6.,5.52);
 %\draw[color=gray] (-3.2,0.4) node {\large $\theta$};
-\draw[color=gray] (0.34,0.33);
+%\draw[color=gray] (0.34,0.33);
 %\tkzMarkRightAngle[fill=blue!20](B,F,C)
 \end{tikzpicture}
 \caption[The Golden Sanchez Triangle properties.]{Golden Sanchez Triangle.}
