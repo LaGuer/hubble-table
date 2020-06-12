@@ -2121,6 +2121,10 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
       let \p1 =  ($(-4.32,0)-(center)$),
           \n0 = {veclen(\x1,\y1)}
       in (center) circle(\n0);
+\tkzDefMidPoint(O,B) \tkzGetPoint{E}
+\tkzDrawPoints(E)
+\tkzLabelPoints[above](E)
+\tkzMarkRightAngle(B,E,C)
 \draw[step=1cm,gray,very thin] (-6,-4) grid (7,9);
 \draw[color=red] (-4.32,0.) -- (6.,0.);
 \draw[color=red] (6.,0.) -- (6.,5.52);
