@@ -2116,6 +2116,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \tkzLabelPoints[below](O)
 \tkzDrawPoints(O)
 %\tkzDefInterPoint(A,C) \tkzGetPoint{O}
+\tkzLabelSegment[sloped,above,text=red](A,B){$\sqrt{a}$}
 \draw[blue, dotted]
       let \p1 =  ($(-4.32,0)-(center)$),
           \n0 = {veclen(\x1,\y1)}
@@ -2124,7 +2125,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \draw[color=red] (-4.32,0.) -- (6.,0.);
 \draw[color=red] (6.,0.) -- (6.,5.52);
 \draw[color=red] (-4.32,0.) -- (6.,5.52);
-\node [anchor = east] at (1.,3.5) {$\sqrt{a}$};
+%\node [anchor = east] at (1.,3.5) {$\sqrt{a}$};
 \node [anchor = east] at (6.,2.5) {$\sqrt{a'}$};
 \node [anchor = east] at (1.,-0.5) {$\sqrt{a''}$};
 \draw [<->] (O) node[left]{} -- (-5.0,2.8) node[right]{};
@@ -2135,7 +2136,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 %\draw (6.,5.52)-- (-4.32,0.);
 %\draw (6.,0.)-- (6.,5.52);
 \draw[color=gray] (-3.2,0.4) node {\large $\theta$};
-\draw[color=black] (-2.,2.5) node {\large $r=\omega+-1$};
+\draw[color=black] (-2.,2.5) node {\large $r=\omega+z-1$};
 \draw[color=gray] (0.34,0.33);
 %\tkzMarkRightAngle[fill=blue!20](B,F,C)
 \end{tikzpicture}
@@ -2159,6 +2160,10 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \coordinate (center) at (O);
 \tkzLabelPoints[below](O)
 \tkzDrawPoints(O)
+\draw[blue, dotted]
+      let \p1 =  ($(B)-(center)$),
+          \n0 = {veclen(\x1,\y1)}
+      in (center) circle(\n0);
 \draw[color=red] (-1.42,0.) -- (5.,0.);
 \draw[color=red] (5.,0.) -- (5.,3.43);
 \draw[color=red] (-1.42,0.) -- (5.,3.43);
@@ -2169,10 +2174,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \clip(-6.,-0.4) rectangle (0.4,3.4);
 % 1st triangle
 
-\draw[blue, dotted]
-      let \p1 =  ($(B)-(center)$),
-          \n0 = {veclen(\x1,\y1)}
-      in (center) circle(\n0);
+
 %\draw [shift={(-0.42,0.)},color=gray,fill=darkgray,fill opacity=0.1] (0,0) -- (0.:0.6) arc (0.:26.9:0.6) -- cycle;
 %\draw[color=gray,fill=darkgray,fill opacity=0.1] (0.,0.42) -- (-0.42,0.42) -- (-0.42,0.) -- (0.,0.) -- cycle; 
 %\draw (0.,6.)-- (-4.32,0.);
