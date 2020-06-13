@@ -2143,7 +2143,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 %\draw (6.,5.52)-- (-4.32,0.);
 %\draw (6.,0.)-- (6.,5.52);
 \draw[color=gray] (-3.2,0.4) node {\large $\theta$};
-\draw[color=black] (-2.,2.5) node {\large $r=\omega+z-1$};
+\draw[color=black] (-2.,2.5) node {\large $\phi^4-1$};
 \draw[color=gray] (0.34,0.33);
 %\tkzMarkRightAngle[fill=blue!20](B,F,C)
 \end{tikzpicture}
@@ -2220,14 +2220,17 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
       in (center) circle(\n0);
 \draw[color=red] (B) -- (O);
 \tkzDefMidPoint(B,O) \tkzGetPoint{F}
-\tkzLabelSegment[sloped,above,text=blue](B,O){$blah$}
+\tkzLabelSegment[sloped,above,text=blue](B,O){$\sqrt{\sqrt{a_0}}$}
+\draw[color=blue] (B) -- (D);
+\tkzDefMidPoint(B,D) \tkzGetPoint{G}
+\tkzLabelSegment[sloped,below,text=blue](B,D){$\sqrt{\sqrt{a_1}}$}
 \draw[step=1cm,gray,very thin] (-4,-4) grid (4,4);
 \draw[color=red] (-3.21,0.) -- (0.,0.);
 \draw[color=red] (3.64,0.) -- (0.,0.0);
 \draw[color=red] (-3.21,0.) -- (0.,3.42);
 \draw[color=red] (0.,3.42) -- (3.64,0.);
 \draw[color=blue] (0.,0.) -- (0.,3.42);
-\node [anchor = east] at (0.,1.5) {$h$};
+%\node [anchor = east] at (0.,1.5) {$\sqrt{\sqrt{a_1}}$};
 %\node [anchor = east] at (2.,2.0) {$\approx 5$};
 %\node [anchor = east] at (-1.,2.0) {$\approx \sqrt{22}$};
 \node [anchor = north,text=blue] at (0.,-0.6) {$\approx \phi^{4}$};
