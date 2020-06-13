@@ -2129,9 +2129,9 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \draw[color=red] (-4.32,0.) -- (6.,0.);
 \draw[color=red] (6.,0.) -- (6.,5.52);
 \draw[color=red] (-4.32,0.) -- (6.,5.52);
-\draw[color=blue] (E) -- (C);
-\tkzDefMidPoint(E,C) \tkzGetPoint{F}
-\tkzLabelSegment[sloped,below,text=blue](E,C){$\approx \phi^{2}$}
+\draw[color=red] (E) -- (C);
+\tkzDefMidPoint(E,B) \tkzGetPoint{F}
+\tkzLabelSegment[sloped,below,text=blue](E,B){$\approx \phi^{2}$}
 %\node [anchor = east] at (1.,3.5) {$\sqrt{a}$};
 \node [anchor = east,text=red] at (6.,2.5) {$\sqrt{a'}$};
 \node [anchor = east,text=red] at (1.,-0.5) {$\sqrt{a''}$};
@@ -2218,6 +2218,9 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
       let \p1 =  ($(B)-(center)$),
           \n0 = {veclen(\x1,\y1)}
       in (center) circle(\n0);
+\draw[color=red] (B) -- (O);
+\tkzDefMidPoint(B,O) \tkzGetPoint{F}
+\tkzLabelSegment[sloped,above,text=blue](B,O){$blah$}
 \draw[step=1cm,gray,very thin] (-4,-4) grid (4,4);
 \draw[color=red] (-3.21,0.) -- (0.,0.);
 \draw[color=red] (3.64,0.) -- (0.,0.0);
@@ -2228,7 +2231,7 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 %\node [anchor = east] at (2.,2.0) {$\approx 5$};
 %\node [anchor = east] at (-1.,2.0) {$\approx \sqrt{22}$};
 \node [anchor = north,text=blue] at (0.,-0.6) {$\approx \phi^{4}$};
-\draw [<->] (-3.1,-0.1) node[left]{} -- (-0.2,-0.1) node[right]{};
+\draw [<->] (-3.1,-0.1) node[left]{} -- (-0.1,-0.1) node[right]{};
 \draw [<->] (0.2,-0.1) node[left]{} -- (3.42,-0.1) node[right]{};
 \draw [<->] (-3.1,-0.6) node[left]{} -- (3.42,-0.6) node[right]{};
   %\draw [decoration={markings,mark=at position 1 with
