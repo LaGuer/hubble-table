@@ -2161,8 +2161,8 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \tkzMarkRightAngle(A,D,C)
 \tkzLabelPoints[below](A,C)
 \tkzLabelPoints[above](B,D)
-\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
-\tkzLabelAngle[pos=1.6](C,A,B){$\theta$}
+\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](C,A,B)
+\tkzLabelAngle[pos=0.6](C,A,B){$\theta$}
 \tkzDefMidPoint(A,B) \tkzGetPoint{O}
 \coordinate (center) at (O);
 \tkzLabelPoints[below](O)
@@ -2171,6 +2171,9 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
       let \p1 =  ($(B)-(center)$),
           \n0 = {veclen(\x1,\y1)}
       in (center) circle(\n0);
+\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](B,O,D)
+%\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](O,E,D')
+\tkzLabelAngle[pos=0.6](B,C,D){$\theta$}
 \draw[color=red] (-1.42,0.) -- (5.,0.);
 \draw[color=red] (5.,0.) -- (5.,3.43);
 \draw[color=red] (-1.42,0.) -- (5.,3.43);
