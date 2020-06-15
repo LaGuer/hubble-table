@@ -703,7 +703,7 @@ Phi_{WZ} = (WZ)^{1/50} \approx (w+z)^{1/4}
 \end{equation}
 
 
-où $w = \sqrt a_w/W$ et $z = \sqrt a_w/Z$, avec $wz = \sqrt a_0$. Ainsi qu’il avait été prédit, le nombre d’or joue une place centrale dans la future théorie ultime. L’exposant 50 doit être lié à l’espace 5D, voir ci-dessous. L’ordinateur indique les corrélations avec le rapport de masse des leptons tau et mu, à 0.2 ppm e7 4 ppm :
+où $w = \sqrt a_w/W$ et $z = \sqrt a_w/Z$, avec $wz = \sqrt a_0$. Ainsi qu’il avait été prédit, le nombre d’or joue une place centrale dans la future théorie ultime. L’exposant 50 doit être lié à l’espace 5D, voir ci-dessous. L’ordinateur indique les corrélations avec le rapport de masse des leptons tau et mu, à 0.2 ppm et 4 ppm :
 
 
 \begin{equation}
@@ -717,7 +717,7 @@ z (w+z)  \approx p^4n/H(\mu \tau)^2
 Particulièrement pertinente est la corrélation à 23 ppm près :
 
 \begin{equation}
-{a''}/{a'} = cotg\theta  \approx  \tau/9\mu
+{a''}/{a'} = cotg~\theta  \approx  \tau/9\mu
 \end{equation}
 
 où $9\mu$ est voisin du rapport proton/electron, conformément à \textit{la prédiction d’Eddington : une symétrie proton/tau complètement oubliée, malgré qu’Eddington ait prévu le tau, 30 ans avant sa surprenante découverte, avec une bonne estimation de sa masse}. 
@@ -725,7 +725,7 @@ où $9\mu$ est voisin du rapport proton/electron, conformément à \textit{la pr
 La relation suivante définit le rapport $\tau$ dans \textit{une relation exhibant directement $sqrt a$ dans le développement de $\pi$}:
 
 \begin{equation}
-1-cos\theta  \approx  \tau/(4\pi_{\tau})^2 \sqrt a    ~~~~   \rightarrow ~~~~   \pi_{\tau}) : 3, 7, \sqrt a
+1-cos\theta  \approx  \tau/(4\pi_{\tau})^2 \sqrt a    ~~~~   \rightarrow ~~~~   \pi_{\tau} : 3, 7, \sqrt a
 \end{equation}
 
 La proximité des deux derniers rapports signifie que $1/sin\theta - 1/cos\theta$ est voisin de 1. En particulier, on constate que
@@ -743,9 +743,73 @@ lnlnO_M \approx  i^{1/i}
 alors que:
 
 \begin{equation}
-lnO_/ lnlnlnlnO_M M \approx 2 \times 137
+lnO_M / lnlnlnlnO_M  \approx 2 \times 137
 \end{equation}
 
+
+\subsection {La relation gravito-électrofaible }
+En extrapolant la relation de jauge vue ci-dessus
+
+\begin{equation}
+ 1/q^2 = 1/{q'}^2  + 1/{q''}^2 
+ \end{equation}
+
+à l'espace 3D, muni d'un troisème axe portant l'unité (Fig 3), on constate la connexion gavito-électrofaible:
+
+\begin{equation}
+ 1 + 1/q^2 = 1 + 1/{q'}^2  + 1/{q''}^2 = (Z/495^2)^2 + 1 \approx 2a^3/pp_G
+ \end{equation}
+ 
+ L'extrème précision de cette relation ($10^{-7}) confirme la valeur ci-dessus du boson scalaire. Rappelons que le terme $2a^3/ppH$ est la clef holique du rayon de Hubble. 
+ 
+ 
+ 
+ \begin{figure}
+\centering
+\begin{tikzpicture}[scale=1.25]
+%\tkzInit[xmax=6.4, zmax=3.4]
+\tkzDefPoint(0.0,0.0){C} \tkzDefPoint(4.9,0.0){B} \tkzDefPoint(3.12,-1.74){A} \tkzDefPoint(1.8,-1.0){q}
+\tkzDrawPoints(A,B,C,q)
+\tkzDefMidPoint(B,q) \tkzGetPoint{D}
+%\tkzDefPoint[label={[text=blue,align=left]right:$z$},xshift=-01mm](2.25,-1.50){F}
+%\tkzDefPoint[label={[text=blue,align=left]right:$\omega$},xshift=-01mm](0.75,-0.70){E}
+%\tkzDefPoint[label={[text=red,align=left]right:$\sqrt{\omega z}$},xshift=-01mm](2.8,-0.29){D}
+%\tkzDefPoint[label={[align=right]right:$4 \cdot \sqrt{(3H\beta/n)}$},xshift=00mm](3.0,-0.79){D}
+\tkzLabelSegment[sloped,below,text=red](q,B){$\sqrt{\omega z}$}
+\tkzLabelSegment[sloped,below,text=blue](A,q){$z$}
+\tkzLabelSegment[sloped,below,text=blue](C,q){$\omega$}
+\tkzLabelSegment[sloped,text=blue,xshift=1.5mm,yshift=-07.5mm](A,C){$\phi^4$}
+\tkzMarkRightAngle(A,B,C)
+\tkzMarkRightAngle(B,q,C)
+\tkzLabelPoints[below](A,B,C)
+\tkzDrawSegments[red](B,q)
+%\tkzLabelPoints[above right](q)
+%\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
+%\tkzLabelAngle[pos=0.6](A,q,B){$\sqrt{\omega z}$}
+    %\draw [important line] (0.0,0.) coordinate (A) -- (5.1,-1.3) coordinate (C) node[below, text width=5em] {}
+    %\draw [blue] (6.4,0.) coordinate (A) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$h$}
+    %\draw [red] (6.4,0.) coordinate (B) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$q$}
+  \draw (4.9,0,0) coordinate (x) |- (0,1,0) coordinate [midway] (h) coordinate (y) -- (0,1,4.6) coordinate (a) -- (0,0,4.6) coordinate (z) -- (4.9,0,4.6) edge (x) -- (4.9,1,4.6) coordinate (v) edge (h)
+  -- (a)  ;
+  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (y) -- (z);
+  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (v) -- (v);
+  \draw [blue] (0,0,0)  -- (4.9,0.0,4.6);
+  \draw [very thin,black,line join=round] (0,0,0)  -- node [sloped,above,xshift=-0.mm,yshift=-2.mm] {$4\sqrt{(3H\beta/n)}$} (4.9,1.,4.6);
+  %\node [circle, minimum size=2pt, inner sep=0pt, fill, label=135:$4 \cdot \sqrt{(3H\beta/n)}$] at (v) {};
+  \node [circle, minimum size=4pt, inner sep=0pt, fill, label=135:o] at (o) {};
+  \draw [decoration={markings,mark=at position 1 with
+    {\arrow[scale=3,>=stealth]{>}}},postaction={decorate}] (0,0,0) -- (4.9,1,4.6);
+  %\draw [<->] (0.2,-0.5) node[left]{} -- (2.2,-1.8) node[below]{$\phi^4$};
+  \draw [->] (x) -- +(3pt,0,0) node [midway,above] {$\sqrt{\omega \cdot (\omega+z)}$};
+  \draw [->] (y) -- +(0,3pt,0) node [midway,right] {$1$};
+  \draw [->] (z) -- +(0,0,3pt) node [midway,above] {$\sqrt{z \cdot (\omega+z)}$};
+  %\draw (v) -- ++(0,0,-2) coordinate (d) -- ++(-2,0,0) coordinate (e) -- ++(0,0,2) |- ++(2,-2,0) coordinate [midway] (f) -- ++(0,0,-2) coordinate (g) -- (d);
+  %\draw [dashed] (e) -- ++(0,-2,0) coordinate (c) edge (f) -- (g);
+  %\node [label=45:C] at (c) {};
+  %\draw[red]   (0,0,0) -- (.95,0,0)    node[red,left=6pt]    {$x$};
+\end{tikzpicture}
+\caption[The Golden Sanchez cuboid properties]{3D perspective of the "Golden-Sanchez" cuboid: Electro-weak / Eddington matrix connection}
+\end{figure}
 
 
 
@@ -2723,52 +2787,12 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \caption[The Weinberg-Sanchez cuboid properties]{3D perspective of the "Weinberg-Sanchez" cuboid: Electro-weak / Gravitation connection}
 \end{figure}
 
-\begin{figure}
-\centering
-\begin{tikzpicture}[scale=1.25]
-%\tkzInit[xmax=6.4, zmax=3.4]
-\tkzDefPoint(0.0,0.0){C} \tkzDefPoint(4.9,0.0){B} \tkzDefPoint(3.12,-1.74){A} \tkzDefPoint(1.8,-1.0){q}
-\tkzDrawPoints(A,B,C,q)
-\tkzDefMidPoint(B,q) \tkzGetPoint{D}
-%\tkzDefPoint[label={[text=blue,align=left]right:$z$},xshift=-01mm](2.25,-1.50){F}
-%\tkzDefPoint[label={[text=blue,align=left]right:$\omega$},xshift=-01mm](0.75,-0.70){E}
-%\tkzDefPoint[label={[text=red,align=left]right:$\sqrt{\omega z}$},xshift=-01mm](2.8,-0.29){D}
-%\tkzDefPoint[label={[align=right]right:$4 \cdot \sqrt{(3H\beta/n)}$},xshift=00mm](3.0,-0.79){D}
-\tkzLabelSegment[sloped,below,text=red](q,B){$\sqrt{\omega z}$}
-\tkzLabelSegment[sloped,below,text=blue](A,q){$z$}
-\tkzLabelSegment[sloped,below,text=blue](C,q){$\omega$}
-\tkzLabelSegment[sloped,text=blue,xshift=1.5mm,yshift=-07.5mm](A,C){$\phi^4$}
-\tkzMarkRightAngle(A,B,C)
-\tkzMarkRightAngle(B,q,C)
-\tkzLabelPoints[below](A,B,C)
-\tkzDrawSegments[red](B,q)
-%\tkzLabelPoints[above right](q)
-%\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
-%\tkzLabelAngle[pos=0.6](A,q,B){$\sqrt{\omega z}$}
-    %\draw [important line] (0.0,0.) coordinate (A) -- (5.1,-1.3) coordinate (C) node[below, text width=5em] {}
-    %\draw [blue] (6.4,0.) coordinate (A) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$h$}
-    %\draw [red] (6.4,0.) coordinate (B) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$q$}
-  \draw (4.9,0,0) coordinate (x) |- (0,1,0) coordinate [midway] (h) coordinate (y) -- (0,1,4.6) coordinate (a) -- (0,0,4.6) coordinate (z) -- (4.9,0,4.6) edge (x) -- (4.9,1,4.6) coordinate (v) edge (h)
-  -- (a)  ;
-  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (y) -- (z);
-  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (v) -- (v);
-  \draw [blue] (0,0,0)  -- (4.9,0.0,4.6);
-  \draw [very thin,black,line join=round] (0,0,0)  -- node [sloped,above,xshift=-0.mm,yshift=-2.mm] {$4\sqrt{(3H\beta/n)}$} (4.9,1.,4.6);
-  %\node [circle, minimum size=2pt, inner sep=0pt, fill, label=135:$4 \cdot \sqrt{(3H\beta/n)}$] at (v) {};
-  \node [circle, minimum size=4pt, inner sep=0pt, fill, label=135:o] at (o) {};
-  \draw [decoration={markings,mark=at position 1 with
-    {\arrow[scale=3,>=stealth]{>}}},postaction={decorate}] (0,0,0) -- (4.9,1,4.6);
-  %\draw [<->] (0.2,-0.5) node[left]{} -- (2.2,-1.8) node[below]{$\phi^4$};
-  \draw [->] (x) -- +(3pt,0,0) node [midway,above] {$\sqrt{\omega \cdot (\omega+z)}$};
-  \draw [->] (y) -- +(0,3pt,0) node [midway,right] {$1$};
-  \draw [->] (z) -- +(0,0,3pt) node [midway,above] {$\sqrt{z \cdot (\omega+z)}$};
-  %\draw (v) -- ++(0,0,-2) coordinate (d) -- ++(-2,0,0) coordinate (e) -- ++(0,0,2) |- ++(2,-2,0) coordinate [midway] (f) -- ++(0,0,-2) coordinate (g) -- (d);
-  %\draw [dashed] (e) -- ++(0,-2,0) coordinate (c) edge (f) -- (g);
-  %\node [label=45:C] at (c) {};
-  %\draw[red]   (0,0,0) -- (.95,0,0)    node[red,left=6pt]    {$x$};
-\end{tikzpicture}
-\caption[The Golden Sanchez cuboid properties]{3D perspective of the "Golden-Sanchez" cuboid: Electro-weak / Eddington matrix connection}
-\end{figure}
+
+
+
+
+
+
 
 \end{appendix}
 
