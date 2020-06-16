@@ -820,53 +820,11 @@ En complétant le triangle de Weinberg ci-dessus par un troième axe portant l'u
  
  
  
- 
- \begin{figure}
-\centering
-\begin{tikzpicture}[scale=1.25]
-%\tkzInit[xmax=6.4, zmax=3.4]
-\tkzDefPoint(0.0,0.0){C} \tkzDefPoint(4.9,0.0){B} \tkzDefPoint(3.12,-1.74){A} \tkzDefPoint(1.8,-1.0){q}
-\tkzDrawPoints(A,B,C,q)
-\tkzDefMidPoint(B,q) \tkzGetPoint{D}
-%\tkzDefPoint[label={[text=blue,align=left]right:$z$},xshift=-01mm](2.25,-1.50){F}
-%\tkzDefPoint[label={[text=blue,align=left]right:$\omega$},xshift=-01mm](0.75,-0.70){E}
-%\tkzDefPoint[label={[text=red,align=left]right:$\sqrt{\omega z}$},xshift=-01mm](2.8,-0.29){D}
-%\tkzDefPoint[label={[align=right]right:$4 \cdot \sqrt{(3H\beta/n)}$},xshift=00mm](3.0,-0.79){D}
-\tkzLabelSegment[sloped,below,text=red](q,B){$\sqrt{\omega z}$}
-\tkzLabelSegment[sloped,below,text=blue](A,q){$z$}
-\tkzLabelSegment[sloped,below,text=blue](C,q){$\omega$}
-\tkzLabelSegment[sloped,text=blue,xshift=1.5mm,yshift=-07.5mm](A,C){$\phi^4$}
-\tkzMarkRightAngle(A,B,C)
-\tkzMarkRightAngle(B,q,C)
-\tkzLabelPoints[below](A,B,C)
-\tkzDrawSegments[red](B,q)
-%\tkzLabelPoints[above right](q)
-%\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
-%\tkzLabelAngle[pos=0.6](A,q,B){$\sqrt{\omega z}$}
-    %\draw [important line] (0.0,0.) coordinate (A) -- (5.1,-1.3) coordinate (C) node[below, text width=5em] {}
-    %\draw [blue] (6.4,0.) coordinate (A) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$h$}
-    %\draw [red] (6.4,0.) coordinate (B) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$q$}
-  \draw (4.9,0,0) coordinate (x) |- (0,1,0) coordinate [midway] (h) coordinate (y) -- (0,1,4.6) coordinate (a) -- (0,0,4.6) coordinate (z) -- (4.9,0,4.6) edge (x) -- (4.9,1,4.6) coordinate (v) edge (h)
-  -- (a)  ;
-  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (y) -- (z);
-  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (v) -- (v);
-  \draw [blue] (0,0,0)  -- (4.9,0.0,4.6);
-  \draw [very thin,black,line join=round] (0,0,0)  -- node [sloped,above,xshift=-0.mm,yshift=-2.mm] {$4\sqrt{(3H\beta/n)}$} (4.9,1.,4.6);
-  %\node [circle, minimum size=2pt, inner sep=0pt, fill, label=135:$4 \cdot \sqrt{(3H\beta/n)}$] at (v) {};
-  \node [circle, minimum size=4pt, inner sep=0pt, fill, label=135:o] at (o) {};
-  \draw [decoration={markings,mark=at position 1 with
-    {\arrow[scale=3,>=stealth]{>}}},postaction={decorate}] (0,0,0) -- (4.9,1,4.6);
-  %\draw [<->] (0.2,-0.5) node[left]{} -- (2.2,-1.8) node[below]{$\phi^4$};
-  \draw [->] (x) -- +(3pt,0,0) node [midway,above] {$\sqrt{\omega \cdot (\omega+z)}$};
-  \draw [->] (y) -- +(0,3pt,0) node [midway,right] {$1$};
-  \draw [->] (z) -- +(0,0,3pt) node [midway,above] {$\sqrt{z \cdot (\omega+z)}$};
-  %\draw (v) -- ++(0,0,-2) coordinate (d) -- ++(-2,0,0) coordinate (e) -- ++(0,0,2) |- ++(2,-2,0) coordinate [midway] (f) -- ++(0,0,-2) coordinate (g) -- (d);
-  %\draw [dashed] (e) -- ++(0,-2,0) coordinate (c) edge (f) -- (g);
-  %\node [label=45:C] at (c) {};
-  %\draw[red]   (0,0,0) -- (.95,0,0)    node[red,left=6pt]    {$x$};
-\end{tikzpicture}
-\caption[The Golden Sanchez cuboid properties]{3D perspective of the "Golden-Sanchez" cuboid: Electro-weak / Eddington matrix connection}
-\end{figure}
+
+
+
+
+
 
 \subsection{La connexion avec le générateur de Lucas-Lehmer}
 
@@ -928,9 +886,15 @@ Le triangle regtangle de hauteur $\sqrt {a_0}=\sqrt{wz}$ s'inscrit dans un cercl
 a_1 \approx \pi_1^4\sqrt2    ~~~~   \rightarrow ~~~~   \pi_1 \approx (\sqrt{pn}/6): 3, 7, \sqrt{H\sqrt{nH}/3p}
 \end{equation}
 
-Cette double caractérisation  de $\pi_1$  montre que les masses des particules principales sont effectivement liée à la théorie de Wyler.
+Cette double caractérisation  de $\pi_1$  montre que les masses des particules principales sont effectivement liée à la théorie de Wyler. L'extension 3D untaire (fig 4) semble reliée à la matrice d'Eddington.
 
+La pertinence de $a_1$ est confirmée par (60 ppb):
 
+\begin{equation}
+\sqrt P \approx (a_1/a)^2 137WZ/\Gamma
+\end{equation}
+
+une nouvelle confirmation de la pertinence de la constante d'Atiyah $\Gamma = \gamma a/\pi$
 
 
 \begin{figure}
@@ -992,6 +956,55 @@ Cette double caractérisation  de $\pi_1$  montre que les masses des particules 
 \end{tikzpicture}
 \caption[The Golden Sanchez Triangle.]{Golden Sanchez Triangle.}
 \end{figure}
+
+ 
+ \begin{figure}
+\centering
+\begin{tikzpicture}[scale=1.25]
+%\tkzInit[xmax=6.4, zmax=3.4]
+\tkzDefPoint(0.0,0.0){C} \tkzDefPoint(4.9,0.0){B} \tkzDefPoint(3.12,-1.74){A} \tkzDefPoint(1.8,-1.0){q}
+\tkzDrawPoints(A,B,C,q)
+\tkzDefMidPoint(B,q) \tkzGetPoint{D}
+%\tkzDefPoint[label={[text=blue,align=left]right:$z$},xshift=-01mm](2.25,-1.50){F}
+%\tkzDefPoint[label={[text=blue,align=left]right:$\omega$},xshift=-01mm](0.75,-0.70){E}
+%\tkzDefPoint[label={[text=red,align=left]right:$\sqrt{\omega z}$},xshift=-01mm](2.8,-0.29){D}
+%\tkzDefPoint[label={[align=right]right:$4 \cdot \sqrt{(3H\beta/n)}$},xshift=00mm](3.0,-0.79){D}
+\tkzLabelSegment[sloped,below,text=red](q,B){$\sqrt{\omega z}$}
+\tkzLabelSegment[sloped,below,text=blue](A,q){$z$}
+\tkzLabelSegment[sloped,below,text=blue](C,q){$\omega$}
+\tkzLabelSegment[sloped,text=blue,xshift=1.5mm,yshift=-07.5mm](A,C){$\phi^4$}
+\tkzMarkRightAngle(A,B,C)
+\tkzMarkRightAngle(B,q,C)
+\tkzLabelPoints[below](A,B,C)
+\tkzDrawSegments[red](B,q)
+%\tkzLabelPoints[above right](q)
+%\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
+%\tkzLabelAngle[pos=0.6](A,q,B){$\sqrt{\omega z}$}
+    %\draw [important line] (0.0,0.) coordinate (A) -- (5.1,-1.3) coordinate (C) node[below, text width=5em] {}
+    %\draw [blue] (6.4,0.) coordinate (A) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$h$}
+    %\draw [red] (6.4,0.) coordinate (B) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$q$}
+  \draw (4.9,0,0) coordinate (x) |- (0,1,0) coordinate [midway] (h) coordinate (y) -- (0,1,4.6) coordinate (a) -- (0,0,4.6) coordinate (z) -- (4.9,0,4.6) edge (x) -- (4.9,1,4.6) coordinate (v) edge (h)
+  -- (a)  ;
+  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (y) -- (z);
+  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (v) -- (v);
+  \draw [blue] (0,0,0)  -- (4.9,0.0,4.6);
+  \draw [very thin,black,line join=round] (0,0,0)  -- node [sloped,above,xshift=-0.mm,yshift=-2.mm] {$4\sqrt{(3H\beta/n)}$} (4.9,1.,4.6);
+  %\node [circle, minimum size=2pt, inner sep=0pt, fill, label=135:$4 \cdot \sqrt{(3H\beta/n)}$] at (v) {};
+  \node [circle, minimum size=4pt, inner sep=0pt, fill, label=135:o] at (o) {};
+  \draw [decoration={markings,mark=at position 1 with
+    {\arrow[scale=3,>=stealth]{>}}},postaction={decorate}] (0,0,0) -- (4.9,1,4.6);
+  %\draw [<->] (0.2,-0.5) node[left]{} -- (2.2,-1.8) node[below]{$\phi^4$};
+  \draw [->] (x) -- +(3pt,0,0) node [midway,above] {$\sqrt{\omega \cdot (\omega+z)}$};
+  \draw [->] (y) -- +(0,3pt,0) node [midway,right] {$1$};
+  \draw [->] (z) -- +(0,0,3pt) node [midway,above] {$\sqrt{z \cdot (\omega+z)}$};
+  %\draw (v) -- ++(0,0,-2) coordinate (d) -- ++(-2,0,0) coordinate (e) -- ++(0,0,2) |- ++(2,-2,0) coordinate [midway] (f) -- ++(0,0,-2) coordinate (g) -- (d);
+  %\draw [dashed] (e) -- ++(0,-2,0) coordinate (c) edge (f) -- (g);
+  %\node [label=45:C] at (c) {};
+  %\draw[red]   (0,0,0) -- (.95,0,0)    node[red,left=6pt]    {$x$};
+\end{tikzpicture}
+\caption[The Golden Sanchez cuboid properties]{3D perspective of the "Golden-Sanchez" cuboid: Electro-weak / Eddington matrix connection}
+\end{figure}
+
 
 
 
