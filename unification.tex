@@ -870,7 +870,7 @@ En complétant le triangle de Weinberg ci-dessus par un troième axe portant l'u
 
 \subsection{La connexion avec le générateur de Lucas-Lehmer}
 
-Le générateur de Lucas-Lehmer est le nombre $(2 + sqrt 3)$, lié à $a$ et $a^a$, ce dernier terme étant aussi lié au générateur de Pell-Fermat $(1 + sqrt2)$. Les puissances de type $2^n$ de ce générateur produisent des nombres dont la partie entière est la série de Lucas-Lehmer, qui permet de déterminer si un nombre de type Mersenne $2^n-1$ est premier. Ce générateur se caractérise par:
+Le générateur de Lucas-Lehmer est le nombre $(2 + \sqrt 3)$, lié à $a$ et $a^a$, ce dernier terme étant aussi lié au générateur de Pell-Fermat $(1 + \sqrt2)$. Les puissances de type $2^n$ de ce générateur produisent des nombres dont la partie entière est la série de Lucas-Lehmer, qui permet de déterminer si un nombre de type Mersenne $2^n-1$ est premier. Ce générateur se caractérise par:
 
 
 \begin{equation}
@@ -915,15 +915,83 @@ L’analyse montre les deux relations à $10^{-7}$ près:
 \end{equation}
 
 \begin{equation}
-(2 + sqrt 3) \approx \tau (137^2 +e)^2/a_w
-\end{equation}
-
-La pertinence de la rationalisation symbolique de $\pi$ est confirmée aussi par relation suivante \textit{exhibant directement $\sqrt a$ dans le développement de $\pi$}:
-
-\begin{equation}
 1+cos\theta  \approx  \tau/(4\pi_{\tau})^2 \sqrt a    ~~~~   \rightarrow ~~~~   \pi_{\tau} : 3, 7, \sqrt a
 \end{equation}
 
+La pertinence de la rationalisation symbolique de $\pi$ est confirmée. Le terme symétrique $1-cos\theta$ est visin du couplage fort $1/a_s$
+
+\subsection {Le triangle d'or}
+ 
+Le triangle regtangle de hauteur $\sqrt {a_0}=\sqrt{wz}$ s'inscrit dans un cercle de rayon $(w + z)/2 = {a_1}^{1/4}^$, et présente des propriétés très particulières liées au nombre d'or, voir fig4. La valeur de $a_1$ est très particulière:
+
+\begin{equation}
+a_1 \approx \pi_1^4\sqrt2    ~~~~   \rightarrow ~~~~   \pi_1 \approx (\sqrt{pn}/6): 3, 7, \sqrt{H\sqrt{nH}/3p}
+\end{equation}
+
+Cette double caractérisation $\pi_1$ de montre que les masses des particules principales sont effectivement liée à la théorie de Wyler.
+
+
+
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=1.5,line cap=round,line join=round,>=triangle 
+45,x=1.0cm,y=1.0cm]
+%\label{tab:15:table15}
+\tkzDefPoint(-3.21,0.0){A} \tkzDefPoint(0.0,3.42){B} \tkzDefPoint(3.64,0.){C} \tkzDefPoint(0.0,0.0){D}
+\tkzDrawPoints(A,B,C,D)
+\tkzMarkRightAngle(A,B,C)
+\tkzMarkRightAngle(B,D,C)
+\tkzLabelPoints[below](A,C,D)
+\tkzLabelPoints[above](B)
+%\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
+%\tkzLabelAngle[pos=1.6](C,A,B){$\theta$}
+\tkzDefMidPoint(A,C) \tkzGetPoint{O}
+\coordinate (center) at (O);
+\tkzLabelPoints[above](O)
+\tkzDrawPoints(O)
+\tkzLabelSegment[sloped,above,text=red](A,B){$\approx \sqrt{22}$}
+\tkzLabelSegment[sloped,above,text=red](B,C){$\approx 5$}
+%\tkzLabelSegment[sloped,below,text=red](A,C){$\approx \phi^{4}$}
+\draw[blue, dotted]
+      let \p1 =  ($(B)-(center)$),
+          \n0 = {veclen(\x1,\y1)}
+      in (center) circle(\n0);
+\draw[color=red] (B) -- (O);
+\tkzDefMidPoint(B,O) \tkzGetPoint{F}
+\tkzLabelSegment[sloped,above,text=red](B,O){$\sqrt{\sqrt{a_1}}$}
+\draw[color=blue] (B) -- (D);
+\tkzDefMidPoint(B,D) \tkzGetPoint{G}
+\tkzLabelSegment[sloped,below,text=blue](B,D){$\sqrt{\sqrt{a_0}}$}
+\draw[step=1cm,gray,very thin] (-4,-4) grid (4,4);
+\draw[color=red] (-3.21,0.) -- (0.,0.);
+\draw[color=red] (3.64,0.) -- (0.,0.0);
+\draw[color=red] (-3.21,0.) -- (0.,3.42);
+\draw[color=red] (0.,3.42) -- (3.64,0.);
+\draw[color=blue] (0.,0.) -- (0.,3.42);
+%\node [anchor = east] at (0.,1.5) {$\sqrt{\sqrt{a_1}}$};
+%\node [anchor = east] at (2.,2.0) {$\approx 5$};
+%\node [anchor = east] at (-1.,2.0) {$\approx \sqrt{22}$};
+\node [anchor = north,text=blue] at (0.,-0.6) {$\approx \phi^{4}$};
+\draw [<->] (-3.1,-0.1) node[left]{} -- (-0.1,-0.1) node[right]{};
+\draw [<->] (0.0,-0.1) node[left]{} -- (3.42,-0.1) node[right]{};
+\draw [<->] (-3.1,-0.6) node[left]{} -- (3.42,-0.6) node[right]{};
+  %\draw [decoration={markings,mark=at position 1 with
+   % {\arrow[scale=3,>=stealth reversed]{<}}},postaction={decorate}] (-3.2,-0.3) -- (3.42,-0.3);
+\node [anchor = east,text=blue] at (2.,-0.35) {$\omega$};
+\node [anchor = east,text=blue] at (-1.,-0.35) {$z$};
+\clip(-6.,-0.4) rectangle (0.4,3.4);
+%\draw [shift={(-3.2,0.)},color=gray,fill=darkgray,fill opacity=0.1] (0,0) -- (0.:0.6) arc (0.:43.9:0.6) -- cycle;
+%\draw[color=gray,fill=darkgray,fill opacity=0.1] (0.,0.42) -- (-0.42,0.42) -- (-0.42,0.) -- (0.,0.) -- cycle; 
+%\draw (0.,6.)-- (-4.32,0.);
+%\draw (6.,5.52)-- (-4.32,0.);
+%\draw (6.,0.)-- (6.,5.52);
+%\draw[color=gray] (-3.2,0.4) node {\large $\theta$};
+%\draw[color=gray] (0.34,0.33);
+%\tkzMarkRightAngle[fill=blue!20](B,F,C)
+\end{tikzpicture}
+\caption[The Golden Sanchez Triangle.]{Golden Sanchez Triangle.}
+\end{figure}
 
 
 
@@ -2700,69 +2768,6 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 
 
 
-
-
-
-
-\begin{figure}
-\centering
-\begin{tikzpicture}[scale=1.5,line cap=round,line join=round,>=triangle 
-45,x=1.0cm,y=1.0cm]
-%\label{tab:15:table15}
-\tkzDefPoint(-3.21,0.0){A} \tkzDefPoint(0.0,3.42){B} \tkzDefPoint(3.64,0.){C} \tkzDefPoint(0.0,0.0){D}
-\tkzDrawPoints(A,B,C,D)
-\tkzMarkRightAngle(A,B,C)
-\tkzMarkRightAngle(B,D,C)
-\tkzLabelPoints[below](A,C,D)
-\tkzLabelPoints[above](B)
-%\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
-%\tkzLabelAngle[pos=1.6](C,A,B){$\theta$}
-\tkzDefMidPoint(A,C) \tkzGetPoint{O}
-\coordinate (center) at (O);
-\tkzLabelPoints[above](O)
-\tkzDrawPoints(O)
-\tkzLabelSegment[sloped,above,text=red](A,B){$\approx \sqrt{22}$}
-\tkzLabelSegment[sloped,above,text=red](B,C){$\approx 5$}
-%\tkzLabelSegment[sloped,below,text=red](A,C){$\approx \phi^{4}$}
-\draw[blue, dotted]
-      let \p1 =  ($(B)-(center)$),
-          \n0 = {veclen(\x1,\y1)}
-      in (center) circle(\n0);
-\draw[color=red] (B) -- (O);
-\tkzDefMidPoint(B,O) \tkzGetPoint{F}
-\tkzLabelSegment[sloped,above,text=red](B,O){$\sqrt{\sqrt{a_0}}$}
-\draw[color=blue] (B) -- (D);
-\tkzDefMidPoint(B,D) \tkzGetPoint{G}
-\tkzLabelSegment[sloped,below,text=blue](B,D){$\sqrt{\sqrt{a_1}}$}
-\draw[step=1cm,gray,very thin] (-4,-4) grid (4,4);
-\draw[color=red] (-3.21,0.) -- (0.,0.);
-\draw[color=red] (3.64,0.) -- (0.,0.0);
-\draw[color=red] (-3.21,0.) -- (0.,3.42);
-\draw[color=red] (0.,3.42) -- (3.64,0.);
-\draw[color=blue] (0.,0.) -- (0.,3.42);
-%\node [anchor = east] at (0.,1.5) {$\sqrt{\sqrt{a_1}}$};
-%\node [anchor = east] at (2.,2.0) {$\approx 5$};
-%\node [anchor = east] at (-1.,2.0) {$\approx \sqrt{22}$};
-\node [anchor = north,text=blue] at (0.,-0.6) {$\approx \phi^{4}$};
-\draw [<->] (-3.1,-0.1) node[left]{} -- (-0.1,-0.1) node[right]{};
-\draw [<->] (0.0,-0.1) node[left]{} -- (3.42,-0.1) node[right]{};
-\draw [<->] (-3.1,-0.6) node[left]{} -- (3.42,-0.6) node[right]{};
-  %\draw [decoration={markings,mark=at position 1 with
-   % {\arrow[scale=3,>=stealth reversed]{<}}},postaction={decorate}] (-3.2,-0.3) -- (3.42,-0.3);
-\node [anchor = east,text=blue] at (2.,-0.35) {$\omega$};
-\node [anchor = east,text=blue] at (-1.,-0.35) {$z$};
-\clip(-6.,-0.4) rectangle (0.4,3.4);
-%\draw [shift={(-3.2,0.)},color=gray,fill=darkgray,fill opacity=0.1] (0,0) -- (0.:0.6) arc (0.:43.9:0.6) -- cycle;
-%\draw[color=gray,fill=darkgray,fill opacity=0.1] (0.,0.42) -- (-0.42,0.42) -- (-0.42,0.) -- (0.,0.) -- cycle; 
-%\draw (0.,6.)-- (-4.32,0.);
-%\draw (6.,5.52)-- (-4.32,0.);
-%\draw (6.,0.)-- (6.,5.52);
-%\draw[color=gray] (-3.2,0.4) node {\large $\theta$};
-%\draw[color=gray] (0.34,0.33);
-%\tkzMarkRightAngle[fill=blue!20](B,F,C)
-\end{tikzpicture}
-\caption[The Golden Sanchez Triangle properties.]{Golden Sanchez Triangle.}
-\end{figure}
 
 
 
