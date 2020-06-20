@@ -536,6 +536,7 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \coordinate (center) at (O);
 \tkzLabelPoints[below](O)
 \tkzDrawPoints(O)
+\draw [<->] (-1.8,1.7) node[right]{} -- (O) node[left]{};
 \draw[blue, dotted]
       let \p1 =  ($(B)-(center)$),
           \n0 = {veclen(\x1,\y1)}
@@ -553,7 +554,7 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \clip(-6.,-0.4) rectangle (0.4,3.4);
 
 %\draw [<->] (O) node[left]{} -- (-2.0,2.) node[right]{};
-\draw [<->] (-1.8,2.3) node[right]{} -- (O) node[left]{};
+
 \draw[color=black] (-1.,2.5) node {\large $\approx q' \times 2^{1/12}$};
 
 %\draw [shift={(-0.42,0.)},color=gray,fill=darkgray,fill opacity=0.1] (0,0) -- (0.:0.6) arc (0.:26.9:0.6) -- cycle;
