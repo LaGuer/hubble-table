@@ -584,9 +584,9 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \tkzLabelAngle[pos=0.6](C,A,B){$\theta$}
 \tkzDefMidPoint(A,B) \tkzGetPoint{O}
 \coordinate (center) at (O);
-\tkzLabelPoints[below](O)
+\tkzLabelPoints[above](O)
 \tkzDrawPoints(O)
-\draw [<->] (-1.8,1.7) node[right]{} -- (O) node[left]{};
+\draw [<->] (1.8,-1.8) node[right]{} -- (O) node[left]{};
 \draw[blue, dotted]
       let \p1 =  ($(B)-(center)$),
           \n0 = {veclen(\x1,\y1)}
@@ -616,7 +616,7 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 %\draw[color=gray] (0.34,0.33);
 %\tkzMarkRightAngle[fill=blue!20](B,F,C)
 \end{tikzpicture}
-\caption{Weinberg Triangle.}
+\caption[Weinberg-Koide Circles]{Weinberg-Koide similitude circles.}
 \end{figure}
 
 \begin{figure}
@@ -670,7 +670,7 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \draw[color=gray] (0.34,0.33);
 %\tkzMarkRightAngle[fill=blue!20](B,F,C)
 \end{tikzpicture}
-\caption[Weinberg-Koide circles]{Weinberg-Koide similitude circles.}
+\caption[Electric Triangle properties]{Electric Triangle.}
 \end{figure}
 
 
