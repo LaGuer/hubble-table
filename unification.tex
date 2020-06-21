@@ -569,7 +569,55 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \caption{Weinberg Triangle.}
 \end{figure}
 
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=1.0,line cap=round,line join=round,>=triangle 
+45,x=1.0cm,y=1.0cm]
+%\label{tab:14:table14}
+\draw[step=1cm,gray,very thin] (-3,-3) grid (6,6);
+\tkzDefPoint(-1.42,0.0){A} \tkzDefPoint(5.,3.43){B} \tkzDefPoint(5.,0.){C} \tkzDefPoint(3.3,2.5){D}
+\tkzDrawPoints(A,B,C,D)
+\tkzMarkRightAngle(A,D,C)
+\tkzLabelPoints[below](A,C)
+\tkzLabelPoints[above](B,D)
+\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](C,A,B)
+\tkzLabelAngle[pos=0.6](C,A,B){$\theta$}
+\tkzDefMidPoint(A,B) \tkzGetPoint{O}
+\coordinate (center) at (O);
+\tkzLabelPoints[below](O)
+\tkzDrawPoints(O)
+\draw [<->] (-1.8,1.7) node[right]{} -- (O) node[left]{};
+\draw[blue, dotted]
+      let \p1 =  ($(B)-(center)$),
+          \n0 = {veclen(\x1,\y1)}
+      in (center) circle(\n0);
+\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](B,C,D)
+%\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](O,E,D')
+\tkzLabelAngle[pos=0.6](B,C,D){$\theta$}
+\draw[color=red] (-1.42,0.) -- (5.,0.);
+\draw[color=red] (5.,0.) -- (5.,3.43);
+\draw[color=red] (-1.42,0.) -- (5.,3.43);
+\draw[color=blue] (5.,0.) -- (3.3,2.5);
+\node [anchor = east] at (3.9,1.0) {$q$};
+\node [anchor = east] at (6.,1.5) {$q''$};
+\node [anchor = east] at (2.5,-0.5) {$q'$};
+\clip(-6.,-0.4) rectangle (0.4,3.4);
 
+%\draw [<->] (O) node[left]{} -- (-2.0,2.) node[right]{};
+
+\draw[color=black] (-0.5,2.0) node {\large $\approx 2^{1/12} q'' ~~$};
+
+%\draw [shift={(-0.42,0.)},color=gray,fill=darkgray,fill opacity=0.1] (0,0) -- (0.:0.6) arc (0.:26.9:0.6) -- cycle;
+%\draw[color=gray,fill=darkgray,fill opacity=0.1] (0.,0.42) -- (-0.42,0.42) -- (-0.42,0.) -- (0.,0.) -- cycle; 
+%\draw (0.,6.)-- (-4.32,0.);
+%\draw (6.,5.52)-- (-4.32,0.);
+%\draw (6.,0.)-- (6.,5.52);
+%\draw[color=gray] (0.,0.8) node {\large $\theta$};
+%\draw[color=gray] (0.34,0.33);
+%\tkzMarkRightAngle[fill=blue!20](B,F,C)
+\end{tikzpicture}
+\caption{Weinberg Triangle.}
+\end{figure}
 
 \begin{figure}
 \centering
@@ -622,7 +670,7 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \draw[color=gray] (0.34,0.33);
 %\tkzMarkRightAngle[fill=blue!20](B,F,C)
 \end{tikzpicture}
-\caption{Electric Triangle.}
+\caption[Weinberg-Koide circles]{Weinberg-Koide similitude circles.}
 \end{figure}
 
 
