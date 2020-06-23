@@ -537,6 +537,7 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \tkzLabelPoints[below](O)
 \tkzDrawPoints(O)
 \draw [<->] (-1.8,1.7) node[right]{} -- (O) node[left]{};
+\tkzLabelSegment[sloped,below,text=red](A,B){$m_Z/m_{BEH}$}
 \draw[blue, dotted]
       let \p1 =  ($(B)-(center)$),
           \n0 = {veclen(\x1,\y1)}
@@ -549,8 +550,8 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \draw[color=red] (-1.42,0.) -- (5.,3.43);
 \draw[color=blue] (5.,0.) -- (3.3,2.5);
 \node [anchor = east] at (3.9,1.0) {$q$};
-\node [anchor = east] at (6.,1.5) {$q''$};
-\node [anchor = east] at (2.5,-0.5) {$q'$};
+\node [anchor = east,text=red] at (6.,1.5) {$q''$};
+\node [anchor = east,text=red] at (2.5,-0.5) {$q'$};
 \clip(-6.,-0.4) rectangle (0.4,3.4);
 
 %\draw [<->] (O) node[left]{} -- (-2.0,2.) node[right]{};
@@ -566,7 +567,7 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 %\draw[color=gray] (0.34,0.33);
 %\tkzMarkRightAngle[fill=blue!20](B,F,C)
 \end{tikzpicture}
-\caption{Weinberg Triangle.}
+\caption[Weinberg Triangle properties]{Weinberg Triangle.}
 \end{figure}
 
 \begin{figure}
