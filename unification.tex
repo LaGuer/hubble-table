@@ -549,7 +549,7 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \draw[color=red] (5.,0.) -- (5.,3.43);
 \draw[color=red] (-1.42,0.) -- (5.,3.43);
 \draw[color=blue] (5.,0.) -- (3.3,2.5);
-\node [anchor = east] at (3.9,1.0) {$q$};
+\node [anchor = east,text=blue] at (3.9,1.0) {$q$};
 \node [anchor = east,text=red] at (6.,1.5) {$q''$};
 \node [anchor = east,text=red] at (2.5,-0.5) {$q'$};
 \clip(-6.,-0.4) rectangle (0.4,3.4);
@@ -639,9 +639,9 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \draw[color=red] (-4.32,0.) -- (6.,0.);
 \draw[color=red] (6.,0.) -- (6.,5.52);
 \draw[color=red] (-4.32,0.) -- (6.,5.52);
-\draw[color=red] (E) -- (C);
+\draw[color=blue] (E) -- (C);
 \tkzDefMidPoint(E,B) \tkzGetPoint{F}
-\tkzLabelSegment[sloped,below,text=blue](E,B){$\approx \phi^{2}$}
+\tkzLabelSegment[sloped,below,text=black](E,B){$EB \approx \phi^{2}$}
 %\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](B,C,E)
 \tkzLabelAngle[pos=0.6](B,C,E){$\theta$}
 %\node [anchor = east] at (1.,3.5) {$\sqrt{a}$};
