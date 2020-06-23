@@ -537,7 +537,7 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \tkzLabelPoints[below](O)
 \tkzDrawPoints(O)
 \draw [<->] (-1.8,1.7) node[right]{} -- (O) node[left]{};
-\tkzLabelSegment[sloped,below,text=red](A,B){$m_Z/m_{BEH}$}
+\tkzLabelSegment[sloped,right,text=red](A,B){$m_Z/m_{BEH}$}
 \draw[blue, dotted]
       let \p1 =  ($(B)-(center)$),
           \n0 = {veclen(\x1,\y1)}
@@ -572,35 +572,41 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 
 \begin{figure}
 \centering
-\begin{tikzpicture}[scale=1.0,line cap=round,line join=round,>=triangle 
-45,x=1.0cm,y=1.0cm]
+%\begin{tikzpicture}[scale=1.0,line cap=round,line join=round,>=triangle 
+%45,x=1.0cm,y=1.0cm]
 %\label{tab:14:table14}
-\draw[step=1cm,gray,very thin] (-3,-3) grid (6,6);
-\tkzDefPoint(-1.42,0.0){A} \tkzDefPoint(5.,3.43){B} \tkzDefPoint(5.,0.){C} \tkzDefPoint(3.3,2.5){D}
-\tkzDrawPoints(A,B,C,D)
-\tkzMarkRightAngle(A,D,C)
-\tkzLabelPoints[below](A,C)
-\tkzLabelPoints[above](B,D)
-\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](C,A,B)
-\tkzLabelAngle[pos=0.6](C,A,B){$\theta$}
-\tkzDefMidPoint(A,B) \tkzGetPoint{O}
-\coordinate (center) at (O);
-\tkzLabelPoints[above](O)
-\tkzDrawPoints(O)
-\draw [<->] (1.8,-1.8) node[right]{} -- (O) node[left]{};
+\draw[step=1cm,gray,very thin] (-2,-3) grid (5,5);
+\tkzDefPoint(4.,0.0){B} \tkzDefPoint(0.,0.0){B} %% \tkzDefPoint(5.,0.){C} \tkzDefPoint(3.3,2.5){D}
+\tkzDefMidPoint(A,B) \tkzGetPoint{M}
+\tkzInterLC[R](A,B)(A,1cm) \tkzGetSecondPoint{D}
+\tkzDefLine[orthogonal=through D](A,D)
+\tkzInterLC(D,tkPointResult)(M,A) \tkzGetSecondPoint{C}
+\tkzDrawPolygon(A,B,C)
+\tkzDrawSegment(C,D)
+\tkzDrawPoints(A,B,C,D,M)
+\tkzLabelPoints[above](A,B,C,D,M)
+\coordinate (center) at (M);
+\coordinate (center1) at (D);
 \draw[blue, dotted]
       let \p1 =  ($(B)-(center)$),
           \n0 = {veclen(\x1,\y1)}
       in (center) circle(\n0);
+\draw[blue, dotted]
+      let \p1 =  ($(A)-(center1)$),
+          \n0 = {veclen(\x1,\y1)}
+      in (center1) circle(\n0);
+
+
+
+\tkzMarkRightAngle(A,D,C)
+\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](C,A,B)
+\tkzLabelAngle[pos=0.6](C,A,B){$\theta$}
+
+\draw [<->] (1.8,-1.8) node[right]{} -- (O) node[left]{};
+
 \tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](B,C,D)
 %\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](O,E,D')
 \tkzLabelAngle[pos=0.6](B,C,D){$\theta$}
-\draw[color=red] (-1.42,0.) -- (5.,0.);
-\draw[color=red] (5.,0.) -- (5.,3.43);
-\draw[color=red] (-1.42,0.) -- (5.,3.43);
-\draw[color=blue] (5.,0.) -- (3.3,2.5);
-\node [anchor = east] at (3.9,1.0) {$q$};
-\node [anchor = east] at (6.,1.5) {$q''$};
 \node [anchor = east] at (2.5,-0.5) {$1+\mu+\tau$};
 \clip(-6.,-0.4) rectangle (0.4,3.4);
 
