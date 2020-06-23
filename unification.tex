@@ -570,7 +570,7 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \tkzDefMidPoint(A,B) \tkzGetPoint{O}
 \tkzInterLC[R](A,B)(A,1cm) \tkzGetSecondPoint{D}
 \tkzDefLine[orthogonal=through D](A,D)
-\tkzInterLC(D,tkPointResult)(O,A) \tkzGetSecondPoint{C}
+\tkzInterLC(D,tkzPointResult)(O,A) \tkzGetSecondPoint{C}
 \tkzDrawPolygon(A,B,C)
 \tkzDrawSegment(C,D)
 \tkzDrawPoints(A,B,C,D,O)
