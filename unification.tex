@@ -639,9 +639,9 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 %\tkzInterLC(F,tkzPointResult)(B,E) \tkzGetSecondPoint{G}
 \tkzDrawPolygon(A,E,H)
 %\tkzDrawSegment(C,D)
-\tkzDrawPoints(A,B,O,O',E,F,H)
-\tkzLabelPoints(A,B,O,E,F,H)
-\tkzLabelPoints[below](O')
+\tkzDrawPoints(A,B,O,O',E,H)
+\tkzLabelPoints(A,B,O,E,H)
+\tkzLabelPoints[above](O')
 \coordinate (center) at (O);
 \coordinate (center1) at (O');
 \draw[blue, dotted]
@@ -657,6 +657,7 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \draw [<->] (O') node[left]{} -- (3.,-7.) node[right]{};
 \node [anchor = north,text=red] at (-2.,-1.) {$q'/2$};
 \draw [<->] (O) node[left]{} -- (-2.,-2.) node[right]{};
+\tkzMarkRightAngle(A,H,C)
 \end{tikzpicture}
 \caption[Weinberg-Koide Circles]{Weinberg-Koide similitude circles.}
 \end{figure}
