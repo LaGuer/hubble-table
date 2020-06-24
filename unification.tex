@@ -658,35 +658,35 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \begin{tikzpicture}
 \draw[step=1cm,gray,very thin] (-5,-8) grid (11,8);
 \tkzDefPoint(-4.,0.){A} 
-\tkzDefPoint(0.,0.){B}
+\tkzDefPoint(0.,0.){C}
 \tkzDefPoint(3.,0.){O'}
 \tkzDefPoint(10.,0.){E}
-\tkzDefMidPoint(A,B) \tkzGetPoint{O}
-\tkzInterLC[R](A,B)(B,-0.3cm) \tkzGetSecondPoint{D}
-\tkzInterLC[R](B,E)(E,-1cm) \tkzGetSecondPoint{F}
+\tkzDefMidPoint(A,C) \tkzGetPoint{O}
+\tkzInterLC[R](A,C)(C,-0.3cm) \tkzGetSecondPoint{B}
+\tkzInterLC[R](C,E)(E,-1cm) \tkzGetSecondPoint{F}
 %\tkzDefLine[orthogonal=through D](A,D)
 \tkzDefLine[perpendicular=through F](O',E) \tkzGetPoint{G}
-\tkzDefLine[perpendicular=through D](O,B) \tkzGetPoint{J}
+\tkzDefLine[perpendicular=through B](O,C) \tkzGetPoint{J}
 \tkzDefMidPoint(F,G) \tkzGetPoint{H}
-\tkzDefMidPoint(J,D) \tkzGetPoint{C}
+\tkzDefMidPoint(J,D) \tkzGetPoint{D}
 %\tkzInterLC(D,tkzPointResult)(O,A) \tkzGetSecondPoint{C}
 %\tkzInterLC(F,tkzPointResult)(B,E) \tkzGetSecondPoint{G}
 %\tkzDrawPolygon(A,E,H)
 \tkzDrawSegment[color=blue](H,E)
 \tkzDrawSegment[color=blue](H,C)
-\tkzDrawSegment[color=blue](B,E)
+\tkzDrawSegment[color=blue](C,E)
 %\tkzDrawSegment[color=blue](C,D)
 \tkzDrawSegment[color=red](A,C)
-\tkzDrawSegment[color=red](A,B)
-\tkzDrawSegment[color=red](C,B)
-\tkzDrawPoints(A,B,C,O,O',E,H)
-\tkzLabelPoints(A,B,O,E,H)
-\tkzLabelPoints[above](O',C)
+\tkzDrawSegment[color=red](A,C)
+\tkzDrawSegment[color=red](C,D)
+\tkzDrawPoints(A,C,D,O,O',E,H)
+\tkzLabelPoints(A,C,D,O,E,H)
+\tkzLabelPoints[above](O',D)
 %\tkzLabelPoints[left](D)
 \coordinate (center) at (O);
 \coordinate (center1) at (O');
 \draw[blue, dotted]
-      let \p1 =  ($(B)-(center)$),
+      let \p1 =  ($(C)-(center)$),
           \n0 = {veclen(\x1,\y1)}
       in (center) circle(\n0);
 \draw[blue, dotted]
@@ -699,10 +699,10 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \node [anchor = west,text=red] at (-2.,-1.) {\large $q'/2$};
 \draw [<->] (O) node[left]{} -- (-2.,-2.) node[right]{};
 \tkzMarkRightAngle(A,H,E)
-\tkzMarkRightAngle(A,C,B)
+\tkzMarkRightAngle(A,D,C)
 \tkzDefMidPoint(H,E) \tkzGetPoint{I}
 \tkzLabelSegment[left,text=blue](H,E){\large $\tau$}
-\tkzLabelSegment[left,text=blue](C,B){\large $q$}
+\tkzLabelSegment[left,text=red](D,C){\large $q$}
 %\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](E,A,H)
 \tkzLabelAngle[pos=1.4](E,A,H){$\theta$}
 \end{tikzpicture}
