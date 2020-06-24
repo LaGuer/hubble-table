@@ -678,8 +678,8 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \tkzDrawSegment[color=red](A,C)
 \tkzDrawSegment[color=red](D,A)
 \tkzDrawSegment[color=red](C,D)
-\tkzDrawPoints(A,B,C,D,O,O',E,H,J)
-\tkzLabelPoints(A,B,C,O,E,H,J)
+\tkzDrawPoints(A,C,D,O,O',E,H)
+\tkzLabelPoints(A,C,O,E,H)
 \tkzLabelPoints[above](O',D)
 %\tkzLabelPoints[left](D)
 \coordinate (center) at (O);
@@ -703,7 +703,11 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \tkzLabelSegment[left,text=blue](H,E){\large $\tau$}
 \tkzLabelSegment[right,text=red](D,C){\large $q$}
 %\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](E,A,H)
-\tkzLabelAngle[pos=1.4](E,A,H){$\theta$}
+%\tkzLabelAngle[pos=1.4](E,A,H){$\theta$}
+    \begin{pgfinterruptboundingbox}
+        \tkzMarkAngle[fill = gray, size=0.3cm, opacity = .3](D,A,C)
+        \tkzLabelAngle[pos = 0.2](P,O,Q){$\theta$}
+    \end{pgfinterruptboundingbox}
 \end{tikzpicture}
 \caption[Weinberg-Koide Circles]{Weinberg-Koide similitude circles.}
 \end{figure}
