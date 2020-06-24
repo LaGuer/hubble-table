@@ -643,12 +643,14 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \tkzDrawSegment[color=blue](H,E)
 \tkzDrawSegment[color=blue](H,C)
 \tkzDrawSegment[color=blue](B,E)
+\tkzDrawSegment[color=blue](C,D)
 \tkzDrawSegment[color=red](A,C)
 \tkzDrawSegment[color=red](A,B)
 \tkzDrawSegment[color=red](C,B)
 \tkzDrawPoints(A,B,C,O,O',D,E,H)
-\tkzLabelPoints(A,B,C,D,O,E,H)
+\tkzLabelPoints(A,B,C,O,E,H)
 \tkzLabelPoints[above](O')
+\tkzLabelPoints[left](D)
 \coordinate (center) at (O);
 \coordinate (center1) at (O');
 \draw[blue, dotted]
@@ -668,6 +670,7 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \tkzMarkRightAngle(A,C,B)
 \tkzDefMidPoint(H,E) \tkzGetPoint{I}
 \tkzLabelSegment[left,text=blue](H,E){\large $\tau$}
+\tkzLabelSegment[left,text=blue](C,D){\large $q$}
 %\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](E,A,H)
 \tkzLabelAngle[pos=1.4](E,A,H){$\theta$}
 \end{tikzpicture}
