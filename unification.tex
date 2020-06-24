@@ -673,14 +673,14 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 %\tkzInterLC(F,tkzPointResult)(B,E) \tkzGetSecondPoint{G}
 %\tkzDrawPolygon(A,E,H)
 \tkzDrawSegment[color=blue](H,E)
-\tkzDrawSegment[color=blue](H,C)
+\tkzDrawSegment[color=blue](H,D)
 \tkzDrawSegment[color=blue](C,E)
 %\tkzDrawSegment[color=blue](C,D)
 \tkzDrawSegment[color=red](A,C)
-\tkzDrawSegment[color=red](A,C)
+\tkzDrawSegment[color=red](D,A)
 \tkzDrawSegment[color=red](C,D)
 \tkzDrawPoints(A,C,D,O,O',E,H)
-\tkzLabelPoints(A,C,D,O,E,H)
+\tkzLabelPoints(A,C,O,E,H)
 \tkzLabelPoints[above](O',D)
 %\tkzLabelPoints[left](D)
 \coordinate (center) at (O);
@@ -702,7 +702,7 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \tkzMarkRightAngle(A,D,C)
 \tkzDefMidPoint(H,E) \tkzGetPoint{I}
 \tkzLabelSegment[left,text=blue](H,E){\large $\tau$}
-\tkzLabelSegment[left,text=red](D,C){\large $q$}
+\tkzLabelSegment[right,text=red](D,C){\large $q$}
 %\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](E,A,H)
 \tkzLabelAngle[pos=1.4](E,A,H){$\theta$}
 \end{tikzpicture}
