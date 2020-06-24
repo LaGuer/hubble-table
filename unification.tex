@@ -657,7 +657,9 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \draw [<->] (O') node[left]{} -- (3.,-7.) node[right]{};
 \node [anchor = north,text=red] at (-2.,-1.) {$q'/2$};
 \draw [<->] (O) node[left]{} -- (-2.,-2.) node[right]{};
-\tkzMarkRightAngle(A,H,C)
+\tkzMarkRightAngle(A,H,E)
+\tkzDefMidPoint(H,E) \tkzGetPoint{I}
+\tkzLabelSegment[sloped,below,text=blue](H,E){$\tau$}
 \end{tikzpicture}
 \caption[Weinberg-Koide Circles]{Weinberg-Koide similitude circles.}
 \end{figure}
