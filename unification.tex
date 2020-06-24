@@ -668,19 +668,18 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \tkzDefLine[perpendicular=through F](O',E) \tkzGetPoint{G}
 \tkzDefLine[perpendicular=through B](O,C) \tkzGetPoint{J}
 \tkzDefMidPoint(F,G) \tkzGetPoint{H}
-\tkzDefMidPoint(J,D) \tkzGetPoint{D}
+\tkzDefMidPoint(J,B) \tkzGetPoint{D}
 %\tkzInterLC(D,tkzPointResult)(O,A) \tkzGetSecondPoint{C}
 %\tkzInterLC(F,tkzPointResult)(B,E) \tkzGetSecondPoint{G}
 %\tkzDrawPolygon(A,E,H)
 \tkzDrawSegment[color=blue](H,E)
 \tkzDrawSegment[color=blue](H,D)
 \tkzDrawSegment[color=blue](C,E)
-%\tkzDrawSegment[color=blue](C,D)
 \tkzDrawSegment[color=red](A,C)
 \tkzDrawSegment[color=red](D,A)
 \tkzDrawSegment[color=red](C,D)
 \tkzDrawPoints(A,B,C,D,O,O',E,H,J)
-\tkzLabelPoints(A,B,C,D,O,E,H,J)
+\tkzLabelPoints(A,B,C,O,E,H,J)
 \tkzLabelPoints[above](O',D)
 %\tkzLabelPoints[left](D)
 \coordinate (center) at (O);
