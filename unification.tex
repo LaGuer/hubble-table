@@ -623,51 +623,35 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 
 \begin{figure}
 \centering
-\begin{tikzpicture}[scale=1.0,line cap=round,line join=round,>=triangle 
-45,x=1.0cm,y=1.0cm]
-%\label{tab:14:table14}
-\draw[step=1cm,gray,very thin] (-2,-3) grid (5,5);
-
-\tkzDefPoint(0.,0.0){B} %% \tkzDefPoint(5.,0.){C} \tkzDefPoint(3.3,2.5){D}
-\tkzDefPoint(4.,0.0){A} 
+\begin{tikzpicture}
+\draw[step=1cm,gray,very thin] (-5,-8) grid (11,8);
+\tkzDefPoint(-4.,0.){A} 
+\tkzDefPoint(0.,0.){B}
+\tkzDefPoint(3.,0.){O'}
+\tkzDefPoint(10.,0.){E}
 \tkzDefMidPoint(A,B) \tkzGetPoint{O}
-\tkzInterLC[R](A,B)(A,1cm) \tkzGetSecondPoint{D}
-\tkzDefLine[orthogonal=through D](A,D)
-\tkzInterLC(D,tkzPointResult)(O,A) \tkzGetSecondPoint{C}
-\tkzDrawPolygon(A,B,C)
-\tkzDrawSegment(C,D)
-\tkzDrawPoints(A,B,C,D,O)
-\tkzLabelPoints[above](A,B,C,D,O)
+%\tkzInterLC[R](A,B)(B,-1cm) \tkzGetSecondPoint{D}
+\tkzInterLC[R](B,E)(E,-1cm) \tkzGetSecondPoint{F}
+%\tkzDefLine[orthogonal=through D](A,D)
+\tkzDefLine[perpendicular=through F](O',E) \tkzGetPoint{G}
+\tkzDefMidPoint(F,G) \tkzGetPoint{H}
+%\tkzInterLC(D,tkzPointResult)(O,A) \tkzGetSecondPoint{C}
+%\tkzInterLC(F,tkzPointResult)(B,E) \tkzGetSecondPoint{G}
+\tkzDrawPolygon(A,E,H)
+%\tkzDrawSegment(C,D)
+\tkzDrawPoints(A,B,O,O',E,F,G)
+\tkzLabelPoints(A,B,O,E,F,G)
+\tkzLabelPoints[above](O')
 \coordinate (center) at (O);
-\coordinate (center1) at (D);
+\coordinate (center1) at (O');
 \draw[blue, dotted]
       let \p1 =  ($(B)-(center)$),
           \n0 = {veclen(\x1,\y1)}
       in (center) circle(\n0);
 \draw[blue, dotted]
-      let \p1 =  ($(A)-(center1)$),
+      let \p1 =  ($(E)-(center1)$),
           \n0 = {veclen(\x1,\y1)}
       in (center1) circle(\n0);
-
-%\tkzMarkRightAngle(A,D,C)
-%\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](C,A,B)
-%\tkzLabelAngle[pos=0.6](C,A,B){$\theta$}
-%\draw [<->] (1.8,-1.8) node[right]{} -- (O) node[left]{};
-%\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](B,C,D)
-%\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](O,E,D')
-%\tkzLabelAngle[pos=0.6](B,C,D){$\theta$}
-%\node [anchor = east] at (2.5,-0.5) {$1+\mu+\tau$};
-%\clip(-6.,-0.4) rectangle (0.4,3.4);
-%\draw [<->] (O) node[left]{} -- (-2.0,2.) node[right]{};
-%\draw[color=black] (-0.5,2.0) node {\large $\approx 2^{1/12} q'' ~~$};
-%\draw [shift={(-0.42,0.)},color=gray,fill=darkgray,fill opacity=0.1] (0,0) -- (0.:0.6) arc (0.:26.9:0.6) -- cycle;
-%\draw[color=gray,fill=darkgray,fill opacity=0.1] (0.,0.42) -- (-0.42,0.42) -- (-0.42,0.) -- (0.,0.) -- cycle; 
-%\draw (0.,6.)-- (-4.32,0.);
-%\draw (6.,5.52)-- (-4.32,0.);
-%\draw (6.,0.)-- (6.,5.52);
-%\draw[color=gray] (0.,0.8) node {\large $\theta$};
-%\draw[color=gray] (0.34,0.33);
-%\tkzMarkRightAngle[fill=blue!20](B,F,C)
 \end{tikzpicture}
 \caption[Weinberg-Koide Circles]{Weinberg-Koide similitude circles.}
 \end{figure}
