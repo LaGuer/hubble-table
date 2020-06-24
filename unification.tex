@@ -630,17 +630,24 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \tkzDefPoint(3.,0.){O'}
 \tkzDefPoint(10.,0.){E}
 \tkzDefMidPoint(A,B) \tkzGetPoint{O}
-%\tkzInterLC[R](A,B)(B,-1cm) \tkzGetSecondPoint{D}
+\tkzInterLC[R](A,B)(B,-0.3cm) \tkzGetSecondPoint{D}
 \tkzInterLC[R](B,E)(E,-1cm) \tkzGetSecondPoint{F}
 %\tkzDefLine[orthogonal=through D](A,D)
 \tkzDefLine[perpendicular=through F](O',E) \tkzGetPoint{G}
+\tkzDefLine[perpendicular=through D](O,B) \tkzGetPoint{J}
 \tkzDefMidPoint(F,G) \tkzGetPoint{H}
+\tkzDefMidPoint(J,D) \tkzGetPoint{C}
 %\tkzInterLC(D,tkzPointResult)(O,A) \tkzGetSecondPoint{C}
 %\tkzInterLC(F,tkzPointResult)(B,E) \tkzGetSecondPoint{G}
-\tkzDrawPolygon(A,E,H)
-%\tkzDrawSegment(C,D)
-\tkzDrawPoints(A,B,O,O',E,H)
-\tkzLabelPoints(A,B,O,E,H)
+%\tkzDrawPolygon(A,E,H)
+\tkzDrawSegment[color=blue](H,E)
+\tkzDrawSegment[color=blue](H,C)
+\tkzDrawSegment[color=blue](B,E)
+\tkzDrawSegment[color=red](A,C)
+\tkzDrawSegment[color=red](A,B)
+\tkzDrawSegment[color=red](C,B)
+\tkzDrawPoints(A,B,C,O,O',D,E,H)
+\tkzLabelPoints(A,B,C,D,O,E,H)
 \tkzLabelPoints[above](O')
 \coordinate (center) at (O);
 \coordinate (center1) at (O');
@@ -653,13 +660,13 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
           \n0 = {veclen(\x1,\y1)}
       in (center1) circle(\n0);
 %\draw [<->] (-1.8,1.7) node[right]{} -- (O) node[left]{};
-\node [anchor = north,text=blue] at (3.,-3.5) {\large $1+\mu+\tau$};
+\node [anchor = right,text=blue] at (3.,-3.5) {\large $1+\mu+\tau$};
 \draw [<->] (O') node[left]{} -- (3.,-7.) node[right]{};
-\node [anchor = north,text=red] at (-2.,-1.) {\large $q'/2$};
+\node [anchor = left,text=red] at (-2.,-1.) {\large $q'/2$};
 \draw [<->] (O) node[left]{} -- (-2.,-2.) node[right]{};
 \tkzMarkRightAngle(A,H,E)
 \tkzDefMidPoint(H,E) \tkzGetPoint{I}
-\tkzLabelSegment[sloped,below,text=blue](H,E){\large $\tau$}
+\tkzLabelSegment[left,text=blue](H,E){\large $\tau$}
 %\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](E,A,H)
 \tkzLabelAngle[pos=1.4](E,A,H){$\theta$}
 \end{tikzpicture}
