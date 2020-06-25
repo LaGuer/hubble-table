@@ -744,114 +744,6 @@ Le propre de la Science est que l’on peut progresser sans connaître la théor
 
 
 
-\begin{figure}
-\centering
-\begin{tikzpicture}[scale=1.5,line cap=round,line join=round,>=triangle 
-45,x=1.0cm,y=1.0cm]
-%\label{tab:15:table15}
-\tkzDefPoint(-3.21,0.0){A} \tkzDefPoint(0.0,3.42){B} \tkzDefPoint(3.64,0.){C} \tkzDefPoint(0.0,0.0){D}
-\tkzDrawPoints(A,B,C,D)
-\tkzMarkRightAngle(A,B,C)
-\tkzMarkRightAngle(B,D,C)
-\tkzLabelPoints[below](A,C,D)
-\tkzLabelPoints[above](B)
-%\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
-%\tkzLabelAngle[pos=1.6](C,A,B){$\theta$}
-\tkzDefMidPoint(A,C) \tkzGetPoint{O}
-\coordinate (center) at (O);
-\tkzLabelPoints[above](O)
-\tkzDrawPoints(O)
-\tkzLabelSegment[sloped,above,text=red](A,B){$\approx \sqrt{22}$}
-\tkzLabelSegment[sloped,above,text=red](B,C){$\approx 5$}
-%\tkzLabelSegment[sloped,below,text=red](A,C){$\approx \phi^{4}$}
-\draw[blue, dotted]
-      let \p1 =  ($(B)-(center)$),
-          \n0 = {veclen(\x1,\y1)}
-      in (center) circle(\n0);
-\draw[color=red] (B) -- (O);
-\tkzDefMidPoint(B,O) \tkzGetPoint{F}
-\tkzLabelSegment[sloped,above,text=red](B,O){$\sqrt{\sqrt{a_1}}$}
-\draw[color=blue] (B) -- (D);
-\tkzDefMidPoint(B,D) \tkzGetPoint{G}
-\tkzLabelSegment[sloped,below,text=blue](B,D){$\sqrt{\sqrt{a_0}}$}
-\draw[step=1cm,gray,very thin] (-4,-4) grid (4,4);
-\draw[color=red] (-3.21,0.) -- (0.,0.);
-\draw[color=red] (3.64,0.) -- (0.,0.0);
-\draw[color=red] (-3.21,0.) -- (0.,3.42);
-\draw[color=red] (0.,3.42) -- (3.64,0.);
-\draw[color=blue] (0.,0.) -- (0.,3.42);
-%\node [anchor = east] at (0.,1.5) {$\sqrt{\sqrt{a_1}}$};
-%\node [anchor = east] at (2.,2.0) {$\approx 5$};
-%\node [anchor = east] at (-1.,2.0) {$\approx \sqrt{22}$};
-\node [anchor = north,text=blue] at (0.,-0.6) {$\approx \phi^{4}$};
-\draw [<->] (-3.1,-0.1) node[left]{} -- (-0.1,-0.1) node[right]{};
-\draw [<->] (0.0,-0.1) node[left]{} -- (3.42,-0.1) node[right]{};
-\draw [<->] (-3.1,-0.6) node[left]{} -- (3.42,-0.6) node[right]{};
-  %\draw [decoration={markings,mark=at position 1 with
-   % {\arrow[scale=3,>=stealth reversed]{<}}},postaction={decorate}] (-3.2,-0.3) -- (3.42,-0.3);
-\node [anchor = east,text=blue] at (2.,-0.35) {$\omega$};
-\node [anchor = east,text=blue] at (-1.,-0.35) {$z$};
-\clip(-6.,-0.4) rectangle (0.4,3.4);
-%\draw [shift={(-3.2,0.)},color=gray,fill=darkgray,fill opacity=0.1] (0,0) -- (0.:0.6) arc (0.:43.9:0.6) -- cycle;
-%\draw[color=gray,fill=darkgray,fill opacity=0.1] (0.,0.42) -- (-0.42,0.42) -- (-0.42,0.) -- (0.,0.) -- cycle; 
-%\draw (0.,6.)-- (-4.32,0.);
-%\draw (6.,5.52)-- (-4.32,0.);
-%\draw (6.,0.)-- (6.,5.52);
-%\draw[color=gray] (-3.2,0.4) node {\large $\theta$};
-%\draw[color=gray] (0.34,0.33);
-%\tkzMarkRightAngle[fill=blue!20](B,F,C)
-\end{tikzpicture}
-\caption[The Golden Sanchez Triangle.]{Golden Sanchez Triangle.}
-\end{figure}
-
- 
- \begin{figure}
-\centering
-\begin{tikzpicture}[scale=1.25]
-%\tkzInit[xmax=6.4, zmax=3.4]
-\tkzDefPoint(0.0,0.0){C} \tkzDefPoint(4.9,0.0){B} \tkzDefPoint(3.12,-1.74){A} \tkzDefPoint(1.8,-1.0){q}
-\tkzDrawPoints(A,B,C,q)
-\tkzDefMidPoint(B,q) \tkzGetPoint{D}
-%\tkzDefPoint[label={[text=blue,align=left]right:$z$},xshift=-01mm](2.25,-1.50){F}
-%\tkzDefPoint[label={[text=blue,align=left]right:$\omega$},xshift=-01mm](0.75,-0.70){E}
-%\tkzDefPoint[label={[text=red,align=left]right:$\sqrt{\omega z}$},xshift=-01mm](2.8,-0.29){D}
-%\tkzDefPoint[label={[align=right]right:$4 \cdot \sqrt{(3H\beta/n)}$},xshift=00mm](3.0,-0.79){D}
-\tkzLabelSegment[sloped,below,text=red](q,B){$\sqrt{\omega z}$}
-\tkzLabelSegment[sloped,below,text=blue](A,q){$z$}
-\tkzLabelSegment[sloped,below,text=blue](C,q){$\omega$}
-\tkzLabelSegment[sloped,text=blue,xshift=1.5mm,yshift=-07.5mm](A,C){$\phi^4$}
-\tkzMarkRightAngle(A,B,C)
-\tkzMarkRightAngle(B,q,C)
-\tkzLabelPoints[below](A,B,C)
-\tkzDrawSegments[red](B,q)
-%\tkzLabelPoints[above right](q)
-%\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
-%\tkzLabelAngle[pos=0.6](A,q,B){$\sqrt{\omega z}$}
-    %\draw [important line] (0.0,0.) coordinate (A) -- (5.1,-1.3) coordinate (C) node[below, text width=5em] {}
-    %\draw [blue] (6.4,0.) coordinate (A) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$h$}
-    %\draw [red] (6.4,0.) coordinate (B) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$q$}
-  \draw (4.9,0,0) coordinate (x) |- (0,1,0) coordinate [midway] (h) coordinate (y) -- (0,1,4.6) coordinate (a) -- (0,0,4.6) coordinate (z) -- (4.9,0,4.6) edge (x) -- (4.9,1,4.6) coordinate (v) edge (h)
-  -- (a)  ;
-  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (y) -- (z);
-  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (v) -- (v);
-  \draw [blue] (0,0,0)  -- (4.9,0.0,4.6);
-  \draw [very thin,black,line join=round] (0,0,0)  -- node [sloped,above,xshift=-0.mm,yshift=-2.mm] {$\approx 4\sqrt 3$} (4.9,1.,4.6);
-  %\node [circle, minimum size=2pt, inner sep=0pt, fill, label=135:$4 \cdot \sqrt{(3H\beta/n)}$] at (v) {};
-  \node [circle, minimum size=4pt, inner sep=0pt, fill, label=135:o] at (o) {};
-  \draw [decoration={markings,mark=at position 1 with
-    {\arrow[scale=3,>=stealth]{>}}},postaction={decorate}] (0,0,0) -- (4.9,1,4.6);
-  %\draw [<->] (0.2,-0.5) node[left]{} -- (2.2,-1.8) node[below]{$\phi^4$};
-  \draw [->] (x) -- +(3pt,0,0) node [midway,above] {$\sqrt{\omega \cdot (\omega+z)}$};
-  \draw [->] (y) -- +(0,3pt,0) node [midway,right] {$1$};
-  \draw [->] (z) -- +(0,0,3pt) node [midway,above] {$\sqrt{z \cdot (\omega+z)}$};
-  %\draw (v) -- ++(0,0,-2) coordinate (d) -- ++(-2,0,0) coordinate (e) -- ++(0,0,2) |- ++(2,-2,0) coordinate [midway] (f) -- ++(0,0,-2) coordinate (g) -- (d);
-  %\draw [dashed] (e) -- ++(0,-2,0) coordinate (c) edge (f) -- (g);
-  %\node [label=45:C] at (c) {};
-  %\draw[red]   (0,0,0) -- (.95,0,0)    node[red,left=6pt]    {$x$};
-\end{tikzpicture}
-\caption[The Golden Sanchez cuboid properties]{3D perspective of the "Golden-Sanchez" cuboid: Electro-weak / Eddington matrix connection}
-\end{figure}
-
 
 
 \begin{table}
@@ -1858,6 +1750,121 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \end{tikzpicture}
 \caption[Bloch sphere.]{The Bloch sphere is a geometrical representation of the Quantum state in QC.}
 \end{figure}
+
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=1.5,line cap=round,line join=round,>=triangle 
+45,x=1.0cm,y=1.0cm]
+%\label{tab:15:table15}
+\tkzDefPoint(-3.21,0.0){A} \tkzDefPoint(0.0,3.42){B} \tkzDefPoint(3.64,0.){C} \tkzDefPoint(0.0,0.0){D}
+\tkzDrawPoints(A,B,C,D)
+\tkzMarkRightAngle(A,B,C)
+\tkzMarkRightAngle(B,D,C)
+\tkzLabelPoints[below](A,C,D)
+\tkzLabelPoints[above](B)
+%\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
+%\tkzLabelAngle[pos=1.6](C,A,B){$\theta$}
+\tkzDefMidPoint(A,C) \tkzGetPoint{O}
+\coordinate (center) at (O);
+\tkzLabelPoints[above](O)
+\tkzDrawPoints(O)
+\tkzLabelSegment[sloped,above,text=red](A,B){$\approx \sqrt{22}$}
+\tkzLabelSegment[sloped,above,text=red](B,C){$\approx 5$}
+%\tkzLabelSegment[sloped,below,text=red](A,C){$\approx \phi^{4}$}
+\draw[blue, dotted]
+      let \p1 =  ($(B)-(center)$),
+          \n0 = {veclen(\x1,\y1)}
+      in (center) circle(\n0);
+\draw[color=red] (B) -- (O);
+\tkzDefMidPoint(B,O) \tkzGetPoint{F}
+\tkzLabelSegment[sloped,above,text=red](B,O){$\sqrt{\sqrt{a_1}}$}
+\draw[color=blue] (B) -- (D);
+\tkzDefMidPoint(B,D) \tkzGetPoint{G}
+\tkzLabelSegment[sloped,below,text=blue](B,D){$\sqrt{\sqrt{a_0}}$}
+\draw[step=1cm,gray,very thin] (-4,-4) grid (4,4);
+\draw[color=red] (-3.21,0.) -- (0.,0.);
+\draw[color=red] (3.64,0.) -- (0.,0.0);
+\draw[color=red] (-3.21,0.) -- (0.,3.42);
+\draw[color=red] (0.,3.42) -- (3.64,0.);
+\draw[color=blue] (0.,0.) -- (0.,3.42);
+%\node [anchor = east] at (0.,1.5) {$\sqrt{\sqrt{a_1}}$};
+%\node [anchor = east] at (2.,2.0) {$\approx 5$};
+%\node [anchor = east] at (-1.,2.0) {$\approx \sqrt{22}$};
+\node [anchor = north,text=blue] at (0.,-0.6) {$\approx \phi^{4}$};
+\draw [<->] (-3.1,-0.1) node[left]{} -- (-0.1,-0.1) node[right]{};
+\draw [<->] (0.0,-0.1) node[left]{} -- (3.42,-0.1) node[right]{};
+\draw [<->] (-3.1,-0.6) node[left]{} -- (3.42,-0.6) node[right]{};
+  %\draw [decoration={markings,mark=at position 1 with
+   % {\arrow[scale=3,>=stealth reversed]{<}}},postaction={decorate}] (-3.2,-0.3) -- (3.42,-0.3);
+\node [anchor = east,text=blue] at (2.,-0.35) {$\omega$};
+\node [anchor = east,text=blue] at (-1.,-0.35) {$z$};
+\clip(-6.,-0.4) rectangle (0.4,3.4);
+%\draw [shift={(-3.2,0.)},color=gray,fill=darkgray,fill opacity=0.1] (0,0) -- (0.:0.6) arc (0.:43.9:0.6) -- cycle;
+%\draw[color=gray,fill=darkgray,fill opacity=0.1] (0.,0.42) -- (-0.42,0.42) -- (-0.42,0.) -- (0.,0.) -- cycle; 
+%\draw (0.,6.)-- (-4.32,0.);
+%\draw (6.,5.52)-- (-4.32,0.);
+%\draw (6.,0.)-- (6.,5.52);
+%\draw[color=gray] (-3.2,0.4) node {\large $\theta$};
+%\draw[color=gray] (0.34,0.33);
+%\tkzMarkRightAngle[fill=blue!20](B,F,C)
+\end{tikzpicture}
+\caption[The Golden Sanchez Triangle.]{Golden Sanchez Triangle.}
+\end{figure}
+
+ 
+ \begin{figure}
+\centering
+\begin{tikzpicture}[scale=1.25]
+%\tkzInit[xmax=6.4, zmax=3.4]
+\tkzDefPoint(0.0,0.0){C} \tkzDefPoint(4.9,0.0){B} \tkzDefPoint(3.12,-1.74){A} \tkzDefPoint(1.8,-1.0){q}
+\tkzDrawPoints(A,B,C,q)
+\tkzDefMidPoint(B,q) \tkzGetPoint{D}
+%\tkzDefPoint[label={[text=blue,align=left]right:$z$},xshift=-01mm](2.25,-1.50){F}
+%\tkzDefPoint[label={[text=blue,align=left]right:$\omega$},xshift=-01mm](0.75,-0.70){E}
+%\tkzDefPoint[label={[text=red,align=left]right:$\sqrt{\omega z}$},xshift=-01mm](2.8,-0.29){D}
+%\tkzDefPoint[label={[align=right]right:$4 \cdot \sqrt{(3H\beta/n)}$},xshift=00mm](3.0,-0.79){D}
+\tkzLabelSegment[sloped,below,text=red](q,B){$\sqrt{\omega z}$}
+\tkzLabelSegment[sloped,below,text=blue](A,q){$z$}
+\tkzLabelSegment[sloped,below,text=blue](C,q){$\omega$}
+\tkzLabelSegment[sloped,text=blue,xshift=1.5mm,yshift=-07.5mm](A,C){$\phi^4$}
+\tkzMarkRightAngle(A,B,C)
+\tkzMarkRightAngle(B,q,C)
+\tkzLabelPoints[below](A,B,C)
+\tkzDrawSegments[red](B,q)
+%\tkzLabelPoints[above right](q)
+%\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
+%\tkzLabelAngle[pos=0.6](A,q,B){$\sqrt{\omega z}$}
+    %\draw [important line] (0.0,0.) coordinate (A) -- (5.1,-1.3) coordinate (C) node[below, text width=5em] {}
+    %\draw [blue] (6.4,0.) coordinate (A) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$h$}
+    %\draw [red] (6.4,0.) coordinate (B) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$q$}
+  \draw (4.9,0,0) coordinate (x) |- (0,1,0) coordinate [midway] (h) coordinate (y) -- (0,1,4.6) coordinate (a) -- (0,0,4.6) coordinate (z) -- (4.9,0,4.6) edge (x) -- (4.9,1,4.6) coordinate (v) edge (h)
+  -- (a)  ;
+  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (y) -- (z);
+  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (v) -- (v);
+  \draw [blue] (0,0,0)  -- (4.9,0.0,4.6);
+  \draw [very thin,black,line join=round] (0,0,0)  -- node [sloped,above,xshift=-0.mm,yshift=-2.mm] {$\approx 4\sqrt 3$} (4.9,1.,4.6);
+  %\node [circle, minimum size=2pt, inner sep=0pt, fill, label=135:$4 \cdot \sqrt{(3H\beta/n)}$] at (v) {};
+  \node [circle, minimum size=4pt, inner sep=0pt, fill, label=135:o] at (o) {};
+  \draw [decoration={markings,mark=at position 1 with
+    {\arrow[scale=3,>=stealth]{>}}},postaction={decorate}] (0,0,0) -- (4.9,1,4.6);
+  %\draw [<->] (0.2,-0.5) node[left]{} -- (2.2,-1.8) node[below]{$\phi^4$};
+  \draw [->] (x) -- +(3pt,0,0) node [midway,above] {$\sqrt{\omega \cdot (\omega+z)}$};
+  \draw [->] (y) -- +(0,3pt,0) node [midway,right] {$1$};
+  \draw [->] (z) -- +(0,0,3pt) node [midway,above] {$\sqrt{z \cdot (\omega+z)}$};
+  %\draw (v) -- ++(0,0,-2) coordinate (d) -- ++(-2,0,0) coordinate (e) -- ++(0,0,2) |- ++(2,-2,0) coordinate [midway] (f) -- ++(0,0,-2) coordinate (g) -- (d);
+  %\draw [dashed] (e) -- ++(0,-2,0) coordinate (c) edge (f) -- (g);
+  %\node [label=45:C] at (c) {};
+  %\draw[red]   (0,0,0) -- (.95,0,0)    node[red,left=6pt]    {$x$};
+\end{tikzpicture}
+\caption[The Golden Sanchez cuboid properties]{3D perspective of the "Golden-Sanchez" cuboid: Electro-weak / Eddington matrix connection}
+\end{figure}
+
+
+
+
+
+
 
 
 
