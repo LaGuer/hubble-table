@@ -505,29 +505,29 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 45,x=1.0cm,y=1.0cm]
 \draw[step=1cm,gray,very thin] (-5,-8) grid (11,8);
 \tkzDefPoint(-4.,0.){A} 
-\tkzDefPoint(0.,0.){C}
+\tkzDefPoint(0.,0.){B}
 \tkzDefPoint(3.,0.){O'}
-\tkzDefPoint(10.,0.){E}
-\tkzDefMidPoint(A,C) \tkzGetPoint{O}
-\tkzInterLC[R](A,C)(C,-0.3cm) \tkzGetSecondPoint{B}
-\tkzInterLC[R](C,E)(E,-1cm) \tkzGetSecondPoint{F}
+\tkzDefPoint(10.,0.){B'}
+\tkzDefMidPoint(A,B) \tkzGetPoint{O}
+\tkzInterLC[R](A,B)(C,-0.3cm) \tkzGetSecondPoint{B}
+\tkzInterLC[R](B,B')(E,-1cm) \tkzGetSecondPoint{F}
 %\tkzDefLine[orthogonal=through D](A,D)
-\tkzDefLine[perpendicular=through F](O',E) \tkzGetPoint{G}
-\tkzDefLine[perpendicular=through B](O,C) \tkzGetPoint{J}
-\tkzDefMidPoint(F,G) \tkzGetPoint{H}
-\tkzDefMidPoint(J,B) \tkzGetPoint{D}
+\tkzDefLine[perpendicular=through F](O',B') \tkzGetPoint{G}
+\tkzDefLine[perpendicular=through B](O,B) \tkzGetPoint{J}
+\tkzDefMidPoint(F,G) \tkzGetPoint{Q'}
+\tkzDefMidPoint(J,B) \tkzGetPoint{Q}
 %\tkzInterLC(D,tkzPointResult)(O,A) \tkzGetSecondPoint{C}
 %\tkzInterLC(F,tkzPointResult)(B,E) \tkzGetSecondPoint{G}
 %\tkzDrawPolygon(A,E,H)
-\tkzDrawSegment[color=blue](H,E)
-\tkzDrawSegment[color=blue](H,D)
-\tkzDrawSegment[color=blue](C,E)
-\tkzDrawSegment[color=red](A,C)
-\tkzDrawSegment[color=red](D,A)
-\tkzDrawSegment[color=red](C,D)
-\tkzDrawPoints(A,C,D,O,O',E,H)
-\tkzLabelPoints(A,C,O,E,H)
-\tkzLabelPoints[above](O',D)
+\tkzDrawSegment[color=blue](Q',B')
+\tkzDrawSegment[color=blue](Q',Q)
+\tkzDrawSegment[color=blue](B,B')
+\tkzDrawSegment[color=red](A,B)
+\tkzDrawSegment[color=red](Q,A)
+\tkzDrawSegment[color=red](B,Q)
+\tkzDrawPoints(A,B,Q,O,O',B',Q')
+\tkzLabelPoints(A,B,O,B',Q')
+\tkzLabelPoints[above](O',Q)
 %\tkzLabelPoints[left](D)
 \coordinate (center) at (O);
 \coordinate (center1) at (O');
@@ -544,16 +544,16 @@ Ainsi la charge électrique $q$  est intimement relié au couplage électrique $
 \draw [<->] (O') node[left]{} -- (3.,-7.) node[right]{};
 \node [anchor = west,text=red] at (-2.,-1.) {\large $q'/2$};
 \draw [<->] (O) node[left]{} -- (-2.,-2.) node[right]{};
-\tkzMarkRightAngle(A,H,E)
-\tkzMarkRightAngle(A,D,C)
-\tkzDefMidPoint(H,E) \tkzGetPoint{I}
-\tkzLabelSegment[left,text=blue](H,E){\large $\tau$}
-\tkzLabelSegment[right,text=red](D,C){\large $q$}
+\tkzMarkRightAngle(A,Q',B')
+\tkzMarkRightAngle(A,Q,B)
+\tkzDefMidPoint(Q',B') \tkzGetPoint{I}
+\tkzLabelSegment[left,text=blue](Q',B'){\large $\tau$}
+\tkzLabelSegment[right,text=red](Q,B){\large $q$}
 %\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](E,A,H)
 %\tkzLabelAngle[pos=1.4](E,A,H){$\theta$}
     \begin{pgfinterruptboundingbox}
-        \tkzMarkAngle[fill = gray, size=0.633cm, opacity = .3](C,A,D)
-        \tkzLabelAngle[pos = 1.](D,A,C){$\theta$}
+        \tkzMarkAngle[fill = gray, size=0.633cm, opacity = .3](B,A,Q)
+        \tkzLabelAngle[pos = 1.](Q,A,B){$\theta$}
     \end{pgfinterruptboundingbox}
 \end{tikzpicture}
 \caption[Weinberg-Koide Circles]{Weinberg-Koide similitude circles. Figure not drawn to scale.}
@@ -1865,6 +1865,65 @@ The authors would like to thank Anatole Khelif for many thoroughful discussions,
 \bibitem{Veysseyre} Veysseyre R., Veysseyre H., and Weigel D. "Nombre de types d’opérations ponctuelles de symétrie cristallographiques dans l’espace E n . (Number of types of crystallographic point symmetry operations of space E n )", Comptes Rendus de l’Académie des Sciences. Série II (Jan.1990).\\
 
 
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=1.0,line cap=round,line join=round,>=triangle 
+45,x=1.0cm,y=1.0cm]
+\draw[step=1cm,gray,very thin] (-5,-8) grid (11,8);
+\tkzDefPoint(-4.,0.){A} 
+\tkzDefPoint(0.,0.){C}
+\tkzDefPoint(3.,0.){O'}
+\tkzDefPoint(10.,0.){E}
+\tkzDefMidPoint(A,C) \tkzGetPoint{O}
+\tkzInterLC[R](A,C)(C,-0.3cm) \tkzGetSecondPoint{B}
+\tkzInterLC[R](C,E)(E,-1cm) \tkzGetSecondPoint{F}
+%\tkzDefLine[orthogonal=through D](A,D)
+\tkzDefLine[perpendicular=through F](O',E) \tkzGetPoint{G}
+\tkzDefLine[perpendicular=through B](O,C) \tkzGetPoint{J}
+\tkzDefMidPoint(F,G) \tkzGetPoint{H}
+\tkzDefMidPoint(J,B) \tkzGetPoint{D}
+%\tkzInterLC(D,tkzPointResult)(O,A) \tkzGetSecondPoint{C}
+%\tkzInterLC(F,tkzPointResult)(B,E) \tkzGetSecondPoint{G}
+%\tkzDrawPolygon(A,E,H)
+\tkzDrawSegment[color=blue](H,E)
+\tkzDrawSegment[color=blue](H,D)
+\tkzDrawSegment[color=blue](C,E)
+\tkzDrawSegment[color=red](A,C)
+\tkzDrawSegment[color=red](D,A)
+\tkzDrawSegment[color=red](C,D)
+\tkzDrawPoints(A,C,D,O,O',E,H)
+\tkzLabelPoints(A,C,O,E,H)
+\tkzLabelPoints[above](O',D)
+%\tkzLabelPoints[left](D)
+\coordinate (center) at (O);
+\coordinate (center1) at (O');
+\draw[blue, dotted]
+      let \p1 =  ($(C)-(center)$),
+          \n0 = {veclen(\x1,\y1)}
+      in (center) circle(\n0);
+\draw[blue, dotted]
+      let \p1 =  ($(E)-(center1)$),
+          \n0 = {veclen(\x1,\y1)}
+      in (center1) circle(\n0);
+%\draw [<->] (-1.8,1.7) node[right]{} -- (O) node[left]{};
+\node [anchor = east,text=blue] at (3.,-3.5) {\large $1+\mu+\tau$};
+\draw [<->] (O') node[left]{} -- (3.,-7.) node[right]{};
+\node [anchor = west,text=red] at (-2.,-1.) {\large $q'/2$};
+\draw [<->] (O) node[left]{} -- (-2.,-2.) node[right]{};
+\tkzMarkRightAngle(A,H,E)
+\tkzMarkRightAngle(A,D,C)
+\tkzDefMidPoint(H,E) \tkzGetPoint{I}
+\tkzLabelSegment[left,text=blue](H,E){\large $\tau$}
+\tkzLabelSegment[right,text=red](D,C){\large $q$}
+%\tkzMarkAngle[fill=blue!20,size=0.4cm,opacity=.5](E,A,H)
+%\tkzLabelAngle[pos=1.4](E,A,H){$\theta$}
+    \begin{pgfinterruptboundingbox}
+        \tkzMarkAngle[fill = gray, size=0.633cm, opacity = .3](C,A,D)
+        \tkzLabelAngle[pos = 1.](D,A,C){$\theta$}
+    \end{pgfinterruptboundingbox}
+\end{tikzpicture}
+\caption[Weinberg-Koide Circles]{Weinberg-Koide similitude circles. Figure not drawn to scale.}
+\end{figure}
 
 
 
