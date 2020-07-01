@@ -43,34 +43,34 @@
 \usepackage{tkz-euclide}
 \usetkzobj{all}
 
-\newcommand\RectTri[4][thick,green!50!black,text=black]{%
-\coordinate [label=left:$C$] (C) at #2;
-\coordinate [label=below right:$B$] (B) at #3;
-\coordinate (aux) at ($ #2 ! 1 ! 90:#3 $);
-\coordinate [label=above:$A$] (A) at ($ #2 !#4!(aux) $);
+%\newcommand\RectTri[4][thick,green!50!black,text=black]{%
+%\coordinate [label=left:$C$] (C) at #2;
+%\coordinate [label=below right:$B$] (B) at #3;
+%\coordinate (aux) at ($ #2 ! 1 ! 90:#3 $);
+%\coordinate [label=above:$A$] (A) at ($ #2 !#4!(aux) $);
 
-\coordinate (perp) at ($(A)!(C)!(B)$);
-\draw[purple!70!black,thick,dashed] (C) -- (perp);
+%\coordinate (perp) at ($(A)!(C)!(B)$);
+%\draw[purple!70!black,thick,dashed] (C) -- (perp);
 
-\draw[#1] 
-  (C) -- 
-  node[auto] {$\sqrt{a''}$} (A) -- 
-  node[auto] {$\sqrt{a}$} (B) --
-  node[auto] {$\sqrt{a'}$} 
-  (C)
-  pic ["$\theta$",draw,red,thick,angle radius=1cm] {angle = C--A--B} 
-  pic ["$\alpha$",draw,cyan,thick,angle radius=1cm] {angle = B--C--perp}
-  pic ["$\beta$",draw,orange!70!black,thick,angle radius=1cm] {angle = A--B--C}
-  pic ["$\beta$",draw,orange!70!black,thick,angle radius=1cm] {angle = perp--C--A};
-}
+%\draw[#1] 
+%  (C) -- 
+%  node[auto] {$\sqrt{a''}$} (A) -- 
+%  node[auto] {$\sqrt{a}$} (B) --
+%  node[auto] {$\sqrt{a'}$} 
+%  (C)
+%  pic ["$\theta$",draw,red,thick,angle radius=1cm] {angle = C--A--B} 
+%  pic ["$\alpha$",draw,cyan,thick,angle radius=1cm] {angle = B--C--perp}
+%  pic ["$\beta$",draw,orange!70!black,thick,angle radius=1cm] {angle = A--B--C}
+%  pic ["$\beta$",draw,orange!70!black,thick,angle radius=1cm] {angle = perp--C--A};
+%}
 
-\tikzset{
-mydot/.style={
-  fill,
-  circle,
-  inner sep=1.5pt
-  }
-}
+%\tikzset{
+%mydot/.style={
+%  fill,
+%  circle,
+%  inner sep=1.5pt
+%  }
+%}
 
 %%%%%%%
 %%%%%%%
@@ -208,7 +208,7 @@ La théorie des cordes a suscité un espoir énorme quand elle a exhibé une par
 La plupart des physiciens ont opté pour la soluton de facilité, le "Multivers", évacuant le problème épineux de la caractérisation précise de l'Univers. Ils s'appuient sur le fait que le nombre de solutions pour le repliement des dimensions cachées est énorme ($10^{500}$). 
 
 
-Mais cela est fortement discuté actuellement, et remis en question par une étude précédente \cite{Sanchez2} qui a montré que les multiples corrélations observées entre les grands nombres de la physique mathématique pouvait être considérées comme une succession de relations holographiques 1D-2D, aboutissant à l'Axe Topologique (Fig 1), confirmant la théorie bosonique des cordes, et sa dimension 26, qui correspond au rayon de Hubble donné par le modèle de la molécule gravitationnelle d'hydrogène $R =  2 \hbar^2/Gm_e m_p m_H \approx 13.812 \times 10^3$ années-lumère, compatible avec les mesures directes du rayon de Hubble qui contredisent la cosmologie standard de 10% \cite{Tanabashi}.
+Mais cela est fortement discuté actuellement, et remis en question par une étude précédente \cite{Sanchez2} qui a montré que les multiples corrélations observées entre les grands nombres de la physique mathématique pouvait être considérées comme une succession de relations holographiques 1D-2D, aboutissant à l'Axe Topologique (Fig 1), confirmant la théorie bosonique des cordes, et sa dimension 26, qui correspond au rayon de Hubble donné par le modèle de la molécule gravitationnelle d'hydrogène $R =  2 \hbar^2/Gm_e m_p m_H \approx 13.812 \times 10^3$ années-lumère, compatible avec les mesures directes du rayon de Hubble qui contredisent la cosmologie standard de 10\% \cite{Tanabashi}.
 
 
 Cette valeur $R$ connecte avec la fonction topologique réduite : $g(k) = exp(2^{k+1/2})/k$, pour la valeur $k = 6 (d = 26)$ de l'Axe Topologique, où $26$ est la dimension privilégiée de la thèorie bosonique des cordes: 
@@ -286,7 +286,7 @@ La complexité de la structure de l'espace-temps est trahie par le phènomène d
 
 \section{La période non-Doppler des quasars}
 
-L'Axe Topologique réhabilite la théorie bosonique des cordes qui a le défaut apparent de faire intervenir des tachyons. En fait, c'est plutôt un avantage pour expliquer le caractère non-Doppler de l'oscillation \cite {Kotov} de période $t_K ≈ 9600.06(2) s$. 
+L'Axe Topologique réhabilite la théorie bosonique des cordes qui a le défaut apparent de faire intervenir des tachyons. En fait, c'est plutôt un avantage pour expliquer le caractère non-Doppler de l'oscillation \cite{Kotov} de période $t_K \approx 9600.06(2)$ s. 
 
 
 En effet, le rapport de cette période avec celle de l’électron $t_e = \hbar/m_ec^2$ est donnée par la plus simple formule éliminant $c$ entre la constante électrofaible ci-dessus$a_w$ et la constante inverse de couplage gravitationnelle $a_G = \hbar c/G m_p m_H$, qui intervient dans le modèle de la molécule gravitationnelle d’hydrogène \cite{Sanchez2}, où $m_p$ et $m_H$ sont les masses du proton et de l’hydrogène: 
@@ -904,9 +904,9 @@ The authors thank Anatole Khelif for many thoroughful discussions, including wit
 \bibitem{Seiberg} Emergent Spacetime. The Quantum Structure of Space and Time, Proccedings of the 23rd Sovay Conference on Physics, Brussels, Belgium, ed. David Gross, Marc Henneaux and Alexander Sevrin, World Scientific, Dec. 2005, 163-178.\\
 
 
-%\bibitem{Weigel} Veysseyre R., Veysseyre H., and Weigel D. "Counting, types and symbols of crystallographic Point Symmetry Operations of space %E^{n}" AAECC 5, 53--70 (1992) DOI: 10.1007/BF01196625 ISBN: 0938-1279.\\
+\bibitem{Weigel} Veysseyre R., Veysseyre H., and Weigel D. "Counting, types and symbols of crystallographic Point Symmetry Operations of space E^{n}" AAECC 5, 53--70 (1992) DOI: 10.1007/BF01196625 ISBN: 0938-1279.\\
 
-%\bibitem{Veysseyre} Veysseyre R., Veysseyre H., and Weigel D. "Nombre de types d’opérations ponctuelles de symétrie cristallographiques dans %l’espace E^{n} . (Number of types of crystallographic point symmetry operations of space E^{n} )", Comptes Rendus de l’Académie des Sciences. %Série II (Jan.1990).\\
+\bibitem{Veysseyre} Veysseyre R., Veysseyre H., and Weigel D. "Nombre de types d’opérations ponctuelles de symétrie cristallographiques dans l'espace E^{n} . (Number of types of crystallographic point symmetry operations of space E^{n} )", Comptes Rendus de l’Académie des Sciences. Série II (Jan.1990).\\
 
 \bibitem{Wyler} Wyler A., "L'espace symetrique du groupe des equations de Maxwell" C. R. Acad. Sc. Paris, t. 269, 743-745 (1969). Wyler A., C.R. Acad. Sci, Paris "Les groupes des potentiels de Coulomb et de Yukawa". C. R. Acad. Sc. Paris, t. 272, 186-188 (1971).\\
 
@@ -932,8 +932,22 @@ The authors thank Anatole Khelif for many thoroughful discussions, including wit
 
 \bibitem{Salingaros} Salingaros N., Some Remarks on the Algebra of Eddington's E Numbers. Foundations of Physics, June 1985, Volume 15, 6, pp 683–691.\\
 
-\bibitem{Taylor} Taylor John G., "The New Physics", American Journal of Physics, Vol.41, p 1381--1382, DEC.1973,doi: 10.1119/1.1987588
+\bibitem{Taylor} Taylor John G., "The New Physics", American Journal of Physics, Vol.41, p 1381--1382, DEC.1973,doi: 10.1119/1.1987588. \\
 
+\bibitem{Kotov} Kotov V.A. and Lyuty V.M. ``The 160-min. periodicity in the optical
+and X-ray observations of extragalactic objects''. Compt. Rend. Acad. Sci.
+Paris 310, Ser. II, 743--748 (1990). Fossat E., Boumier P., Corbard T., et al.
+``Asymptotic $g$ modes: Evidence for a rapid rotation of the solar core''.
+Astron. Astrophys. 604, A40, 1-17 (2017); DOI: 10.1051/0004-6361/201730460.
+Grec G., Fossat E. ``Calculation of pseudo solar narrow band oscillations
+produced by atmospheric differential extinction''. Astron. Astrophys. 77,
+351--353 (1979). Kotov V.A. ``Evolution of the Sun and the Earth: the (un)known
+period 1.035 years''. Izv. Krym. Astrofiz. Obs. 109(1), 232--253 (2013).
+Kotov V.A. ``Fast spinning of planets''. Earth Moon Planets 122(1), 43--52
+(2018) (2018); DOI:10.1007/s11038-018-9520-6. Sevin, \'E. ``Sur la structure du
+syst\`eme solaire''. Compt. Rend. Acad. Sci. Paris. 222, 220--221 (1946).
+Kotov V.A. ``Motion of the fast exoplanets''. Astrophys. Space Sci. 363(3), 1-5
+(2018); DOI: 10.1007/s10509-018-3278-1.
 
 \end{thebibliography}
 
@@ -1037,7 +1051,6 @@ The authors thank Anatole Khelif for many thoroughful discussions, including wit
    Equivalent number of Hydrogen atoms in the Cosmos  & $N_H$ & - & exp(603.8432382) & this work ppb \\
  \bottomrule
   \end{tabular}
-  % \label{tab3:table3}
 \end{table}
  
  
@@ -1591,45 +1604,45 @@ The authors thank Anatole Khelif for many thoroughful discussions, including wit
 \end{figure}
 
 
-\bibitem{Hirzebruch} Hirzebruch F. Topological methods in algebraic geometry. Springer 1966.\\
-\bibitem{Bott} M. Atiyah, R. Bott, V. Patodi, "On the heat equation and the index theorem" Invent. Math. , 19 (1973) pp. 279--330.\\
-\bibitem{Singer} M. Atiyah, I. Singer, "The index of elliptic operators IV" Ann. of Math. , 93 (1971) pp. 119--138. \\
-\bibitem{Alvarez} L. Alvarez-Gaume, "Supersymmetry and the Atiyah Singer index theorem" Comm. Math. Phys. , 90 (1983) pp. 161--170.\\
+%\bibitem{Hirzebruch} Hirzebruch F. Topological methods in algebraic geometry. Springer 1966.\\
+%\bibitem{Bott} M. Atiyah, R. Bott, V. Patodi, "On the heat equation and the index theorem" Invent. Math. , 19 (1973) pp. 279--330.\\
+%\bibitem{Singer} M. Atiyah, I. Singer, "The index of elliptic operators IV" Ann. of Math. , 93 (1971) pp. 119--138. \\
+%\bibitem{Alvarez} L. Alvarez-Gaume, "Supersymmetry and the Atiyah Singer index theorem" Comm. Math. Phys. , 90 (1983) pp. 161--170.\\
 
 
-\bibitem{Frenkel} I. B. Frenkel, J. Lepowsky, and A. Meurman, “A Natural Representation of the Fischer-Griess Monster With the Modular Function J As Character,” Proc. Natl. Acad. Sci. USA 81 (1984) 3256-3260. 
+%\bibitem{Frenkel} I. B. Frenkel, J. Lepowsky, and A. Meurman, “A Natural Representation of the Fischer-Griess Monster With the Modular Function J As Character,” Proc. Natl. Acad. Sci. USA 81 (1984) 3256-3260. 
 
-\bibitem{Witten} Witten E., Three-Dimensional Gravity Revisited arxiv.org/abs/0706.3359 
-
-
-
-\bibitem{deVries} Hans de Vries. http://www.chip-architect.com/news/2004/10/04. The Electro-Magnetic coupling constant.html, An exact formula for the Electro Magnetic coupling constant, web page, 2004 Oct 4.\\ 
+%\bibitem{Witten} Witten E., Three-Dimensional Gravity Revisited arxiv.org/abs/0706.3359 
 
 
-\bibitem{Atiyah1} Atiyah M. Private Communication (december 2018).\\
 
-\bibitem{Conway} Conway, John Horton; Norton, Simon P. (1979). "Monstrous Moonshine". Bull. London Math. Soc. 11 (3): 308--339.\\
-\bibitem{Borcherds} Borcherds, Richard (1992), "Monstrous Moonshine and Monstrous Lie Superalgebras", Invent. Math., 109: 405--444.\\
+%\bibitem{deVries} Hans de Vries. http://www.chip-architect.com/news/2004/10/04. The Electro-Magnetic coupling constant.html, An exact formula for the Electro Magnetic coupling constant, web page, 2004 Oct 4.\\ 
 
-\bibitem{Shannon} Shannon C.E. « A Mathematical Theory of Communication » Reprinted with corrections from The Bell System Technical Journal, Vol. 27, p. 379–423, 623–656, July, October, 1948.)\\
-\bibitem{Stark} Stark H.M. A complete determination of the complex quadratic fields of class-number one, Michigan Math. J., vol. 14,‎ 1967, p. 1-27  \\
-\bibitem{Lovelace} Lovelace C. (1971) Pomeron form factors and dual Regee cuts, Physics Letters B34 (6) 500-506.\\
-\bibitem{Apostol} Apostol T. Modular functions and Dirichlet Series in Number Theory. Springler-Verlag. New-York (1990).\\
 
-\bibitem{Shlay} Shray J. (1994) Octonions and Supersymmetry, PhD thesis.  http://ir.library.oregonstate.edu/xmlui/handle/1957/35649. \\
+%\bibitem{Atiyah1} Atiyah M. Private Communication (december 2018).\\
+
+%\bibitem{Conway} Conway, John Horton; Norton, Simon P. (1979). "Monstrous Moonshine". Bull. London Math. Soc. 11 (3): 308--339.\\
+%\bibitem{Borcherds} Borcherds, Richard (1992), "Monstrous Moonshine and Monstrous Lie Superalgebras", Invent. Math., 109: 405--444.\\
+
+%\bibitem{Shannon} Shannon C.E. « A Mathematical Theory of Communication » Reprinted with corrections from The Bell System Technical Journal, Vol. 27, p. 379–423, 623–656, July, October, 1948.)\\
+%\bibitem{Stark} Stark H.M. A complete determination of the complex quadratic fields of class-number one, Michigan Math. J., vol. 14,‎ 1967, p. 1-27  \\
+%\bibitem{Lovelace} Lovelace C. (1971) Pomeron form factors and dual Regee cuts, Physics Letters B34 (6) 500-506.\\
+%\bibitem{Apostol} Apostol T. Modular functions and Dirichlet Series in Number Theory. Springler-Verlag. New-York (1990).\\
+
+%\bibitem{Shlay} Shray J. (1994) Octonions and Supersymmetry, PhD thesis.  http://ir.library.oregonstate.edu/xmlui/handle/1957/35649. \\
  
-\bibitem{Hooft} Hooft 't Th Holographic Principle. ArXiv: hep-th/003004 (2000). \\
-\bibitem{Bousso} Bousso R., The Holographic Principle, Review of Modern Physics, vol 74, p.834 (2002).\\
+%\bibitem{Hooft} Hooft 't Th Holographic Principle. ArXiv: hep-th/003004 (2000). \\
+%\bibitem{Bousso} Bousso R., The Holographic Principle, Review of Modern Physics, vol 74, p.834 (2002).\\
  
-\bibitem{Durham} Durham I.T. 2006, Sir Arthur Eddington and the Foundations of Modern Physics arXiv:quant-ph/0603146v1  p.117.
-\bibitem{Sanchez2} Sanchez F.M., Kotov V. and Bizouard C., 'Towards a synthesis of two cosmologies: the steady- state flickering Universe'. Journal of Cosmology, vol 17. (2011).\\
+%\bibitem{Durham} Durham I.T. 2006, Sir Arthur Eddington and the Foundations of Modern Physics arXiv:quant-ph/0603146v1  p.117.
+%\bibitem{Sanchez2} Sanchez F.M., Kotov V. and Bizouard C., 'Towards a synthesis of two cosmologies: the steady- state flickering Universe'. Journal of Cosmology, vol 17. (2011).\\
 
 
-\bibitem{Carr} Carr B.J. and Rees M. J. , “The anthropic principle and the structure of the physical world”, Nature 278, 605-612 (1979).\\
-\bibitem{Sanchez3} F.M. Sanchez. Coherent Cosmology Vixra.org,1601.0011. Springer International Publishing AG 2017. A. Tadjer et al. (eds.), Quantum Systems in Physics, Chemistry, and Biology, Progress in Theoretical Chemistry and Physics 30, pp. 375--407. \\ 
-\bibitem{LaGuer} Gueroult.L, 49 methods for computing the Hubble Radius with Jupyter https://mybinder.org/v2/gh/LaGuer/hubble-radius/master \\
+%\bibitem{Carr} Carr B.J. and Rees M. J. , “The anthropic principle and the structure of the physical world”, Nature 278, 605-612 (1979).\\
+%\bibitem{Sanchez3} F.M. Sanchez. Coherent Cosmology Vixra.org,1601.0011. Springer International Publishing AG 2017. A. Tadjer et al. (eds.), Quantum Systems in Physics, Chemistry, and Biology, Progress in Theoretical Chemistry and Physics 30, pp. 375--407. \\ 
+%\bibitem{LaGuer} Gueroult.L, 49 methods for computing the Hubble Radius with Jupyter https://mybinder.org/v2/gh/LaGuer/hubble-radius/master \\
 
-\bibitem{Lenz} Friedrich Lenz, The Ratio of Proton and Electron Masses, Phys. Rev. 82, 554 - 1951.\\
+%\bibitem{Lenz} Friedrich Lenz, The Ratio of Proton and Electron Masses, Phys. Rev. 82, 554 - 1951.\\
 
 %\bibitem{Lecompte} Sanchez, F and Lecompte, C, ``Q-Switched $Nd^{3+}$ Glass Laser of Variable Temporal Coherence, Applied optics'', vol.13, p1071-6, 05.1974, DOI: 10.1364/AO.13.001071 \\
 
@@ -1643,22 +1656,21 @@ The authors thank Anatole Khelif for many thoroughful discussions, including wit
 
 
 
-\bibitem{Nist} ``2018 CODATA Value: Newtonian constant of gravitation''. The NIST Reference on Constants, Units, and Uncertainty. NIST. 20 May 2019. Retrieved 20 May 2019. https://www.physics.nist.gov/cgi-bin/cuu/Value?bg \\
+%\bibitem{Nist} ``2018 CODATA Value: Newtonian constant of gravitation''. The NIST Reference on Constants, Units, and Uncertainty. NIST. 20 May 2019. Retrieved 20 May 2019. https://www.physics.nist.gov/cgi-bin/cuu/Value?bg \\
 
 %\bibitem{Haramein} Haramein N. ``The Schwarzschild Proton'', 2011, p95--100, vol.60, DOI: 10.1063/1.3527190. \\
 
-\bibitem{Haramein} Haramein N., Val Baker A. ``Resolving the Vacuum catastrophe. A Generalised Holographic Approach. Journal of High Energy Physics, Gravitation and Cosmology'', 2019, 5, 412-424 \\ 
+%\bibitem{Haramein} Haramein N., Val Baker A. ``Resolving the Vacuum catastrophe. A Generalised Holographic Approach. Journal of High Energy Physics, Gravitation and Cosmology'', 2019, 5, 412-424 \\ 
 
-\bibitem{Val} Val Baker A. ``The puzzle of the proton'', DOI : 1031219/osf.io/myfxh \\
+%\bibitem{Val} Val Baker A. ``The puzzle of the proton'', DOI : 1031219/osf.io/myfxh \\
 
-\bibitem{Maruani} Jean Maruani. ``The Dirac Electron: From Quantum Chemistry to Holistic Cosmology'' in Journal of the Chinese Chemical Society, vol.63 issue 1, Taipei, Wiley VCH Verlag GmbH, 2016, 33--48 p. DOI: https://doi.org/10.1002/jccs.201500374 \\
+%\bibitem{Maruani} Jean Maruani. ``The Dirac Electron: From Quantum Chemistry to Holistic Cosmology'' in Journal of the Chinese Chemical Society, vol.63 issue 1, Taipei, Wiley VCH Verlag GmbH, 2016, 33--48 p. DOI: https://doi.org/10.1002/jccs.201500374 \\
 
-\bibitem{oeis1} OEIS Foundation Inc. The on-line encyclopedia of integer sequences,https://oeis.org/A180873, Sep 22 2010.
+%\bibitem{oeis1} OEIS Foundation Inc. The on-line encyclopedia of integer sequences,https://oeis.org/A180873, Sep 22 2010.
 
-\bibitem{Veysseyre} Veysseyre R., Veysseyre H., and Weigel D. "Nombre de types d’opérations ponctuelles de symétrie cristallographiques dans l’espace E^{n} . (Number of types of crystallographic point symmetry operations of space E^{n} )", Comptes Rendus de l’Académie des Sciences. Série II (Jan.1990).\\
+%\bibitem{Veysseyre} Veysseyre R., Veysseyre H., and Weigel D. "Nombre de types d’opérations ponctuelles de symétrie cristallographiques dans l'espace E^{n} . (Number of types of crystallographic point symmetry operations of space E^{n} )", Comptes Rendus de l’Académie des Sciences. Série II (Jan.1990).\\
 
-\bibitem{Weigel} Veysseyre R., Veysseyre H., and Weigel D. "Counting, types and symbols of crystallographic Point Symmetry
-Operations of space E n" AAECC 5, 53–70 (1992) DOI: 10.1007/BF01196625 ISBN: 0938-1279.\\
+%\bibitem{Weigel} Veysseyre R., Veysseyre H., and Weigel D. "Counting, types and symbols of crystallographic Point Symmetry Operations of space E n" AAECC 5, 53–70 (1992) DOI: 10.1007/BF01196625 ISBN: 0938-1279.\\
 
 
 
