@@ -1048,7 +1048,7 @@ z={({0.5*cos(45)},{0.5*sin(45)})},
 \coordinate (H) at (0,\a,\a);
 
 %Ecken
-\node[left= 1pt of A]{$Quantum$};
+\node[left= 1pt of A]{\tiny$\hbar$};
 \node[right= 1pt of B]{$$};
 \node[right= 1pt of C]{$$};
 \node[left= 1pt of D]{$$};
@@ -1059,10 +1059,10 @@ z={({0.5*cos(45)},{0.5*sin(45)})},
 
 %Kanten
 \draw[] (A) 
--- (B)  node[midway, below]{\tiny$\hbar$}
+-- (B)  node[midway, below]{Quantum}
 -- (C)      node[midway, right]{\tiny$G$}
 -- (D)  node[midway, above]{\tiny$c$}
--- (A)  node[midway, left]{\tiny$\a$cm};
+-- (A)  node[midway, left]{\tiny$a$};
 \draw[] (B) -- (F) -- (G) -- (C);
 \draw[] (G) -- (H) -- (D);
 \draw[densely dashed] (A) -- (E) -- (F);
