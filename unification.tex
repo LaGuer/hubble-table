@@ -1029,6 +1029,46 @@ Optimised Strong coupling constant $a_w/2\pi(pH)^{3/2}$ & $a_s$   & $8.434502906
 \caption[Example Bloch Sphere]{Bloch Sphere based on Bloch-Redfield master eq.} 
 \end{figure}
 
+
+\begin{tikzpicture}[%
+x={(1cm,0cm)},
+y={(0cm,1cm)},
+z={({0.5*cos(45)},{0.5*sin(45)})},
+]
+  \def\a{2}
+
+\coordinate (A) at (0,0,0); 
+\coordinate (B) at (\a,0,0) ;
+\coordinate (C) at (\a,\a,0); 
+\coordinate (D) at (0,\a,0); 
+\coordinate (E) at (0,0,\a); 
+\coordinate (F) at (\a,0,\a); 
+\coordinate (G) at (\a,\a,\a); 
+\coordinate (H) at (0,\a,\a);
+
+%Ecken
+\node[left= 1pt of A]{$A$};
+\node[right= 1pt of B]{$B$};
+\node[right= 1pt of C]{$C$};
+\node[left= 1pt of D]{$D$};
+\node[left= 1pt of E]{$E$};
+\node[right= 1pt of F]{$F$};
+\node[right= 1pt of G]{$G$};
+\node[left= 1pt of H]{$H$};
+
+%Kanten
+\draw[] (A) 
+-- (B)  node[midway, below]{\tiny$\a$cm}
+-- (C)      node[midway, right]{\tiny$\a$cm}
+-- (D)  node[midway, above]{\tiny$\a$cm}
+-- (A)  node[midway, left]{\tiny$\a$cm};
+\draw[] (B) -- (F) -- (G) -- (C);
+\draw[] (G) -- (H) -- (D);
+\draw[densely dashed] (A) -- (E) -- (F);
+\draw[densely dashed] (E) -- (H);
+
+\end{tikzpicture}
+
 \end{document}
 
 
