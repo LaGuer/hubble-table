@@ -101,7 +101,7 @@ La théorie standard procède par approximations successives: c’est la méthod
 \section{L'exigence de quasi-continuité : la rationalisation symbolique de $\pi$} 
 Le modèle standard des particules est incapable d’inclure la gravitation, se heurtant à des problèmes de renormalisation, c’est-à-dire l’élimination de quantités infinies qui apparaissent dans les calculs. Nous proposons ici l’hypothèse d’une rationalisation symbolique de $\pi$, revenant à supprimer les décimales infinies de $\pi$ au-dela d’un certain nombre. 
 
-Cette hypothèse a été présentée comme une "exigence de quasi-continuité" dans une conférence à Cambridge en 1994 \cite{Sanchez1}, introduisant, par souci de simplicité, le Principe Holographique, de manière différente et indépendante d'autres théoriciens \cite {Hooft}. En effet, par opposition aux équations différentielles, qui sont fondamentalement inadaptées dans un monde quantique, comme Poincaré l'avait expressément souligné \cite {Poincaré1}, \textit{les équations globales les plus simples} sont les connexions entre variétés topologiques de dimensions différentes (périmètre, aire, volume…), donc utilisent la constante $\pi$, et pourraient être liées aux symétries cristallines de dimensions supérieures, comme constaté ci-dessous.  
+Cette hypothèse a été présentée comme une "exigence de quasi-continuité" dans une conférence à Cambridge en 1994 \cite{Sanchez1}, introduisant, par souci de simplicité, le Principe Holographique, de manière différente et indépendante d'autres théoriciens \cite {Hooft}. En effet, par opposition aux équations différentielles, qui sont fondamentalement inadaptées dans un monde quantique, comme Poincaré l'avait expressément souligné \cite {Poincare}, \textit{les équations globales les plus simples} sont les connexions entre variétés topologiques de dimensions différentes (périmètre, aire, volume…), donc utilisent la constante $\pi$, et pourraient être liées aux symétries cristallines de dimensions supérieures, comme constaté ci-dessous.  
 
 Dans cette hypothèse d’un Cosmos calculateur, de même qu’un ordinateur ne peut utiliser le $\pi$ mathématique "rigoureux", tout calcul doit être associé à une imprécision. Dans cet article, la précision maximale $10^{-9}$ (ou ppb) est recherchée, laissant peu de prise au hasard. Ainsi $\pi$ \textit {doit} être rationalisé, et, dans un premier temps, de manière symbolique, c’est-à-dire que son développement fractionnaire doit montrer des paramètres-clefs.
 
@@ -501,7 +501,7 @@ q = {q'} \sin\theta = {q''} \cos\theta
 \sin \theta^2 - \sin \theta_{\tau}^2  \approx 1/\sqrt a_w \sin_{eff}{\theta} (m_Z) \approx 1 / P^{1/4}
  \end{equation}
   
- faisant apparaître le terme $\sin_{eff}{\theta} (m_Z)$ appelé "effective weak mixing angle"  (table 1).
+ faisant apparaître le terme $\sin_{eff}{\theta} (m_Z)$ appelé "effective weak mixing angle"  (Table  \ref{tab:1:table1}).
  
  
  
@@ -816,7 +816,7 @@ The authors thank Anatole Khelif for many thoroughful discussions, including wit
 
 \bibitem{Arp} Arp H. ``The origin of companion galaxies''. Astrophys. J. 496, p661--669 (1998). \\
 
-\bibitem{Poincaré} Poincaré H., Dernières Pensées. “Conférence à l’Université de Londres”, pp. 102-103 (Flammarion, 1913).\\
+\bibitem{Poincare} Poincaré H., Dernières Pensées. “Conférence à l’Université de Londres”, pp. 102-103 (Flammarion, 1913).\\
 
 
 \bibitem{Seiberg} Seiberg N. Emergent Spacetime. The Quantum Structure of Space and Time, Proccedings of the 23rd Sovay Conference on Physics, Brussels, Belgium, ed. David Gross, Marc Henneaux and Alexander Sevrin, World Scientific, Dec. 2005, 163-178.\\
@@ -1044,18 +1044,18 @@ z={({0.5*cos(45)},{0.5*sin(45)})},
 \coordinate (D) at (0,\a,0); 
 \coordinate (E) at (0,0,\a); 
 \coordinate (F) at (\a,0,\a); 
-\coordinate (G) at (\a,\a,\a); 
-\coordinate (H) at (0,\a,\a);
+%\coordinate (G) at (\a,\a,\a); 
+%\coordinate (H) at (0,\a,\a);
 
 %Ecken
 \node[left= 1pt of A]{\tiny$\hbar$};
-\node[right= 1pt of B]{$$};
-\node[right= 1pt of C]{$$};
-\node[left= 1pt of D]{$$};
-\node[left= 1pt of E]{$$};
+\node[right= 1pt of B]{$B$};
+\node[right= 1pt of C]{$C$};
+\node[left= 1pt of D]{$D$};
+\node[left= 1pt of E]{$E$};
 \node[right= 1pt of F]{$Gravitation$};
-\node[right= 1pt of G]{$$};
-\node[left= 1pt of H]{$$};
+%\node[right= 1pt of G]{$$};
+%\node[left= 1pt of H]{$$};
 
 %Kanten
 \draw[] (A) 
@@ -1070,6 +1070,76 @@ z={({0.5*cos(45)},{0.5*sin(45)})},
 \end{tikzpicture}
 \end{figure}
 
+\begin{tikzpicture}
+\begin{axis}[
+  view={35}{15},
+  axis lines=center,
+  width=15cm,height=15cm,
+  xtick={-10,-5,5,10},ytick={-10,-5,5,10},ztick={-10,-5,5,10},
+  minor tick={-12,-11,...,12},
+  xmin=-13,xmax=13,ymin=-13,ymax=13,zmin=-13,zmax=13,
+  xlabel={$x$-axis},ylabel={$y$-axis},zlabel={$z$-axis},
+]
+
+% plot dots for the two points
+\addplot3 [only marks] coordinates {(-5,-5,7) (3,0,5)};
+
+% plot dashed lines to axes
+\addplot3 [no marks,densely dashed] coordinates {(0,0,5) (3,0,5) (3,0,0)};
+\addplot3 [no marks,densely dashed] coordinates {(0,-5,0) (-5,-5,0) (-5,0,0) (-5,0,7) (0,0,7) (0,-5,7) (0,-5,0)};
+\addplot3 [no marks,densely dashed] coordinates {(-5,0,7) (-5,-5,7) (0,-5,7)};
+\addplot3 [no marks,densely dashed] coordinates {(-5,-5,0) (-5,-5,7)};
+
+% label points
+\node [above right] at (axis cs:3,0,5) {$P (3,0,5)$};
+\node [above left] at (axis cs:-5,-5,7) {$Q (-5,-5,7)$};
+\node [inner sep=2pt,outer sep=0pt] (O) at (axis cs:0,0,0) {};
+\node [align=center] (origin) at ([xshift=1.5cm,yshift=-1.3cm]O) {$(0,0,0)$ \\Origin};
+\draw [shorten <=.1cm,stealth-,gray] (O) to [out=-30,in=160] (origin.west);
+\end{axis}
+\end{tikzpicture}
+
+
+ \begin{figure}
+\centering
+\begin{tikzpicture}[scale=0.75]
+%\tkzInit[xmax=6.4, zmax=3.4]
+\tkzDefPoint(0.0,0.0){A} \tkzDefPoint(6.4,0.0){B} \tkzDefPoint(5.1,-1.3){C} \tkzDefPoint(4.0,-1.0){q}
+\tkzDrawPoints(A,B,q)
+\tkzDefMidPoint(B,q) \tkzGetPoint{D}
+%\tkzDefPoint[label={[align=left]right:$q$},xshift=00mm](4.5,-0.5){D}
+\tkzLabelSegment[sloped,text=red,xshift=-06mm](q,B){$q$}
+%\tkzMarkRightAngle(A,B,C)
+%\tkzMarkRightAngle(B,q,C)
+\tkzLabelPoints[below](A,B,C)
+%\tkzLabelPoints[above right](q)
+%\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
+%\tkzLabelAngle[pos=1.6](C,A,B){$\theta$}
+    %\draw [important line] (0.0,0.) coordinate (A) -- (5.1,-1.3) coordinate (C) node[below, text width=5em] {}
+    %\draw [blue] (6.4,0.) coordinate (A) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$h$}
+    %\draw [red] (6.4,0.) coordinate (B) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$q$}
+  \draw (6.4,0,0) coordinate (x) |- (0,10,0) coordinate [midway] (h) coordinate (y) -- (0,10,3.4) coordinate (a) -- (0,0,3.4) coordinate (z) -- (6.4,0,3.4) edge (x) -- (6.4,10,3.4) coordinate (v) edge (h)
+  -- (a)  ;
+  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (y) -- (z);
+  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (v) -- (v);
+  %\draw [blue] (0,0,0)  -- (6.4,0.0,3.4);
+  %\draw [red] (4.9,0.02,2.7)  -- (6.4,0.0,0.0);
+  %\node [circle, minimum size=2pt, inner sep=0pt, fill, label=135:$\sqrt{2a^3/pp_G}$] at (v) {};
+  %\draw [very thin,black,line join=round] (0,0,0)  -- node [sloped,above] {$\sqrt{2a^3/pp_G}$} (6.4,10,3.4);
+  %\node [circle, minimum size=4pt, inner sep=0pt, fill, label=135:o] at (o) {};
+  %\draw [decoration={markings,mark=at position 1 with
+  %  {\arrow[scale=3,>=stealth]{>}}},postaction={decorate}] (0,0,0) -- (6.4,10,3.4);
+  \draw [dashed] (0,0,0) -- (6.4,0,3.4);
+  \draw [->] (x) -- +(3pt,0,0) node [midway,above] {$\hbar$};
+  \draw [->] (y) -- +(0,3pt,0) node [midway,right] {$c$};
+  \draw [->] (z) -- +(0,0,3pt) node [midway,above] {$G$};
+  %\draw (v) -- ++(0,0,-2) coordinate (d) -- ++(-2,0,0) coordinate (e) -- ++(0,0,2) |- ++(2,-2,0) coordinate [midway] (f) -- ++(0,0,-2) coordinate (g) -- (d);
+  %\draw [dashed] (e) -- ++(0,-2,0) coordinate (c) edge (f) -- (g);
+  %\node [label=45:C] at (c) {};
+  %\draw[red]   (0,0,0) -- (.95,0,0)    node[red,left=6pt]    {$x$};
+\end{tikzpicture}
+\caption[The Triedre]{Triedre of Cosmology / Quantum / Gravitation connections}
+\end{figure}
 
 \end{document}
 
