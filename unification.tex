@@ -1095,45 +1095,33 @@ Optimised Strong coupling constant $a_w/2\pi(pH)^{3/2}$ & $a_s$   & $8.434502906
 
 
 
- \begin{figure}
+\begin{figure}
 \centering
-\begin{tikzpicture}[scale=0.75]
-%\tkzInit[xmax=6.4, zmax=3.4]
-\tkzDefPoint(0.0,0.0){Gravitation} \tkzDefPoint(6.4,0.0){Quantum} \tkzDefPoint(5.1,-1.3){Cosmology} \tkzDefPoint(4.0,-1.0){q}
-%\tkzDrawPoints(A,B,q)
-%\tkzDefMidPoint(B,q) \tkzGetPoint{D}
-%\tkzDefPoint[label={[align=left]right:$q$},xshift=00mm](4.5,-0.5){D}
-%\tkzLabelSegment[sloped,text=red,xshift=-06mm](q,B){$q$}
-%\tkzMarkRightAngle(A,B,C)
-%\tkzMarkRightAngle(B,q,C)
-\tkzLabelPoints[below](Cosmology)
-\tkzLabelPoints[left](Gravitation)
-\tkzLabelPoints[above](Quantum)
-%\tkzLabelPoints[above right](q)
-%\tkzMarkAngle[fill=blue!40,size=1.4cm,opacity=.5](C,A,B)
-%\tkzLabelAngle[pos=1.6](C,A,B){$\theta$}
-    %\draw [important line] (0.0,0.) coordinate (A) -- (5.1,-1.3) coordinate (C) node[below, text width=5em] {}
-    %\draw [blue] (6.4,0.) coordinate (A) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$h$}
-    %\draw [red] (6.4,0.) coordinate (B) -- (4.,-1.0) coordinate (D) node[below, text width=5em] {$q$}
-  \draw (6.4,0,0) coordinate (x) |- (0,10,0) coordinate [midway] (h) coordinate (y) -- (0,10,3.4) coordinate (a) -- (0,0,3.4) coordinate (z) -- (6.4,0,3.4) edge (x) -- (6.4,10,3.4) coordinate (v) edge (h)
-  -- (a)  ;
-  \draw [dashed] (0,0,0) coordinate (o) edge (x) edge (y) -- (z);
-  %\draw [dashed] (0,0,0) coordinate (o) edge (x) edge (v) -- (v);
-  %\draw [blue] (0,0,0)  -- (6.4,0.0,3.4);
-  %\draw [red] (4.9,0.02,2.7)  -- (6.4,0.0,0.0);
-  %\node [circle, minimum size=2pt, inner sep=0pt, fill, label=135:$\sqrt{2a^3/pp_G}$] at (v) {};
-  %\draw [very thin,black,line join=round] (0,0,0)  -- node [sloped,above] {$\sqrt{2a^3/pp_G}$} (6.4,10,3.4);
-  %\node [circle, minimum size=4pt, inner sep=0pt, fill, label=135:o] at (o) {};
-  %\draw [decoration={markings,mark=at position 1 with
-  %  {\arrow[scale=3,>=stealth]{>}}},postaction={decorate}] (0,0,0) -- (6.4,10,3.4);
-  \draw [dashed] (0,0,0) -- (6.4,0,3.4);
-  \draw [->] (x) -- +(3pt,0,0) node [midway,above] {$\hbar$};
-  \draw [->] (y) -- +(0,3pt,0) node [midway,right] {$c$};
-  \draw [->] (z) -- +(0,0,3pt) node [midway,above] {$G$};
-  %\draw (v) -- ++(0,0,-2) coordinate (d) -- ++(-2,0,0) coordinate (e) -- ++(0,0,2) |- ++(2,-2,0) coordinate [midway] (f) -- ++(0,0,-2) coordinate (g) -- (d);
-  %\draw [dashed] (e) -- ++(0,-2,0) coordinate (c) edge (f) -- (g);
-  %\node [label=45:C] at (c) {};
-  %\draw[red]   (0,0,0) -- (.95,0,0)    node[red,left=6pt]    {$x$};
+\begin{tikzpicture}[scale=2, tdplot_main_coords,axis/.style={->,dashed},thick]
+\node[shape=circle,draw,fill=black,inner sep=1pt] (O) at (0,-2,2){};
+\draw[axis] (0, 0, 0) -- (3, 0, 0) node [right] {$G$};
+\draw[axis] (0, 0, 0) -- (0, 3, 0) node [above] {$\hbar$};
+\draw[axis] (0, 0, 0) -- (0, 0, 3) node [above] {$c$};
+%\coordinate  (d1) at (1,0,3){};
+%\coordinate  (d2) at (-1,0,3){};
+%\coordinate  (d3) at (0,0,1){};
+%\coordinate  (d4) at (0,0,4){};
+%\draw [] (d1) -- (d4)--(d2)--(d3)--cycle;
+
+%\coordinate  (t1) at (1,2.,4){};
+%\coordinate  (t2) at (-1,2,4){};
+%\coordinate  (t3) at (0,2,2){};
+%\draw (t1)--(t2)--(t3)--cycle;
+%\foreach \d in {1,2,3,4}{
+%\draw[color=red] (O)--(d\d);
+%}
+%\foreach \i in {1,2,3,4}{
+%\foreach \j in {1,2,3}{
+%\draw[color=red] (d\i)--(t\j);
+%}}
+\node at (0,0,-0.5) (l){$\mathbf Cosmology$};
+\node at (O |- l) {$\mathbf Gravitation$};
+\node at (t3 |- l) {$\mathbf Quantum$};
 \end{tikzpicture}
 \caption[The Triedre]{Triedre of Cosmology / Quantum / Gravitation connections}
 \end{figure}
