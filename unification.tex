@@ -432,7 +432,8 @@ où $417 = 419 - 2$ est le nombre de symétries positives $10D$ non triviales, e
 \tkzDefPoint(17.25,17.25){L}
 \tkzDefPoint(19.25,19.25){M}
 \tkzDefPoint(25.25,25.25){N}
-\tkzDrawPoints(A,B,C,D,F,E,G,H,I,J,K,L,M,N)
+\tkzDefPoint(-10.0,-10.0){P}
+\tkzDrawPoints(A,B,C,D,F,E,G,H,I,J,K,L,M,N,P)
 %\tkzMarkRightAngle(A,D,C)
 %\tkzLabelPoints[below](A,C)
 %\tkzLabelPoints[above](STRING,GLUON)
@@ -442,7 +443,7 @@ où $417 = 419 - 2$ est le nombre de symétries positives $10D$ non triviales, e
 %\tkzLabelAngle[pos=1.6](C,A,B){$\theta$}
 \tkzDefMidPoint(A,Y) \tkzGetPoint{BICODON}
 \coordinate (center) at (BICODON);
-\tkzLabelPoints[below,color=green](BICODON)
+%\tkzLabelPoints[below,color=green](BICODON)
 \tkzDrawPoints(BICODON)
 \draw [->] (-31.0,-31.0) node[left]{} -- (-31.,31.) node[right]{}; % scale Y
 \draw [->] (31.0,-31.0) node[left]{} -- (31.,31.) node[right]{}; % 
@@ -473,7 +474,7 @@ où $417 = 419 - 2$ est le nombre de symétries positives $10D$ non triviales, e
 \node [anchor = south] at (-4.25,-34.0) {$3$};
 \node [anchor = east] at (-4.0,-4.0) {HALF MEAN WEAK BOSON};
 \node [anchor = west,color=red] at (-4.0,-4.0){HALF RYDBERG WAVELENGTH};
-\node [anchor = south] at (-3.05,-32.0) {$\gamma\Gamma$};
+\node [anchor = south] at (-2.75,-32.0) {$\gamma\Gamma$};
 \node [anchor = east,color=black] at (-3.0,-3.0){SCALAR BOSON};
 \node [anchor = east,color=green!90!black] at (0.,0.0) {$BICODON$};
 \node [anchor = west,color=black!40!green] at (0.,0.0) {$2R_N/R$};
