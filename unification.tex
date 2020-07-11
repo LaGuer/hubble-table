@@ -1245,10 +1245,12 @@ Optimised Strong coupling constant $a_w/2\pi(pH)^{3/2}$ & $a_s$   & $8.434502906
 \centering
 \begin{tikzpicture}[scale=2, tdplot_main_coords,axis/.style={->,dashed},thick]
 %\tkzDefPoint(1.,-1.,0.75){A} \tkzDefPoint(4.9,0.,-0.75){B} \tkzDefPoint(3.12,0.,-1.74){C}
-\node[shape=circle,draw,fill=black,inner sep=1pt] (O) at (0,-2,2){};
+%\draw[step=1cm,gray,very thin] (-4,-4) grid (4,4);
+\node[shape=circle,draw,fill=black,inner sep=1pt] (O) at (0,0,0){};
+\node[shape=circle,draw,fill=black,inner sep=1pt] (M) at (1,-1,0){};
 \draw[axis] (0, 0, 0) -- (3, 0, 0) node [right] {$G$};
-\draw[axis] (0, 0, 0) -- (0, 3, 0) node [above] {$\hbar$};
-\draw[axis] (0, 0, 0) -- (0, 0, 3) node [above] {$c$};
+\draw[axis] (0, 0, 0) -- (0, 2, 0.25) node [above] {$\hbar$};
+\draw[axis] (0, 0, 0) -- (0, 0, 1) node [above] {$c$};
 \coordinate  (d1) at (1,0,1){};
 \coordinate  (d2) at (3,-2,-1){};
 %\coordinate  (d3) at (0,0,1){};
@@ -1266,10 +1268,10 @@ Optimised Strong coupling constant $a_w/2\pi(pH)^{3/2}$ & $a_s$   & $8.434502906
 %\foreach \j in {1,2,3}{
 %\draw[color=red] (d\i)--(t\j);
 %}}
-\node at (0.,0.5,-0.5) (l){$\mathbf Cosmology$};
+\node at (0.,0.5,-0.5) (l){$\mathbf COSMOS$};
 %\node at (2.,0.0,1.5) (l){$\mathbf Gravitation$};
-\node at (1.,1.5,1.5) (l){$\mathbf Quantum$};
-\tkzLabelSegment[sloped,below,text=blue](d1,d2){$Gravitation$}
+\node at (1.,1.5,1.5) (l){$\mathbf QUANTONDE$};
+\tkzLabelSegment[sloped,below,text=blue](d1,M){$GRAVITONDE$}
 \end{tikzpicture}
 \caption[The Triedre]{Triedre of Cosmology / Quantum / Gravitation connections}
 \end{figure}
