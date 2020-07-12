@@ -194,9 +194,9 @@ Cette récession galactique n'est pas le seul phénomène à permettre un renouv
 \tkzDefPoint(4.0,4.0){H}
 \tkzDefPoint(12.0,12.0){I}
 \tkzDefPoint(-3.0,-3.0){J}
-\tkzDefPoint(15.25,15.25){K}
+\tkzDefPoint(16.0,16.0){K}
 \tkzDefPoint(17.25,17.25){L}
-\tkzDefPoint(19.25,19.25){M}
+\tkzDefPoint(20.0,20.0){M}
 \tkzDefPoint(25.25,25.25){N}
 \tkzDefPoint(-10.0,-10.0){P}
 \tkzDrawPoints(A,B,C,D,F,E,G,H,I,J,K,L,M,N,P)
@@ -216,15 +216,17 @@ Cette récession galactique n'est pas le seul phénomène à permettre un renouv
 \draw [->] (-31.0,-31.0) node[left]{} -- (31.8,-31.0) node[right]{}; % scale d
 \draw [->] (-31.0,-34.) node[left]{} -- (31.8,-34.) node[right]{};   % scale k
 \draw [->] (-34.0,-31.) node[left]{} -- (-34.,34.) node[right]{};   % scale Y'
-\draw [->] (-20.0,-32.) node[left]{} -- (-20.,-10.) node[right]{};   % Bicodon vertical line
-\draw [-,color=blue,dashed] (-20.0,-32.) node[left]{} -- (-20.,-10.) node[right]{};   % Bicodon vertical line
+%\draw [->] (-20.0,-32.) node[left]{} -- (-20.,-10.) node[right]{};   % Bicodon vertical line
+\draw [-,color=blue,dashed] (-20.0,-32.) node[left]{} -- (-20.,-10.) node[right]{};   % Gluon vertical line
 \draw [-,color=blue,dashed] (-12.0,-32.) node[left]{} -- (-12.,-12.) node[right]{};   % ATOM DIAMETER vertical line
 \draw [-,color=blue,dashed] (-10.0,-32.) node[left]{} -- (-10.,-10.) node[right]{};   % Kaon vertical line
 \draw [-,color=blue,dashed] (-3.0,-32.) node[left]{} -- (-3.,-3.) node[right]{};   % Scalar Boson vertical line
 \draw [-,color=blue,dashed] (16.,-32.) node[left]{} -- (16.,16.) node[right]{};   % Photon vertical line
-\draw [-,color=blue,dashed] (17.25,-32.) node[left]{} -- (17.25,17.25) node[right]{};   % Galaxyy group vertical line
+\draw [-,color=blue,dashed] (17.25,-32.) node[left]{} -- (17.25,17.25) node[right]{};   % Galaxy group vertical line
+\draw [-,color=blue,dashed] (20.0,-32.) node[left]{} -- (20.0,20.) node[right]{};   % Gravitonde vertical line
 \draw [-,color=blue,dashed] (30.0,-32.) node[left]{} -- (30.0,30.0) node[right]{};   % Super Period vertical line
-\draw [-,color=blue,dashed] (17.25,-32.) node[left]{} -- (17.25,17.25) node[right]{};   % Topon vertical line
+%\draw [-,color=blue,dashed] (17.25,-32.) node[left]{} -- (17.25,17.25) node[right]{};   % Topon vertical line
+
 %\draw[blue, dotted]
 %      let \p1 =  ($(B)-(center)$),
 %          \n0 = {veclen(\x1,\y1)}
@@ -252,7 +254,7 @@ Cette récession galactique n'est pas le seul phénomène à permettre un renouv
 \node [anchor = south] at (-2.75,-31.0) {$\gamma\Gamma$};
 \node [anchor = east,color=black] at (-3.0,-3.0){SCALAR BOSON};
 \node [anchor = east,color=black!40!green] at (0.,0.0) {$BICODON$};
-\node [anchor = west,color=black!40!green] at (0.,0.0) {$2R_N/R$};
+\node [anchor = west,color=black!40!green] at (0.,0.0) {$\times 2R_N/R$};
 \node [anchor = south] at (4.25,-33.0) {$18$};
 \node [anchor = south] at (4.25,-36.0) {$4$};
 \node [cross,anchor = west,color=red] at (4.25,4.25){THERMAL PHOTON};
@@ -264,8 +266,8 @@ Cette récession galactique n'est pas le seul phénomène à permettre un renouv
 \node [anchor = west,color=red] at (16.,16.){Kotov Length $*2\pi$a};
 \node [anchor = west,color=red] at (17.25,17.250){Galaxy group};
 \node [anchor = south,color=red] at (17.25,-31.0) {$\Gamma$};
-\node [anchor = east,color=black!40!green] at (19.25,19.250){$GRAVITONDE$};
-\node [anchor = west,color=red] at (19.25,19.250){Hubble Radius $/6$};
+\node [anchor = east,color=black!40!green] at (20.,20.0){$GRAVITONDE$};
+\node [anchor = west,color=red] at (20.,20.0){Hubble Radius $/6$};
 \node [anchor = east,color=black!40!green] at (29.25,29.250){$Super Period$};
 \node [anchor = east,color=black] at (30.25,30.250){$TOPON$\tiny{:Visible universe wavelength}};
 \node [anchor = south] at (20.25,-33.0) {$26$};
