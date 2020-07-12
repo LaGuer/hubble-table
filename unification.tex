@@ -181,6 +181,14 @@ Cette récession galactique n'est pas le seul phénomène à permettre un renouv
 \centering
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 
 45,x=0.25cm,y=0.25cm]
+\begin{axis}[%
+%width=\figurewidth,
+%height=\figureheight,
+%scale only axis,
+%xmin=1,
+%xmax=20,
+%ymin=0,
+%ymax=2,
 title={caracteristics length follow the law $exp(2^{d/4})$, unit length: electron compton reduced wavelength: $\hbar m_ec=\lambdabar_e$}, 
 legend style={draw=black,fill=white,legend cell align=left}
 ]
@@ -221,7 +229,7 @@ legend style={draw=black,fill=white,legend cell align=left}
 \draw [->] (-31.0,-34.) node[left]{} -- (31.8,-34.) node[right]{};   % scale k
 \draw [->] (-34.0,-31.) node[left]{} -- (-34.,34.) node[right]{};   % scale Y'
 %\draw [->] (0.0,-32.) node[left]{} -- (0.,0.) node[right]{};   % Bicodon vertical line
-\draw [-,color=blue,dashed] (-34.0,-2.4) node[left]{} -- (-2.4,-2.4) node[right]{};   % Scalar Boson horizontal line
+\draw [-,color=blue,dashed] (-34.0,-2.6) node[left]{} -- (-2.6,-2.6) node[right]{};   % Scalar Boson horizontal line
 \draw [-,color=blue,dashed] (-28.0,-32.) node[left]{} -- (-28.,-28.) node[right]{};   % String vertical line
 \draw [-,color=blue,dashed] (-20.0,-32.) node[left]{} -- (-20.,-20.) node[right]{};   % Gluon vertical line
 \draw [-,color=blue,dashed] (-12.0,-32.) node[left]{} -- (-12.,-12.) node[right]{};   % ATOM DIAMETER vertical line
