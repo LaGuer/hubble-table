@@ -204,9 +204,9 @@ Cette récession galactique n'est pas le seul phénomène à permettre un renouv
 \tkzDefPoint(12.0,12.0){I}
 \tkzDefPoint(-3.0,-3.0){J}
 \tkzDefPoint(16.0,16.0){K}
-\tkzDefPoint(17.25,17.25){L}
+\tkzDefPoint(18.25,18.25){L}
 \tkzDefPoint(20.0,20.0){M}
-\tkzDefPoint(30.25,30.25){N}
+\tkzDefPoint(29.25,29.25){N}
 \tkzDefPoint(-10.0,-10.0){P}
 \tkzDefPoint[color=red](31.0,31.0){Q}
 \tkzDefPoint(31.0,31.0){Y}
@@ -226,7 +226,8 @@ Cette récession galactique n'est pas le seul phénomène à permettre un renouv
 \draw [->] (-34.0,-31.) node[left]{} -- (-34.,34.) node[right]{};   % scale Y'
 %%% Blue Dashed Horizontal lines
 \draw [-,color=blue,dashed] (-34.0,-2.8) node[left]{} -- (-2.8,-2.8) node[right]{};   % Scalar Boson horizontal line
-\draw [-,color=blue,dashed] (-34.0,31.) node[left]{} -- (31.,31.) node[right]{};   % Cosmos horizontal line
+\draw [-,color=green,dashed] (-34.0,0.) node[left]{} -- (0.,0.) node[right]{};   % bicodon horizontal line
+\draw [-,color=red,dashed] (-34.0,31.) node[left]{} -- (31.,31.) node[right]{};   % Cosmos horizontal line
 %%% Blue Dashed Vertical lines
 \draw [-,color=blue,dashed] (-28.0,-32.) node[left]{} -- (-28.,-28.) node[right]{};   % String vertical line
 \draw [-,color=blue,dashed] (-20.0,-32.) node[left]{} -- (-20.,-20.) node[right]{};   % Gluon vertical line
@@ -238,11 +239,11 @@ Cette récession galactique n'est pas le seul phénomène à permettre un renouv
 \draw [-,color=blue,dashed] (4.1,-32.) node[left]{} -- (4.1,4.1) node[right]{};   % Thermal Photon vertical line
 \draw [-,color=blue,dashed] (12.1,-32.) node[left]{} -- (12.1,12.1) node[right]{};   % Boson X GUT vertical line
 \draw [-,color=blue,dashed] (16.,-32.) node[left]{} -- (16.,16.) node[right]{};   % Photon vertical line
-\draw [-,color=blue,dashed] (17.25,-32.) node[left]{} -- (17.25,17.25) node[right]{};   % Galaxy group vertical line
+\draw [-,color=blue,dashed] (18.25,-32.) node[left]{} -- (18.25,18.25) node[right]{};   % Galaxy group vertical line
 \draw [-,color=blue,dashed] (20.0,-32.) node[left]{} -- (20.0,20.) node[right]{};   % Gravitonde vertical line
 \draw [-,color=blue,dashed] (28.0,-32.) node[left]{} -- (28.0,28.0) node[right]{};   % Super Period vertical line
-\draw [-,color=blue,dashed] (30.0,-32.) node[left]{} -- (30.0,30.0) node[right]{};   % Topon vertical line
-\draw [-,color=blue,dashed] (-34.0,31.) node[left]{} -- (31.,31.) node[right]{};   % Cosmos horizontal line
+\draw [-,color=blue,dashed] (29.0,-32.) node[left]{} -- (29.0,30.0) node[right]{};   % Topon vertical line
+\draw [-,color=red,dashed] (31.0,-36.) node[left]{} -- (31.,31.) node[right]{};   % Cosmos vertical line
 %\draw[blue, dotted]
 %      let \p1 =  ($(B)-(center)$),
 %          \n0 = {veclen(\x1,\y1)}
@@ -251,9 +252,10 @@ Cette récession galactique n'est pas le seul phénomène à permettre un renouv
 %\draw[color=red] (5.,0.) -- (5.,3.43);
 %\draw[color=red] (-1.42,0.) -- (5.,3.43);
 \draw[color=blue] (A) -- (Y);
-\node [anchor = east,text=blue] at (0.,33.75) {\Large{TOPOLOGICAL AXIS}};
-\node [anchor = east,text=blue] at (0.,31.75) {Caracteristics length follow the law $exp(2^{d/4})$, unit length: electron Compton reduced wavelength: $\hbar m_ec=\lambdabar_e$}};
-\node [anchor = east,text=blue] at (0.,31.75) {Super Period unit: $\lambdabar_e/c$. Photonde and Gravitonde masses unit: $2\pi m_N$};
+\node [anchor = text=blue] at (-8.,34.75) {\Large{TOPOLOGICAL AXIS}};
+%\node [anchor = text=blue] at (-10.,32.75) {\tiny{Caracteristics length follow the law $exp(2^{d/4})$}}
+\node [anchor = text=black] at (-10.,33.00) {\tiny{Unit length: electron Compton reduced wavelength: $\hbar m_ec=\lambdabar_e$}};
+\node [anchor = text=black!40!green] at (-12.,31.75) {\tiny{Super Period unit: $\lambdabar_e/c$. Photonde and Gravitonde masses unit: $2\pi m_N$}};
 \node [anchor = east,text=red] at (31.75,31.75) {\Large{COSMOS}};
 \node [anchor = south] at (-28.,-33.0) {$2$};
 \node [anchor = south] at (-28.,-36.0) {$0$};
@@ -274,7 +276,8 @@ Cette récession galactique n'est pas le seul phénomène à permettre un renouv
 \node [anchor = south] at (-2.75,-31.0) {$\gamma\Gamma$};
 \node [anchor = east,color=black] at (-3.0,-3.0){SCALAR BOSON};
 \node [anchor = west,color=black] at (-3.0,-3.0){$125GeV$};
-\node [anchor = east,color=black!40!green] at (0.,0.0) {$DNA BI-CODON$};
+\node [anchor = south,color=black!40!green] at (0.,-33.0) {\textbf{16}};
+\node [anchor = east,color=black!40!green] at (0.,0.0) {DNA BI-CODON};
 \node [anchor = west,color=black!40!green] at (0.,0.0) {$\times \phi_1^2$};
 \node [anchor = south] at (4.25,-33.0) {$18$};
 \node [anchor = south] at (4.25,-36.0) {$4$};
@@ -285,13 +288,13 @@ Cette récession galactique n'est pas le seul phénomène à permettre un renouv
 \node [anchor = east,color=black] at (12.25,12.250){BOSON $X_{GUT}:2.3 \times 10^{16}$GeV};
 \node [anchor = east,color=black!40!green] at (16.,16.){$PHOTONDE$};
 \node [anchor = west,color=red] at (16.,16.){Kotov Length $\times 2\pi$a};
-\node [anchor = west,color=red] at (17.25,17.250){Galaxy group};
-\node [anchor = south,color=red] at (17.25,-31.0) {$\Gamma$};
+\node [anchor = west,color=red] at (18.25,18.250){Galaxy group};
+\node [anchor = south,color=red] at (18.25,-31.0) {$\Gamma$};
 \node [anchor = east,color=black!40!green] at (20.,20.0){$GRAVITONDE$};
 \node [anchor = west,color=red] at (20.,20.0){Hubble Radius $\times 6$};
-\node [anchor = south] at (16.25,-33.0) {$24$};
+\node [anchor = south] at (16.25,-33.0) {\textbf{24}};
 \node [anchor = east,color=black!40!green] at (28.25,28.250){$Super Period$};
-\node [anchor = east,color=black] at (30.25,30.250){$TOPON$\tiny{:Visible universe wavelength}};
+\node [anchor = east,color=black] at (29.25,29.250){$TOPON$\tiny{:Visible universe wavelength}};
 \node [anchor = east,color=black] at (-8.25,24.250){\LARGE{MICROPHYSICS}};
 \node [anchor = east,color=black] at (-8.25,22.250){$Y=\ln\ln(\lambdabar_e(n)/\lambdabar_{MICRO})$};
 \node [anchor = east,color=red] at (22.25,-20.250){\LARGE{MACROPHYSICS}};
@@ -301,7 +304,7 @@ Cette récession galactique n'est pas le seul phénomène à permettre un renouv
 \node [anchor = south] at (28.25,-33.0) {$30$};
 \node [anchor = south] at (28.25,-36.0) {$7$};
 \node [anchor = south] at (31.25,-36.0) {$e^2$};
-\node [anchor = south] at (30.25,-33.0) {$2e^e$};
+\node [anchor = south] at (29.25,-31.0) {$2e^e$};
 \node [anchor = south] at (32.6,-33.00) {$d$};
 \node [anchor = south] at (32.6,-36.00) {$k$};
 %%% Y AXIS
@@ -2206,6 +2209,7 @@ Optimised Strong coupling constant $a_w/2\pi(pH)^{3/2}$ & $a_s$   & $8.434502906
 %\bibitem{Veysseyre} Veysseyre R., Veysseyre H., and Weigel D. "Nombre de types d’opérations ponctuelles de symétrie cristallographiques dans l'espace E^{n} . (Number of types of crystallographic point symmetry operations of space E^{n} )", Comptes Rendus de l’Académie des Sciences. Série II (Jan.1990).\\
 
 %\bibitem{Weigel} Veysseyre R., Veysseyre H., and Weigel D. "Counting, types and symbols of crystallographic Point Symmetry Operations of space E n" AAECC 5, 53–70 (1992) DOI: 10.1007/BF01196625 ISBN: 0938-1279.\\
+
 
 
 
