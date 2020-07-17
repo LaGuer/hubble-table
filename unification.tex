@@ -10,8 +10,11 @@
 \usepackage[english]{babel}
 \usepackage{amssymb,amsfonts,amsmath}
 \usepackage{xcolor}
-\usepackage{pdfpages}
-\usepackage{bashful}
+
+\begin{filecontents*}{\periodic-table.tex}
+%\usepackage{pdfpages}
+%\usepackage{bashful}
+%\immediate\write18{pdflatex \periodic-table.tex}
 
 %\usepackage{graphicx}
 %\usepackage{pstricks,pst-node}             % Pstricks
@@ -1603,19 +1606,22 @@ The authors thank Anatole Khelif for many thoroughful discussions, including wit
 %\listoftables{}   % table list
 %\listoffigures{}  % figure list
 %\section{Tables}
-
-
-
-\bash[stderr]
-pdflatex periodic-table
-\END
-
-\includepdf{periodic-table.tex.pdf}
-
-
-%\pagebreak
 \end{appendix}
 \end{document}
+
+
+%\bash[stderr]
+%pdflatex periodic-table
+%\END
+
+\end{filecontents*}
+\usepackage{pdfpages}
+\immediate\write18{pdflatex \periodic-table}
+\begin{document}
+\includepdf{\periodic-table.pdf}
+\end{document}
+
+
 
 \begin{table}
 %\label{tab:5:table5}
