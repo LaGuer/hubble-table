@@ -10,6 +10,8 @@
 \usepackage[english]{babel}
 \usepackage{amssymb,amsfonts,amsmath}
 \usepackage{xcolor}
+\usepackage{pdfpages}
+\usepackage{bashful}
 
 %\usepackage{graphicx}
 %\usepackage{pstricks,pst-node}             % Pstricks
@@ -1604,7 +1606,11 @@ The authors thank Anatole Khelif for many thoroughful discussions, including wit
 
 
 
+\bash[stderr]
+pdflatex periodic-table.tex
+\END
 
+\includepdf{periodic-table.tex.pdf}
 
 
 %\pagebreak
