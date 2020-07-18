@@ -12,8 +12,8 @@
 \usepackage{xcolor}
 
 %\begin{filecontents*}{\periodictable.tex}
-%\usepackage{pdfpages}
-%\usepackage{bashful}
+\usepackage{pdfpages}
+\usepackage{bashful}
 %\immediate\write18{pdflatex \periodic-table.tex}
 
 %\usepackage{graphicx}
@@ -1665,20 +1665,22 @@ The authors thank Anatole Khelif for many thoroughful discussions, including wit
 %\listoftables{}   % table list
 %\listoffigures{}  % figure list
 %\section{Tables}
-\end{appendix}
-\end{document}
+%\end{appendix}
+%\end{document}
 
 
-%\bash[stderr]
-%pdflatex periodic-table
-%\END
+\bash[stderr]
+pdflatex periodictable
+\END
+\includepdf{\periodictable.pdf}
 
 %\end{filecontents*}
 %\usepackage{pdfpages}
 %\immediate\write18{pdflatex \periodictable}
 %\begin{document}
 %\includepdf{\periodictable.pdf}
-%\end{document}
+\end{appendix}
+\end{document}
 
 
 
