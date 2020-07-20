@@ -408,6 +408,7 @@ Optimised Strong coupling constant $a_w/2\pi(pH)^{3/2}$ & $a_s$   & $8.434502906
    Cosmos (CMB) temperature & $T_{C}$ & K & $2.725820138$ & \cite{Sanchez2}, off value $2.7255(6)$  \\
    Cosmos (CMB) reduced wavelength & $\lambdabar_{CMB} = \hbar c/ k_B T_C $ & m & $8.400716621 \times 10^{-4} $ & \cite{Sanchez2} \\
    Cosmos (CMB) Wien wavelength & $\lambda_{CMB}/w_i $ & m & $1.063082472  \times 10^{-3} $ & \cite{Sanchez2} \\
+   Neutrino (CNB) reduced wavelength & $\lambdabar_{CNB} = \lambdabar_{CNB} \times (11/4)^{1/3}  $ & m & $1.176956919 \times 10^{-3} $ & \cite{Sanchez2} \\
    
    
    
@@ -470,7 +471,7 @@ La Table \ref{tab:6:table6} présente 14 formules simples qui confirment ce rayo
  
  $ \lambdabar_{e} 2^{128}$ & 13.89 & Pertinence du grand nombre de Lucas $2^{127}-1$  \\
  
- $ (20/3)N_{Ed}Gm_H/c^2\lambdabar_{e} (\tau/p)^a$ & 13.79 & Confirme le coeficient de matière sombre 3/10  \\
+ %$ (20/3)N_{Ed}Gm_H/c^2\lambdabar_{e} (\tau/p)^a$ & 13.79 & Confirme le coeficient de matière sombre 3/10  \\
  
  
  %$ (3/10)\lambdabar_{e} (\tau/p)^a$ & 13.83 & Confirme le coeficient de matière sombre 3/10  \\
@@ -484,7 +485,7 @@ La Table \ref{tab:6:table6} présente 14 formules simples qui confirment ce rayo
  
  %$(\lambdabar_{e} 2^{128})(1-(137^2+\pi^2+e^2)/pH)$ & 13.81197681 & shows a symmetry between $\pi$, e and 137, prolongating $ a \approx (137^2 + \pi^2)^{1/2}$ \\
  
-   $ 2\lambda_{H}2^{210} (a_w/P)^2  $ & 13.81110 & Pertinence du terme holique $2^{210}$ \\
+   %$ 2\lambda_{H}2^{210} (a_w/P)^2  $ & 13.81110 & Pertinence du terme holique $2^{210}$ \\
    
    %$ \lambda_{e}(e^{2a}2H/3p^2)^{1/3} (a_w/P)^2  $ & 13.81145 & Pertinence du terme holographique $e^a$ \\
    
@@ -510,10 +511,14 @@ La Table \ref{tab:6:table6} présente 14 formules simples qui confirment ce rayo
    $ \lambda_{F} P^3/p^7$ & 13.80 & Confirme $p$ comme base de calcul  \\
    %$ \lambdabar_{e} (\tau/p)^{140}/2$ & 13.77 & Confirme la symétrie $\tau/p$ d'Eddington  \\
    
-   $ (2\lambdabar_{e})/3 (\lambdabar_{CMB}/\lambdabar_{H_2})^2$ & 13.90 &  Holographie dans la molécule gravitationnelle d'hydrogène \\
+   $ (2\lambdabar_{e}/3) (\lambdabar_{CMB}/\lambdabar_{H_2})^2$ & 13.90 &  Holographie dans la molécule gravitationnelle d'hydrogène \\
      %$ R_C(e^{\gamma/R_N^7})^{1/2}$ & 13.81 &  Confirme le rayon cosmique $R_C$ et son rayon holographique $R_N$ \\
      
      %$ (3/10)\lambdabar_{e} (\tau/p)^a$ & 13.83 & Confirme le coeficient de matière sombre 3/10  \\
+     
+     $ (4\pi\lambda_{CMB})^4/\r_H^3$ & 13.78 &  Empiric \\
+     
+     $ \sqrt{a-136}(\lambdabar_{CNB}\lambda_{CNB}/\lambda_{CMB})^4 /\lambdabar_{e}^3$ & 13.812 &  Empiric \\
      
      
      
@@ -1037,8 +1042,14 @@ où $417 = 419 - 2$ est le nombre de symétries positives $10D$ non triviales, e
 Les dimensions de la série anormale des cordes $d = 2 + 4k$, qui apparaissent dans l’Axe Topologique sont les nombres $2, 6, 10, 14, 18, 22, 26, 30$. Les quatre premiers s’identifient avec les nombres atomiques de la série spectroscopique s,p,d,f. La table périodique contient 19 de ces séries, aboutissant à l’Oganesson, de numéro atomique $7s + 6p + 6d + 2f = 118 = 2 \times 59$, de sorte que, tenant copte de la relation cristalloraphique ci-dessus $137 = 2 \times 59 + 19  = 7(s+1)+6(p+1)+4(d+1)+2(f+1)$. Effectivement, les périodes se distinguent des nombres quantiques principaux, de telle façon que les périodes, à partir de la deuxième, sont doubles, de sorte que le nombre ci-dessus se décompose en $118/2 = 59 =  1+3s+3p+2d+f$.
 
 En séparant les termes extremes $f + 1 = 15$, la séparation de jauge ci-dessus $137 = 107 + 30$ est ainsi justifiée. En isolant la première couche des 2 atomes essentiels, l'hydrogène et l'hélium: $107 = 105 + 2$, on arrive à $137 = 30 + 105 + 2$ où $30$ et $105$ sont les nombes holiques $2\times 3 \times 5$ et $5\times 7 \times 5$, de sorte que, finalement, $ 137 = 105 + 32$, où l'on retrouve le nombre 32 des colonnes du tableau. 
+
+Effectivement l'examen des formules de $R$ en fonction des longuers d'ondes $\lambda_{CMB}$ et $\lambda_{CNB}$ conduit aux corrélations suivantes, à 72 ppb et 1 ppm près:
+
+\begin{equation}
+ \sqrt{a-136} \approx (4\pi d_e \beta)^4 a /pH \approx (4\pi_p)^4 (a-32)/a^3
+ \end{equation}
  
- 
+où $\beta = 1/(H-p)$ est l'écart relativiste dans l'atome d'hydrogène, et $pi_p$ défini par $p = 6\pi_p^5$.   
 
 
  
