@@ -53,6 +53,20 @@
 %%%%%%%
 \def\doubleunderline#1{\underline{\underline{#1}}}
 %%%%%%%
+\newcounter{row}
+\newcounter{col}
+
+\newcommand\setrow[9]{
+  \setcounter{col}{1}
+  \foreach \n in {#1, #2, #3, #4, #5, #6, #7, #8} {
+    \edef\x{\value{col} - 0.5}
+    \edef\y{9.5 - \value{row}}
+    \node[anchor=center] at (\x, \y) {\n};
+    \stepcounter{col}
+  }
+  \stepcounter{row}
+}
+
 %%%%%%%
 
 %% Begin of Watermark feature
@@ -1121,6 +1135,57 @@ où $q$ est la charge électrique, $\theta$ l'angle de couplage, et $\tau/\mu$ l
 Les dimensions de la série anormale des cordes $d = 2 + 4k$, qui apparaissent dans l’Axe Topologique sont les nombres $2, 6, 10, 14, 18, 22, 26, 30$. Les quatre premiers s’identifient avec les nombres atomiques des séries spectroscopique s,p,d,f. La table périodique contient 19 de ces séries, aboutissant à l’Oganesson, de numéro atomique $7s + 6p + 6d + 2f = 118 = 2 \times 59$, de sorte que, tenant copte de la relation cristallographique ci-dessus $137 = 2 \times 59 + 19  = 7(s+1)+6(p+1)+4(d+1)+2(f+1)$. Effectivement, les périodes se distinguent des nombres quantiques principaux, de telle façon que les périodes, à partir de la deuxième, sont doubles, de sorte que le nombre ci-dessus se décompose en $118/2 = 59 =  1+3s+3p+2d+f$.
 
 En séparant les termes extremes $f + 1 = 15$, la séparation de jauge (rappelée ci-dessous) $137 = 107 + 30$ est ainsi justifiée. En isolant la première couche des 2 atomes essentiels, l'hydrogène et l'hélium: $107 = 105 + 2$, on arrive à $137 = 30 + 105 + 2$ où $30$ et $105$ sont les nombes holiques $2\times 3 \times 5$ et $5\times 7 \times 5$, de sorte que, finalement, $ 137 = 105 + 32$, où l'on retrouve le nombre 32 des colonnes du tableau. 
+
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=.5]
+
+
+
+  \begin{scope}[xshift=12cm]
+    \draw (0, 0) grid (36, 8);
+    %\draw[very thick, scale=3] (0, 0) grid (3, 3);
+
+    \setcounter{row}{1}
+    %\setrow { }{2}{ }  {5}{ }{1}  { }{9}{ }
+    \setrow { } { }{ }{ }  {$s^1$}{$s^2$}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+    \setrow { } { }{ }{\textcolor{red}{1s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+
+    \setrow { } { }{ }{\textcolor{red}{2s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+    \setrow { } { }{ }{\textcolor{red}{3s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+    \setrow { } { }{ }{\textcolor{red}{4s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+
+    \setrow { } {\textcolor{blue}{3d}}{ }{\textcolor{red}{5s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+    \setrow { } {\textcolor{blue}{4d}}{ }{\textcolor{red}{6s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+    \setrow {\textcolor{green}{4f}} {\textcolor{blue}{5d}}{\textcolor{yellow}{6p}}{\textcolor{red}{7s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+    \setrow {\textcolor{green}{5f}} {\textcolor{blue}{6d}}{\textcolor{yellow}{7p}}{\textcolor{red}{8s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+
+    \node[anchor=center] at (15.5, -0.5) {32 col Periodic Table s,p,d,f};
+
+    \begin{scope}[blue]
+      \setcounter{row}{1}
+      %\setrow {H}{ }{6}  { }{7}{ }  {3}{ }{8}
+      \setrow { } { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+      \setrow { } { }{ }{ }  {$H_1$}{$He_2$}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+
+      \setrow { } { }{ }{ }  {$Li_3$}{$Be_4$}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+      \setrow { } { }{ }{ }  {$Na_{11}$}{$Mg$}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+      \setrow { } { }{ }{ }  {$K$}{$Ca$}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+
+      \setrow { } { }{ }{ }  {$Rb$}{$Sr$}{$Sc$}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+      \setrow { } { }{ }{ }  {$Cs$}{$Ba$}{$Y$}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+      \setrow { } { }{ }{ }  {$Fr$}{$Ra$ }{$Lu$}   { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+      \setrow { } { }{ }{ }  {$-$}{$-$ }{$Lr$}   { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+    \end{scope}
+
+  \end{scope}
+
+\end{tikzpicture}
+\caption[Periodic Table]{Periodic Table 32 columns.}
+\label{PeriodicTable}
+\end{figure}
+
 
 %Effectivement l'examen des formules de $R$ en fonction des longuers d'ondes $\lambda_{CMB}$ et $\lambda_{CNB}$ conduit aux corrélations suivantes, à 72 ppb et 1 ppm près:
 
