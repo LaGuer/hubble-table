@@ -1432,11 +1432,12 @@ La théorie prévoit un photon de masse nulle et trois bosons massifs $W_{+}$, $
 \cos\theta = m_W/m_Z 
 \end{equation}
  
-et la charge électrique est:
+et la charge électrique est, où $u$ = 6, $v$ = 5 sont les masses représentatives des quarks up et down (table):
 
 \begin{equation}
-q = {q'} \sin\theta = {q''} \cos\theta 
+q = {q'} \sin\theta = {q''} \cos\theta \approx 0.302973211 \approx u^2v/495
 \end{equation}
+
  
  Le triangle de Weinberg (Figure 4.) illustre ces relations.
  Le cercle circonscrit fait apparaître le nombre musical $2^{1/12}$, qui est voisin de 
@@ -1513,6 +1514,98 @@ confirmant ainsi la relation ci-dessus, en la reliant à $q'$, ce qui valide ain
 \caption[Weinberg Triangle]{Weinberg Triangle.}
 \label{WeinbergTriangle}
 \end{figure}
+
+
+
+
+
+
+
+
+
+\begin{figure}
+\centering
+
+\begin{tikzpicture}[x=1.2cm, y=1.2cm]
+  \draw[round] (-0.5,0.5) rectangle (4.4,-1.5);
+  \draw[round] (-0.6,0.6) rectangle (5.0,-2.5);
+  \draw[round] (-0.7,0.7) rectangle (5.6,-3.5);
+
+  \node at(0, 0)   {\particle[gray!20!white]
+                   {$u$}        {up}       {$2.3$ MeV}{1/2}{$2/3$}{R/G/B}};
+  \node at(0,-1)   {\particle[gray!20!white]
+                   {$d$}        {down}    {$4.8$ MeV}{1/2}{$-1/3$}{R/G/B}};
+  \node at(0,-2)   {\particle[gray!20!white]
+                   {$e$}        {electron}       {$511$ keV}{1/2}{$-1$}{}};
+  \node at(0,-3)   {\particle[gray!20!white]
+                   {$\nu_e$}    {$e$ neutrino}         {$<2$ eV}{1/2}{}{}};
+  \node at(1, 0)   {\particle
+                   {$c$}        {charm}   {$1.28$ GeV}{1/2}{$2/3$}{R/G/B}};
+  \node at(1,-1)   {\particle 
+                   {$s$}        {strange}  {$95$ MeV}{1/2}{$-1/3$}{R/G/B}};
+  \node at(1,-2)   {\particle
+                   {$\mu$}      {muon}         {$105.7$ MeV}{1/2}{$-1$}{}};
+  \node at(1,-3)   {\particle
+                   {$\nu_\mu$}  {$\mu$ neutrino}    {$<190$ keV}{1/2}{}{}};
+  \node at(2, 0)   {\particle
+                   {$t$}        {top}    {$173.2$ GeV}{1/2}{$2/3$}{R/G/B}};
+  \node at(2,-1)   {\particle
+                   {$b$}        {bottom}  {$4.7$ GeV}{1/2}{$-1/3$}{R/G/B}};
+  \node at(2,-2)   {\particle
+                   {$\tau$}     {tau}          {$1.777$ GeV}{1/2}{$-1$}{}};
+  \node at(2,-3)   {\particle
+                   {$\nu_\tau$} {$\tau$ neutrino}  {$<18.2$ MeV}{1/2}{}{}};
+  \node at(3,-3)   {\particle[orange!20!white]
+                   {$W^{\hspace{-.3ex}\scalebox{.5}{$\pm$}}$}
+                                {}              {$80.4$ GeV}{1}{$\pm1$}{}};
+  \node at(4,-3)   {\particle[orange!20!white]
+                   {$Z$}        {}                    {$91.2$ GeV}{1}{}{}};
+  \node at(3.5,-2) {\particle[green!50!black!20]
+                   {$\gamma$}   {photon}                        {}{1}{}{}};
+  \node at(3.5,-1) {\particle[purple!20!white]
+                   {$g$}        {gluon}                    {}{1}{}{color}};
+  \node at(5,0)    {\particle[gray!50!white]
+                   {$H$}        {Higgs}              {$125.1$ GeV}{0}{}{}};
+  \node at(6.1,-3) {\particle
+                   {}           {graviton}                       {}{}{}{}};
+
+  \node at(4.25,-0.5) [force]      {strong nuclear force (color)};
+  \node at(4.85,-1.5) [force]    {electromagnetic force (charge)};
+  \node at(5.45,-2.4) [force] {weak nuclear force (weak isospin)};
+  \node at(6.75,-2.5) [force]        {gravitational force (mass)};
+
+  \draw [<-] (2.5,0.3)   -- (2.7,0.3)          node [legend] {charge};
+  \draw [<-] (2.5,0.15)  -- (2.7,0.15)         node [legend] {colors};
+  \draw [<-] (2.05,0.25) -- (2.3,0) -- (2.7,0) node [legend]   {mass};
+  \draw [<-] (2.5,-0.3)  -- (2.7,-0.3)         node [legend]   {spin};
+
+  \draw [mbrace] (-0.8,0.5)  -- (-0.8,-1.5)
+                 node[leftlabel] {6 quarks\\(+6 anti-quarks)};
+  \draw [mbrace] (-0.8,-1.5) -- (-0.8,-3.5)
+                 node[leftlabel] {6 leptons\\(+6 anti-leptons)};
+  \draw [mbrace] (-0.5,-3.6) -- (2.5,-3.6)
+                 node[bottomlabel]
+                 {12 fermions\\(+12 anti-fermions)\\increasing mass $\to$};
+  \draw [mbrace] (2.5,-3.6) -- (5.5,-3.6)
+                 node[bottomlabel] {5 bosons\\(+1 opposite charge $W$)};
+
+  \draw [brace] (-0.5,.8) -- (0.5,.8) node[toplabel]         {standard matter};
+  \draw [brace] (0.5,.8)  -- (2.5,.8) node[toplabel]         {unstable matter};
+  \draw [brace] (2.5,.8)  -- (4.5,.8) node[toplabel]          {force carriers};
+  \draw [brace] (4.5,.8)  -- (5.5,.8) node[toplabel]       {Goldstone\\bosons};
+  \draw [brace] (5.5,.8)  -- (7,.8)   node[toplabel] {outside\\standard model};
+
+  \node at (0,1.2)   [generation] {1\tiny st};
+  \node at (1,1.2)   [generation] {2\tiny nd};
+  \node at (2,1.2)   [generation] {3\tiny rd};
+  \node at (2.8,1.2) [generation] {\tiny generation};
+\end{tikzpicture}
+\caption[Standard Model of Particle Physics.]{[Standard Model \footnote{A standard diagram of the current standard model of physics. In some ways, this was the ultimate, single-diagram user experience challenge: all of our current understanding of the universe condensed into a single infographic. This improved diagram of the standard model of physics was made at the CERN Webfest 2012 by David Galbraith and Carsten Burgard. Source: http://davidgalbraith.org/portfolio/ux-standard-model-of-the-standard-model/ . Programmed in TikZ by Carsten Burgard. TikZ styles syntax by Stefan Kottwitz. }} 
+\label{StandardModel}
+\end{figure}
+
+
+
 
 
 
@@ -1869,7 +1962,7 @@ The authors thank Anatole Khelif for many thoroughful discussions, including wit
 \end{thebibliography}
 
 
-\begin{appendix}
+%\begin{appendix}
 
 
 
@@ -1877,91 +1970,12 @@ The authors thank Anatole Khelif for many thoroughful discussions, including wit
 %\listoffigures{}  % figure list
 %\section{Tables}
 
-\end{appendix}
+%\end{appendix}
 \end{document}
 
-\begin{figure}
-\centering
 
-\begin{tikzpicture}[x=1.2cm, y=1.2cm]
-  \draw[round] (-0.5,0.5) rectangle (4.4,-1.5);
-  \draw[round] (-0.6,0.6) rectangle (5.0,-2.5);
-  \draw[round] (-0.7,0.7) rectangle (5.6,-3.5);
 
-  \node at(0, 0)   {\particle[gray!20!white]
-                   {$u$}        {up}       {$2.3$ MeV}{1/2}{$2/3$}{R/G/B}};
-  \node at(0,-1)   {\particle[gray!20!white]
-                   {$d$}        {down}    {$4.8$ MeV}{1/2}{$-1/3$}{R/G/B}};
-  \node at(0,-2)   {\particle[gray!20!white]
-                   {$e$}        {electron}       {$511$ keV}{1/2}{$-1$}{}};
-  \node at(0,-3)   {\particle[gray!20!white]
-                   {$\nu_e$}    {$e$ neutrino}         {$<2$ eV}{1/2}{}{}};
-  \node at(1, 0)   {\particle
-                   {$c$}        {charm}   {$1.28$ GeV}{1/2}{$2/3$}{R/G/B}};
-  \node at(1,-1)   {\particle 
-                   {$s$}        {strange}  {$95$ MeV}{1/2}{$-1/3$}{R/G/B}};
-  \node at(1,-2)   {\particle
-                   {$\mu$}      {muon}         {$105.7$ MeV}{1/2}{$-1$}{}};
-  \node at(1,-3)   {\particle
-                   {$\nu_\mu$}  {$\mu$ neutrino}    {$<190$ keV}{1/2}{}{}};
-  \node at(2, 0)   {\particle
-                   {$t$}        {top}    {$173.2$ GeV}{1/2}{$2/3$}{R/G/B}};
-  \node at(2,-1)   {\particle
-                   {$b$}        {bottom}  {$4.7$ GeV}{1/2}{$-1/3$}{R/G/B}};
-  \node at(2,-2)   {\particle
-                   {$\tau$}     {tau}          {$1.777$ GeV}{1/2}{$-1$}{}};
-  \node at(2,-3)   {\particle
-                   {$\nu_\tau$} {$\tau$ neutrino}  {$<18.2$ MeV}{1/2}{}{}};
-  \node at(3,-3)   {\particle[orange!20!white]
-                   {$W^{\hspace{-.3ex}\scalebox{.5}{$\pm$}}$}
-                                {}              {$80.4$ GeV}{1}{$\pm1$}{}};
-  \node at(4,-3)   {\particle[orange!20!white]
-                   {$Z$}        {}                    {$91.2$ GeV}{1}{}{}};
-  \node at(3.5,-2) {\particle[green!50!black!20]
-                   {$\gamma$}   {photon}                        {}{1}{}{}};
-  \node at(3.5,-1) {\particle[purple!20!white]
-                   {$g$}        {gluon}                    {}{1}{}{color}};
-  \node at(5,0)    {\particle[gray!50!white]
-                   {$H$}        {Higgs}              {$125.1$ GeV}{0}{}{}};
-  \node at(6.1,-3) {\particle
-                   {}           {graviton}                       {}{}{}{}};
 
-  \node at(4.25,-0.5) [force]      {strong nuclear force (color)};
-  \node at(4.85,-1.5) [force]    {electromagnetic force (charge)};
-  \node at(5.45,-2.4) [force] {weak nuclear force (weak isospin)};
-  \node at(6.75,-2.5) [force]        {gravitational force (mass)};
-
-  \draw [<-] (2.5,0.3)   -- (2.7,0.3)          node [legend] {charge};
-  \draw [<-] (2.5,0.15)  -- (2.7,0.15)         node [legend] {colors};
-  \draw [<-] (2.05,0.25) -- (2.3,0) -- (2.7,0) node [legend]   {mass};
-  \draw [<-] (2.5,-0.3)  -- (2.7,-0.3)         node [legend]   {spin};
-
-  \draw [mbrace] (-0.8,0.5)  -- (-0.8,-1.5)
-                 node[leftlabel] {6 quarks\\(+6 anti-quarks)};
-  \draw [mbrace] (-0.8,-1.5) -- (-0.8,-3.5)
-                 node[leftlabel] {6 leptons\\(+6 anti-leptons)};
-  \draw [mbrace] (-0.5,-3.6) -- (2.5,-3.6)
-                 node[bottomlabel]
-                 {12 fermions\\(+12 anti-fermions)\\increasing mass $\to$};
-  \draw [mbrace] (2.5,-3.6) -- (5.5,-3.6)
-                 node[bottomlabel] {5 bosons\\(+1 opposite charge $W$)};
-
-  \draw [brace] (-0.5,.8) -- (0.5,.8) node[toplabel]         {standard matter};
-  \draw [brace] (0.5,.8)  -- (2.5,.8) node[toplabel]         {unstable matter};
-  \draw [brace] (2.5,.8)  -- (4.5,.8) node[toplabel]          {force carriers};
-  \draw [brace] (4.5,.8)  -- (5.5,.8) node[toplabel]       {Goldstone\\bosons};
-  \draw [brace] (5.5,.8)  -- (7,.8)   node[toplabel] {outside\\standard model};
-
-  \node at (0,1.2)   [generation] {1\tiny st};
-  \node at (1,1.2)   [generation] {2\tiny nd};
-  \node at (2,1.2)   [generation] {3\tiny rd};
-  \node at (2.8,1.2) [generation] {\tiny generation};
-\end{tikzpicture}
-\caption[Standard Model of Particle Physics.]{[Standard Model \footnote{A standard diagram of the current standard model of physics. In some ways, this was the ultimate, single-diagram user experience challenge: all of our current understanding of the universe condensed into a single infographic. This improved diagram of the standard model of physics was made at the CERN Webfest 2012 by David Galbraith and Carsten Burgard. Source: http://davidgalbraith.org/portfolio/ux-standard-model-of-the-standard-model/ . Programmed in TikZ by Carsten Burgard. TikZ styles syntax by Stefan Kottwitz. }} 
-\label{StandardModel}
-\end{figure}
-\end{appendix}
-\end{document}
 
 
 %\bash[stderr]
