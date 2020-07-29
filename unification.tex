@@ -430,7 +430,8 @@ Les 4 constantes de couplages (électrique, gravitationnelle, faible, forte), $a
     %Measured Fermi/Electron $m_F/m_e$ & $F_{meas}$   & 573007.362  & 250 \\ 
           
     Proton/Electron mass ratio $m_p/m_e$ & p   & 1836.15267343  & 0.06 \\  
-    Hydrogen/Electron mass ratio  & $H$  & 1837.15266014  & 0.06 \\      
+    Hydrogen/Electron mass ratio  & $H$  & 1837.15266014  & 0.06 \\
+    Relativistic correction factor $1/(H-p)$ & $\beta$  & 1.000026597  & 0.1 \\
     Neutron/Electron mass ratio  & $n_t$ & 1838.6836617  & 0.5 \\     
     %Measured Muon/Electron mass ratio  & $\mu_{meas}$ & 206.7682830  & 22 \\     
     Optimized Muon/Electron mass ratio  & $\mu$ & 203.7682869  & 0.1 $\mu_{mes}$: 206.7682830 \\     
@@ -485,7 +486,7 @@ Optimised Strong coupling constant $a_w/2\pi(pH)^{3/2}$ & $a_s$   & $8.434502906
    Cosmos (CMB) Wien wavelength & $\lambda_{CMB}/w_i $ & m & $1.063082472  \times 10^{-3} $ & \cite{Sanchez2} \\
    %Neutrino (CNB) reduced wavelength & $\lambdabar_{CNB} = \lambdabar_{CNB} \times (11/4)^{1/3}  $ & m & $1.176956919 \times 10^{-3} $ & \cite{Sanchez2} \\
    
-   Non-Doppler length & $l_{nD}$ & m & $2.878184911 \times 10^{12} $ & \cite{Sanchez2} \\ 
+   Non-Local length & $l_{nl}$ & m & $2.878184911 \times 10^{12} $ & \cite{Sanchez2} \\ 
    
     Hubble length & $R$ & m & $1.306713894 \times 10^{26} $ & \cite{Sanchez2} \\ 
    
@@ -552,7 +553,7 @@ La Table \ref{tab:6:table6} présente 16 formules simples qui confirment ce rayo
  
  
  
- $ (2l_{nD}^3/r_e)^{1/2}$  & 13.75    & Relation holographique avec la longueur non-locale $l_{nl}$ \\
+ $ (2l_{nl}^3/r_e)^{1/2}$  & 13.75    & Relation holographique avec la longueur non-locale $l_{nl}$ \\
  
  $(2\pi^2 a^3)^5 \lambdabar_{e} $ & 13.80 & Relation holographique 5D  \\
  
@@ -829,7 +830,7 @@ Avec les cas particuliers:
         
         m_G = m_{bc} = m_{\hbar}   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \rightarrow r_1 = 2l_{cc} \\
         
-        m_G = a^3 m_P~~ m_{\hbar}^2 = m_pm_H ~~~~~~~~~~~~~~ \rightarrow r_1 = \lambda_{Wn} \\
+        m_G = a^3 m_P~~ m_{\hbar}^2 = m_pm_H ~~~~~~~~~~~~~~~~ \rightarrow r_1 = \lambda_{Wn} \\
         m_G = m_e~~ m_{\hbar}^2 = m_pm_H ~~~~~~~~~~~~~~~~~~~~ \rightarrow r_1 = R/2 \\
          
          m_G = m_{bc}R_N/R;~~ = m_{\hbar}^2 = m_{ph}m_{gr}    ~~ \rightarrow r_1 = R_C 
@@ -876,8 +877,10 @@ Par contre, \textit{Le Cosmos utilise la puissance holique 210 de la base entiè
  
  \begin{equation}
 %(e(H-p)^2)^{26^2/2\times210} \approx (q' a^a)^{26^2/2\times210} \approx 5
-5^{2\times210} \approx (e(H-p)^2)^{26^2} \approx q'' a^a
+5^{2\times210} \approx (e/\beta^2)^{26^2} \approx q'' a^a
  \end{equation}
+ 
+ où $q''$ est la charge de jauge SU(1), rappelée ci-dessous.
 
 %Noter que la résonance $ R/\lambdabar_e \approx 2^{128}$ se traduit par: 
 
