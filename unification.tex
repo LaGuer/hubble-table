@@ -1203,54 +1203,12 @@ Les dimensions de la série anormale des cordes $d = 2 + 4k$, qui apparaissent d
 En séparant les termes extremes $f + 1 = 15$, la séparation de jauge (rappelée ci-dessous) $137 = 107 + 30$ est ainsi justifiée. En isolant la première couche des 2 atomes essentiels, l'hydrogène et l'hélium: $107 = 105 + 2$, on arrive à $137 = 30 + 105 + 2$ où $30$ et $105$ sont les nombes holiques $2\times 3 \times 5$ et $5\times 7 \times 5$, de sorte que, finalement, $ 137 = 105 + 32$, où l'on retrouve le nombre 32 des colonnes du tableau de la figure \ref{PeriodicTable}. 
 
 
-\begin{figure}
-\centering
-\begin{tikzpicture}[scale=.5]
 
 
 
-  \begin{scope}[xshift=12cm]
-    \draw (0, 0) grid (36, 8);
-    %\draw[very thick, scale=3] (0, 0) grid (3, 3);
 
-    \setcounter{row}{1}
-    %\setrow { }{2}{ }  {5}{ }{1}  { }{9}{ }
-    \setrow { } { }{ }{ }  {$s^1$}{$s^2$}{$p^1$}  {$p^2$}{$p^3$}{$p^4$ }  {$p^5$ }{$p^6$ }{ }  { }{ }{ }  { }{ }{ }
-    \setrow { } { }{ }{\textcolor{red}{1s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
 
-    \setrow { } { }{ }{\textcolor{red}{2s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
-    \setrow { } { }{\textcolor{red!40!yellow}{2p}}{\textcolor{red}{3s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
-    \setrow { } { }{\textcolor{red!40!yellow}{3p}}{\textcolor{red}{4s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
 
-    \setrow { } {\textcolor{blue}{3d}}{\textcolor{red!40!yellow}{4p}}{\textcolor{red}{5s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
-    \setrow { } {\textcolor{blue}{4d}}{\textcolor{red!40!yellow}{5p}}{\textcolor{red}{6s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
-    \setrow {\textcolor{black!40!green}{4f}} {\textcolor{blue}{5d}}{\textcolor{red!40!yellow}{6p}}{\textcolor{red}{7s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
-    \setrow {\textcolor{black!40!green}{5f}} {\textcolor{blue}{6d}}{\textcolor{red!40!yellow}{7p}}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
-
-    \node[anchor=center] at (15.5, -0.5) {32 col Periodic Table s,p,d,f};
-
-    \begin{scope}[blue, font=\tiny]
-      \setcounter{row}{1}
-      %\setrow {H}{ }{6}  { }{7}{ }  {3}{ }{8}
-      \setrow { } { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
-      \setrow { } { }{ }{ }  {\textcolor{white!20!red}{$H_1$}}{\textcolor{white!20!red}{$He_2$}}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
-
-      \setrow { } { }{ }{ }  {\textcolor{white!20!red}{$Li_3$}}{\textcolor{white!20!red}{$Be_4$}}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
-      \setrow { } { }{ }{ }  {\textcolor{white!20!red}{$Na_{11}$}}{\textcolor{white!20!red}{$Mg_{12}$}}{\textcolor{red!40!yellow}{$B_5$}}  {\textcolor{red!40!yellow}{$C_6$}}{\textcolor{red!40!yellow}{$N_7$}}{\textcolor{red!40!yellow}{$O_8$}}  {\textcolor{red!40!yellow}{$F_9$} }{\textcolor{red!40!yellow}{$Ne_{10}7$} }{ }  { }{ }{ }  { }{ }{ }
-      \setrow { } { }{ }{ }  {\textcolor{white!20!red}{$K_{19}$}}{\textcolor{white!20!red}{$Ca_{20}$}}{\textcolor{red!40!yellow}{$Al_{13}$}}  {\textcolor{red!40!yellow}{$Si_{14}$}}{\textcolor{red!40!yellow}{$P_{15}$}}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
-
-      \setrow { } { }{ }{ }  {\textcolor{white!20!red}{$Rb_{37}$}}{\textcolor{white!20!red}{$Sr_{38}$}}{\textcolor{red!40!yellow}{$Ga_{31}$}}  {\textcolor{red!40!yellow}{$Ge_{32}$}}{\textcolor{red!40!yellow}{$As_{33}$}}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
-      \setrow { } { }{ }{ }  {\textcolor{white!20!red}{$Cs_{55}$}}{\textcolor{white!20!red}{$Ba_{56}$}}{\textcolor{red!40!yellow}{$In_{49}$}}  {\textcolor{red!40!yellow}{$Sn_{50}$}}{\textcolor{red!40!yellow}{$Sb_{51}$}}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
-      \setrow { } { }{ }{ }  {\textcolor{white!20!red}{$Fr_{87}$}}{\textcolor{white!20!red}{$Ra_{88}$}}{\textcolor{red!40!yellow}{$Ti_{81}$}}   {\textcolor{red!40!yellow}{$Pb_{82}$}}{\textcolor{red!40!yellow}{$Bi_{83}$}}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
-      \setrow { } { }{ }{ }  {$--$}{$--$}{\textcolor{red!40!yellow}{$Nh_{113}$}}   {\textcolor{red!40!yellow}{$Fl_{114}$}}{\textcolor{red!40!yellow}{$Mc_{115}$}}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
-    \end{scope}
-
-  \end{scope}
-
-\end{tikzpicture}
-\caption[Periodic Table]{Periodic Table 32 columns.}
-\label{PeriodicTable}
-\end{figure}
 
 %Effectivement l'examen des formules de $R$ en fonction des longuers d'ondes $\lambda_{CMB}$ et $\lambda_{CNB}$ conduit aux corrélations suivantes, à 72 ppb et 1 ppm près:
 
@@ -2004,6 +1962,66 @@ The authors thank Anatole Khelif for many thoroughful discussions, including wit
 
 %\end{appendix}
 \end{document}
+
+
+
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=.5]
+
+
+
+  \begin{scope}[xshift=12cm]
+    \draw (0, 0) grid (36, 8);
+    %\draw[very thick, scale=3] (0, 0) grid (3, 3);
+
+    \setcounter{row}{1}
+    %\setrow { }{2}{ }  {5}{ }{1}  { }{9}{ }
+    \setrow { } { }{ }{ }  {$s^1$}{$s^2$}{$p^1$}  {$p^2$}{}{}  { }{ }{ }  { }{ }{ }  { }{ }{ }
+    \setrow { } { }{ }{\textcolor{red}{1s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+
+    \setrow { } { }{ }{\textcolor{red}{2s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+    \setrow { } { }{\textcolor{red!40!yellow}{2p}}{\textcolor{red}{3s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+    \setrow { } { }{\textcolor{red!40!yellow}{3p}}{\textcolor{red}{4s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+
+    \setrow { } {\textcolor{blue}{3d}}{\textcolor{red!40!yellow}{4p}}{\textcolor{red}{5s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+    \setrow { } {\textcolor{blue}{4d}}{\textcolor{red!40!yellow}{5p}}{\textcolor{red}{6s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+    \setrow {\textcolor{black!40!green}{4f}} {\textcolor{blue}{5d}}{\textcolor{red!40!yellow}{6p}}{\textcolor{red}{7s}}  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+    \setrow {\textcolor{black!40!green}{5f}} {\textcolor{blue}{6d}}{\textcolor{red!40!yellow}{7p}}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+
+    \node[anchor=center] at (15.5, -0.5) {32 col Periodic Table s,p,d,f};
+
+    \begin{scope}[blue, font=\tiny]
+      \setcounter{row}{1}
+      %\setrow {H}{ }{6}  { }{7}{ }  {3}{ }{8}
+      \setrow { } { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+      \setrow { } { }{ }{ }  {\textcolor{white!20!red}{$H_1$}}{\textcolor{white!20!red}{$He_2$}}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+
+      \setrow { } { }{ }{ }  {\textcolor{white!20!red}{$Li_3$}}{\textcolor{white!20!red}{$Be_4$}}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+      \setrow { } { }{ }{ }  {\textcolor{white!20!red}{$Na_{11}$}}{\textcolor{white!20!red}{$Mg_{12}$}}{\textcolor{red!40!yellow}{$B_5$}}  {\textcolor{red!40!yellow}{$C_6$}}{\textcolor{red!40!yellow}{$N_7$}}{\textcolor{red!40!yellow}{$O_8$}}  {\textcolor{red!40!yellow}{$F_9$} }{\textcolor{red!40!yellow}{$Ne_{10}7$} }{ }  { }{ }{ }  { }{ }{ }
+      \setrow { } { }{ }{ }  {\textcolor{white!20!red}{$K_{19}$}}{\textcolor{white!20!red}{$Ca_{20}$}}{\textcolor{red!40!yellow}{$Al_{13}$}}  {\textcolor{red!40!yellow}{$Si_{14}$}}{\textcolor{red!40!yellow}{$P_{15}$}}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+
+      \setrow { } { }{ }{ }  {\textcolor{white!20!red}{$Rb_{37}$}}{\textcolor{white!20!red}{$Sr_{38}$}}{\textcolor{red!40!yellow}{$Ga_{31}$}}  {\textcolor{red!40!yellow}{$Ge_{32}$}}{\textcolor{red!40!yellow}{$As_{33}$}}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+      \setrow { } { }{ }{ }  {\textcolor{white!20!red}{$Cs_{55}$}}{\textcolor{white!20!red}{$Ba_{56}$}}{\textcolor{red!40!yellow}{$In_{49}$}}  {\textcolor{red!40!yellow}{$Sn_{50}$}}{\textcolor{red!40!yellow}{$Sb_{51}$}}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+      \setrow { } { }{ }{ }  {\textcolor{white!20!red}{$Fr_{87}$}}{\textcolor{white!20!red}{$Ra_{88}$}}{\textcolor{red!40!yellow}{$Ti_{81}$}}   {\textcolor{red!40!yellow}{$Pb_{82}$}}{\textcolor{red!40!yellow}{$Bi_{83}$}}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+      \setrow { } { }{ }{ }  {$--$}{$--$}{\textcolor{red!40!yellow}{$Nh_{113}$}}   {\textcolor{red!40!yellow}{$Fl_{114}$}}{\textcolor{red!40!yellow}{$Mc_{115}$}}{ }  { }{ }{ }  { }{ }{ }  { }{ }{ }
+    \end{scope}
+
+  \end{scope}
+
+\end{tikzpicture}
+\caption[Periodic Table]{Periodic Table 32 columns.}
+\label{PeriodicTable}
+\end{figure}
+
+
+
+
+
+
+
+
 
 
 
