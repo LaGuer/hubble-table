@@ -1560,7 +1560,7 @@ Les 26 groupes sporadiques comprennent 20 groupes de la "famille heureuse" du gr
  
  
 
-\section{Les paramètres-clefs du modèle électrofaible}
+\section{Les paramètres-clefs du modèle standard des particules}
 
 Le nombre de « paramètres libres » dans le modèle standard des particules est 19. Les paramètres-clefs sont ces nombres purs (dits "sans dimension") qui interviennent le plus directement dans les théories physiques (Table \ref{tab:2:table2}). En particulier, on considère le rapport des masses des particules les plus importantes avec celle de l'électron, ce qui s'est révélé déterminant dans l'Axe Topologique ci-dessus (Table \ref{AxeTopologique}). 
 
@@ -1644,6 +1644,8 @@ Il en résulte la masse remarquable suivante du boson scalaire:
  
 où le terme de correcton implique $w = W/\sqrt a_w$. Cette masse correspond à $125.21~~ GeV$, compatible avec la mesure \cite{Tanabashi}, et à la "dimension équivalente" $d \approx \gamma\Gamma$ dans l'Axe Topologique.
 
+\textit{La constante d'Atiyah $\Gamma$ confirme donc la valeur de $\sin~\theta$, donc de la masse du boson scalaire et la valeur de $G$ dans le domaine du ppb. Le programme d'Atiyah \cite{Atiyah} est ainsi en cours de réalisation}.
+
 
 %\subsection{Le boson scalaire et le nombre co-parfait 495} 
 %. Suite à l'étude ci-dessus des symétries cristallines en dimension 26, cet article prétend préciser les paramètres, à partir de l'hypothèse que le rapport de masse principal est:
@@ -1680,7 +1682,7 @@ De plus, le nombre co-parfait 495 est la partie impaire de l'ordre du groupe de 
 Cela correspond à la "séparation effective de jauge", figure \ref{ElectricTriangle}:
 
 \begin{equation}
- a (sin \theta)^2  = {a'}  \approx 30.505998 \approx 2e^e ,    ~~~~         a (cos \theta)^2  = {a''}  \approx 106.530011 \approx 4\pi a_s \approx e^e /q sin \theta 
+a (cos \theta)^2  = a_1  \approx 106.530011 \approx 4\pi a_s \approx e^e /q sin \theta      ~~~~   a (sin \theta)^2  = a_2  \approx 30.505998 \approx 2e^e      
  \end{equation}
  
 %c'est-à-dire:
@@ -1688,13 +1690,9 @@ Cela correspond à la "séparation effective de jauge", figure \ref{ElectricTria
 %\sqrt{a}  = \sqrt{({a'} + {a''})} = \sqrt{a'} / \sin\theta  = \sqrt{a''}  / \cos\theta
  %\end{equation}
 
-où l'on reconnaît le terme $2e^e$ de l'Axe Topologique. L'ordinateur indique, à 15 ppb près:
+où l'on reconnaît le terme $2e^e$ de l'Axe Topologique. 
 
-\begin{equation}
-2\times 30\times 30.5 /  a e^e \approx \Gamma \sqrt 2 (H\sin\theta/3p)^2
- \end{equation}
 
-\textit{La constante d'Atiyah $\Gamma$ confirme donc la valeur de $\sin~\theta$, donc de la masse du boson scalaire et la valeur de $G$ dans le domaine du ppb. Le programme d'Atiyah \cite{Atiyah} est ainsi en cours de réalisation}.
 
 %Ces relations sont illustrées dans le « triangle électrique » figure \ref{ElectricTriangle}. 
 
@@ -1704,7 +1702,7 @@ où l'on reconnaît le terme $2e^e$ de l'Axe Topologique. L'ordinateur indique, 
 %\sin \theta(m_Z) = (qR/R_N)^{1/2}   \approx \sin \theta p^2\sqrt {a_w}/Z \pi d_e H n_t
 %\end{equation}
 
- Avec $u_0$ = 5, $d_0$ = 6, le premier couple parfait, les masses représentatives des quarks up et down \cite{Sanchez1}, et $f(8) = e^4$, situé à mi-chemin du terme central $f(16)=e^{16}$  on observe que les combinaisons $u_0-u_0-d_0$(proton) et $u_0-d_0-d_0$(neutron) apparaissent dans:
+Avec $u_0$ = 5, $d_0$ = 6, le premier couple parfait, les masses représentatives des quarks up et down \cite{Sanchez1}, et $f(8) = e^4$, situé à mi-chemin du terme central $f(16)=e^{16}$  on observe que les combinaisons $u_0-u_0-d_0$(proton) et $u_0-d_0-d_0$(neutron) apparaissent dans:
 
 \begin{equation}
  \left\{
@@ -1715,7 +1713,7 @@ où l'on reconnaît le terme $2e^e$ de l'Axe Topologique. L'ordinateur indique, 
 \right.
 \end{equation}
 
-appelant des développements futurs
+appelant des développements futurs.
 
 
 
@@ -1768,7 +1766,7 @@ appelant des développements futurs
 %\draw [<->] (-1.8,1.7) node[right]{} -- (O) node[left]{};
 \node [anchor = east,text=blue] at (3.,-3.5) {\large $1+\mu+\tau \approx \mu \Gamma /\sqrt2$};
 \draw [<->] (O') node[left]{} -- (3.,-7.) node[right]{};
-\node [anchor = west,text=red] at (-2.,-1.) {\large $q'/2$};
+\node [anchor = west,text=red] at (-2.,-1.) {\large $g_2/2$};
 \draw [<->] (O) node[left]{} -- (-2.,-2.) node[right]{};
 \tkzMarkRightAngle(A,H,E)
 \tkzMarkRightAngle(A,D,C)
@@ -1903,10 +1901,10 @@ a/\Gamma = \pi/\Gamma \approx e2d_e (6\pi_{16}^5/p)^2 \approx  2 sin~\theta ~(WZ
 \draw[color=red] (-1.42,0.) -- (5.,3.43);
 \draw[color=blue] (5.,0.) -- (3.3,2.5);
 \node [anchor = east,text=blue] at (3.9,1.0) {$q$};
-\node [anchor = east,text=red] at (6.,1.5) {$q''$};
-\node [anchor = east,text=red] at (2.5,-0.5) {$q'=m_W/m_{BEH}$};
+\node [anchor = east,text=red] at (6.,1.5) {$g_1$};
+\node [anchor = east,text=red] at (2.5,-0.5) {$g_2 =m_W/m_{BEH}$};
 \clip(-6.,-0.4) rectangle (0.4,3.4);
-\draw[color=black] (-0.5,2.0) node {\large $\approx 2^{1/12} q'' ~~$};
+\draw[color=black] (-0.5,2.0) node {\large $\approx 2^{1/12} g_1 ~~$};
 \end{tikzpicture}
 \caption[Weinberg Triangle]{Weinberg Triangle.}
 \label{WeinbergTriangle}
@@ -2040,9 +2038,9 @@ a/\Gamma = \pi/\Gamma \approx e2d_e (6\pi_{16}^5/p)^2 \approx  2 sin~\theta ~(WZ
   \draw [decoration={markings,mark=at position 1 with
     {\arrow[scale=3,>=stealth]{>}}},postaction={decorate}] (0,0,0) -- (6.4,10,3.4);
   \draw [dashed] (0,0,0) -- (6.4,0,3.4);
-  \draw [->] (x) -- +(3pt,0,0) node [midway,above] {$q'$};
+  \draw [->] (x) -- +(3pt,0,0) node [midway,above] {$g_2$};
   \draw [->] (y) -- +(0,3pt,0) node [midway,right] {$1$};
-  \draw [->] (z) -- +(0,0,3pt) node [midway,above] {$q''$};
+  \draw [->] (z) -- +(0,0,3pt) node [midway,above] {$g_1$};
   %\draw (v) -- ++(0,0,-2) coordinate (d) -- ++(-2,0,0) coordinate (e) -- ++(0,0,2) |- ++(2,-2,0) coordinate [midway] (f) -- ++(0,0,-2) coordinate (g) -- (d);
   %\draw [dashed] (e) -- ++(0,-2,0) coordinate (c) edge (f) -- (g);
   %\node [label=45:C] at (c) {};
@@ -2093,8 +2091,8 @@ a/\Gamma = \pi/\Gamma \approx e2d_e (6\pi_{16}^5/p)^2 \approx  2 sin~\theta ~(WZ
 \tkzMarkAngle[fill=blue!20,size=0.633cm,opacity=.5](B,C,E)
 \tkzLabelAngle[pos=0.6](B,C,E){$\theta$}
 %\node [anchor = east] at (1.,3.5) {$\sqrt{a}$};
-\node [anchor = east,text=red] at (6.,2.5) {$\sqrt{a'}$};
-\node [anchor = east,text=red] at (1.,-0.5) {$\sqrt{a''}$};
+\node [anchor = east,text=red] at (6.,2.5) {$\sqrt{a_2}$};
+\node [anchor = east,text=red] at (1.,-0.5) {$\sqrt{a_1}$};
 \draw [<->] (O) node[left]{} -- (-5.0,2.8) node[right]{};
 \clip(-6.,-0.4) rectangle (0.4,3.4);
 \draw [shift={(-4.3,0.)},color=gray,fill=darkgray,fill opacity=0.1] (0,0) -- (0.:0.6) arc (0.:26.9:0.6) -- cycle;
