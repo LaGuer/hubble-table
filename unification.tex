@@ -1,5 +1,195 @@
 
- 
+ \documentclass[a4paper,9pt]{article}
+%\documentclass{aa}
+%\pgfplotsset{compat=1.12}
+%\usepackage[utf8]{inputenc}
+
+%\begin{filecontents*}{\periodictable.tex}
+%\usepackage{pdfpages}
+%\usepackage{bashful}
+%\immediate\write18{pdflatex \periodic-table.tex}
+
+%\usepackage{graphicx}
+%\usepackage{pstricks,pst-node}             % Pstricks
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usepackage{tikz-feynman}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage[varg]{txfonts}
+\usepackage{booktabs}       % professional-quality tables
+%\usepackage[letterpaper, landscape, lmargin=0.25in, rmargin=1.25in]{geometry}
+\usepackage{tabularx}
+\usepackage{enumerate}
+%\usepackage{enumitem}
+\usepackage{multicol}
+% \usepackage{ifpdf}
+
+% \usetikzlibrary{shapes}
+% \usepackage[left=0.1cm, right=0.1cm, top=0.1cm, bottom=0.1cm]{geometry}
+% \usepackage[ansinew]{inputenc}           % Input
+\usepackage[T1]{fontenc}                   % Font encoding
+% \usepackage{cmbright}                    % Font style
+%\usepackage[nohead,margin=0mm]{geometry}  % Page & margins
+
+%%%%%%
+%%%%%%
+
+\usepackage{etoolbox}
+%\usepackage[dvips]{hyperref}
+
+
+\usetikzlibrary{patterns,arrows.meta,shapes,calc,angles,positioning,intersections,through,quotes,decorations.markings,shadows.blur,decorations.pathreplacing}
+\tdplotsetmaincoords{70}{110}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+
+%%%%%%%
+\def\doubleunderline#1{\underline{\underline{#1}}}
+%%%%%%%
+%%%%%%% Begin Periodic Table 
+\newcounter{row}
+\newcounter{col}
+
+\newcommand\setrow[9]{
+  \setcounter{col}{1}
+  \foreach \n in {#1, #2, #3, #4, #5, #6, #7, #8, #9} {
+    \edef\x{\value{col} - 0.5}
+    \edef\y{9.5 - \value{row}}
+    \node[anchor=center] at (\x, \y) {\n};
+    \stepcounter{col}
+  }
+Pull requests
+Issues
+Marketplace
+Explore
+@hol137
+Learn Git and GitHub without any code!
+
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+LaGuer /
+hubble-table
+
+0
+0
+
+    1
+
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+
+    Insights
+
+hubble-table/
+
+34
+
+%\usepackage{enumitem}
+  \stepcounter{row}
+}
+
+%%%%%%% End Periodic Table 
+%%%%%%%
+%%%%%%% Begin Standard Model
+\tikzset{%
+        brace/.style = { decorate, decoration={brace, amplitude=5pt} },
+       mbrace/.style = { decorate, decoration={brace, amplitude=5pt, mirror} },
+        label/.style = { black, midway, scale=0.5, align=center },
+     toplabel/.style = { label, above=.5em, anchor=south },
+    leftlabel/.style = { label,rotate=-90,left=.5em,anchor=north },   
+  bottomlabel/.style = { label, below=.5em, anchor=north },
+        force/.style = { rotate=-90,scale=0.4 },
+        round/.style = { rounded corners=2mm },
+       legend/.style = { right,scale=0.4 },
+        nosep/.style = { inner sep=0pt },
+   generation/.style = { anchor=base }
+}
+
+\newcommand\particle[7][white]{%
+  \begin{tikzpicture}[x=1cm, y=1cm]
+    \path[fill=#1,blur shadow={shadow blur steps=5}] (0.1,0) -- (0.9,0)
+        arc (90:0:1mm) -- (1.0,-0.9) arc (0:-90:1mm) -- (0.1,-1.0)
+        arc (-90:-180:1mm) -- (0,-0.1) arc(180:90:1mm) -- cycle;
+    \ifstrempty{#7}{}{\path[fill=purple!50!white]
+        (0.6,0) --(0.7,0) -- (1.0,-0.3) -- (1.0,-0.4);}
+    \ifstrempty{#6}{}{\path[fill=green!50!black!50] (0.7,0) -- (0.9,0)
+        arc (90:0:1mm) -- (1.0,-0.3);}
+    \ifstrempty{#5}{}{\path[fill=orange!50!white] (1.0,-0.7) -- (1.0,-0.9)
+        arc (0:-90:1mm) -- (0.7,-1.0);}
+    \draw[\ifstrempty{#2}{dashed}{black}] (0.1,0) -- (0.9,0)
+        arc (90:0:1mm) -- (1.0,-0.9) arc (0:-90:1mm) -- (0.1,-1.0)
+        arc (-90:-180:1mm) -- (0,-0.1) arc(180:90:1mm) -- cycle;
+    \ifstrempty{#7}{}{\node at(0.825,-0.175) [rotate=-45,scale=0.2] {#7};}
+    \ifstrempty{#6}{}{\node at(0.9,-0.1)  [nosep,scale=0.17] {#6};}
+    \ifstrempty{#5}{}{\node at(0.9,-0.9)  [nosep,scale=0.2] {#5};}
+    \ifstrempty{#4}{}{\node at(0.1,-0.1)  [nosep,anchor=west,scale=0.25]{#4};}
+    \ifstrempty{#3}{}{\node at(0.1,-0.85) [nosep,anchor=west,scale=0.3] {#3};}
+    \ifstrempty{#2}{}{\node at(0.1,-0.5)  [nosep,anchor=west,scale=1.5] {#2};}
+  \end{tikzpicture}
+}
+
+%% Begin of Watermark feature
+%\usepackage[printwatermark]{xwatermark}
+%\usepackage{xcolor}
+%\newwatermark[allpages,color=red!50,angle=60,scale=6,xpos=0,ypos=0]{DRAFT}
+%\newwatermark[allpages,color=red!20,angle=60,scale=2,xpos=0,ypos=0]{For Peer Review}
+%% End of Watermark feature
+
+%\pagenumbering{gobble}
+
+%\title{Towards Physics-Arithmetics Unification}
+
+\title{Towards Unification Through Number Theory}
+
+\author{F. M. Sanchez \thanks{Retired Prof. of Physics, University of Paris 11, Orsay, France, \href{mailto:hol137@yahoo.fr}{hol137@yahoo.fr}} 
+   %%\\ email \href{mailto:hol137@yahoo.fr}{hol137@yahoo.fr}  	  
+   \and M. H. Grosmann \thanks{Retired Prof. of Physics, University of Strasbourg, France, \href{mailto:michelgrosmann@me.com}{michelgrosmann@me.com}}
+   %%\\ email \href{mailto:michelgrosmann@me.com}{michelgrosmann@me.com} 
+   \and R. Veysseyre \thanks{Retired Agregee de mathematiques et professeur honoraire \`a l'Ecole centrale de Paris, France,
+   \href{mailto:renee.veysseyre@normalsup.org}{renee.veysseyre@normalsup.org}}
+   
+   \and H. Veysseyre \thanks{Retired professeur honoraire d'analyse numérique, Institut Supérieur des Matériaux de Paris, France,
+   \href{mailto:henri.veysseyre@centraliens.net}{henri.veysseyre@centraliens.net}}
+   
+   %%\\ email \href{mailto:renee.veysseyre@normalsup.org}{renee.veysseyre@normalsup.org} 
+   \and D. Weigel  \thanks{Retired Prof of Cristallography, University of Paris 6, Paris, France, \href{mailto:dominiqueweigel18@gmail.com}{dominiqueweigel18@gmail.com}} 
+   %%\\ email \href{mailto:dominiqueweigel18@gmail.com}{dominiqueweigel18@gmail.com} 
+   \and L. Gueroult \thanks{Retired PhD instructor in Holography at ENS, Physics department A2, Cachan, France, \href{mailto:lgueroult@hotmail.com}{lgueroult@hotmail.com}}
+   %%\\ email \href{mailto:lgueroult@hotmail.com}{lgueroult@hotmail.com}
+   }
+
+\begin{document}
+\setcounter{page}{1}
+
+\maketitle
+
+\begin{abstract}
+
+The Holic Principle, which is the extreme form of the Calculation Principle, induces an “Hyper symmetry” between the constants $G$ and $\hbar$ which leads to a new expression of Bohr’s orbits. Using the very precise quasar non-local wavelength, this establishes a connection between the Hubble and Cosmos radius and their common CMB temperature (to 0,03 \%).  The c-observable Universe appears as a Cosmos “immergence”, where the mean DNA bi-codon mass is central, connecting to $10^{-7}$ with the mean dimension 16 of the Topological Axis. The dimension 26 of string theory connects in the ppb domain with both the Hubble radius and the SU1 coupling $g_1$, while the Cosmos connects  with the SU2 coupling g_2$. The string theory, the physical parameters, the sporadic groups and the periodic table of chemical elements are related to the multi-dimensional crystallographic symmetries, confirming the Higgs mass $495^2 m_e$, predicted by the Topological Axis and the Atiyah's constant. So the Multiverse model is excluded, replaced by the research towards a Science-Arithmetic Unification.
+
+
+\end{abstract}
+
+\keywords{Holographic principle. \and Holic Principle.  \and Cosmology. \and Number theory.  \and String theory. \and DNA nucleotides. \and Crystallographic Symmetry. \and Periodic Table}. \and Sporadic Groups.
+
+
+
+\end{document}
+
+
+
+
+
+
+
  
  
  
