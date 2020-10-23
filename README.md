@@ -10,8 +10,8 @@ A latex doc formatted according to the scientific publication requirements.
 
 | Latex Doc Type                |      "*.sty"                 |        "*.tex"              |      Compile in PDF                                                                                                                                    |
 | ----------------------------- |:----------------------------:|:---------------------------:|-------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|hubble-table publication Test  |[conference.sty](conference.sty)| [hubble-table](hubble-table.tex )       |[latexonline.cc hubble-table.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fhubble-table&target=hubble-table.tex&command=pdflatex)      |
-|unification Publication Test  |[conference.sty](conference.sty)| [unification](unification.tex)       |[latexonline.cc unification.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fhubble-table&target=unification.tex&command=pdflatex)      |
+|unification Publication FR  |[conference.sty](conference.sty)| [unification](unification.tex)       |[latexonline.cc unification.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fhubble-table&target=unification.tex&command=pdflatex)      |
+|unification Publication ENG  |[conference.sty](conference.sty)| [unification](unification.tex)       |[latexonline.cc unification.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fhubble-table&target=unification.tex&command=pdflatex)      |
 
 
 
@@ -27,3 +27,4 @@ A latex doc formatted according to the scientific publication requirements.
 |hubble-table publication Test  |[elsarticle.cls](elsarticle.sty)| [periodic-table](periodic-table.tex )       |[periodic-table.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fhubble-table&target=periodic-table.tex&command=pdflatex)      |
 |hubble-table publication Test AA |[aa.cls](aa.cls)| [hubble-table2](hubble-table2.tex )       |[hubble-table2.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fhubble-table&target=hubble-table2.tex&command=pdflatex)      |                                                        
 |unification publication Test  |[conference.sty](conference.sty)| [test](test.tex )       |[latexonline.cc unification](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fhubble-table&target=test.tex&command=pdflatex)      |
+|hubble-table publication Test  |[conference.sty](conference.sty)| [hubble-table](hubble-table.tex )       |[latexonline.cc hubble-table.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fhubble-table&target=hubble-table.tex&command=pdflatex)      |
