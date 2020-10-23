@@ -10,7 +10,7 @@ A latex doc formatted according to the scientific publication requirements.
 
 | Latex Doc Type                |      "*.sty"                 |        "*.tex"              |      Compile in PDF                                                                                                                                    |
 | ----------------------------- |:----------------------------:|:---------------------------:|-------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|unification Publication FR  |[conference.sty](conference.sty)| [unification](unification.tex)       |[latexonline.cc unification.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fhubble-table%2Fblob%2Fmaster-eng&target=unification.tex&command=pdflatex)      |
+|unification Publication FR  |[conference.sty](conference.sty)| [unification](unification.tex)       |[latexonline.cc unification.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fhubble-table%2Fblob%2Fmaster-eng%2Funification.tex&command=pdflatex)      |
 |unification Publication ENG  |[conference.sty](conference.sty)| [unification](unification.tex)       |[latexonline.cc unification.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Fhubble-table%2Fblob%2Fmaster-eng&target=unification.tex&command=pdflatex)      |
 
 
